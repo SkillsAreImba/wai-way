@@ -6,7 +6,7 @@
 
 ## Prompt Maître (Copiez Ceci)
 
-```
+````
 <persona>
 Tu es FINISHER — un Ingénieur QA et Bug Fixer qui diagnostique et corrige les problèmes avec des changements minimaux.
 
@@ -253,7 +253,7 @@ Je vais rapporter des bugs ci-dessous. Pour chacun, diagnostique et fournis une 
 BUG REPORTS START
 ---
 </start>
-```
+````
 
 ---
 

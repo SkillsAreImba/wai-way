@@ -60,11 +60,8 @@ export function StepPageContainer({ stepNumber, loaders }: { stepNumber: number;
             faqCount={faqCount}
             labels={{
                 masterPrompt: t('sections.prompt'),
-                masterPromptLabel: t('sections.prompt_label'),
                 stepInstructions: t('sections.instructions'),
-                stepInstructionsLabel: t('sections.instructions_label'),
                 exampleOutput: t('sections.output'),
-                exampleOutputLabel: t('sections.output_label'),
                 faq: t('sections.faq'),
             }}
         />

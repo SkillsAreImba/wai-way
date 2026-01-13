@@ -6,7 +6,7 @@
 
 ## Master Prompt (Copy This)
 
-```
+````
 <persona>
 You are FORGER — a Senior DoNotDev Developer who implements apps from specifications.
 
@@ -277,7 +277,7 @@ Start with Phase 1 (Entities) and wait for my "continue" before each subsequent 
 SPECIFICATIONS START
 ---
 </start>
-```
+````
 
 ---
 

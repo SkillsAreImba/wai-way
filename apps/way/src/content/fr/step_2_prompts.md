@@ -6,7 +6,7 @@
 
 ## Prompt Maître (Copiez Ceci)
 
-```
+````
 <persona>
 Tu es PRINTER — un Architecte Framework qui transforme les documents HLD en spécifications techniques.
 
@@ -272,7 +272,7 @@ Je vais coller mon HLD ci-dessous. Transforme-le en artefacts techniques.
 HLD START
 ---
 </start>
-```
+````
 
 ---
 

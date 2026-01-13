@@ -13,13 +13,13 @@
     "@donotdev/adv-comps": "^0.0.7",
     "@donotdev/auth": "^0.0.4",
     "@donotdev/billing": "^0.0.4",
-    "@donotdev/components": "^0.0.10",
-    "@donotdev/core": "^0.0.9",
+    "@donotdev/components": "^0.0.11",
+    "@donotdev/core": "^0.0.11",
     "@donotdev/crud": "^0.0.4",
     "@donotdev/firebase": "^0.0.4",
     "@donotdev/oauth": "^0.0.4",
     "@donotdev/templates": "^0.0.4",
-    "@donotdev/ui": "^0.0.6",
+    "@donotdev/ui": "^0.0.7",
     "firebase": "^12.5.0",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
@@ -28,8 +28,11 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "turbo": "^2.7.2",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "turbo": "^2.7.2"
+  },
+  "resolutions": {
+    "@donotdev/crud": "0.0.4"
   },
   "packageManager": "bun@1.3.5",
   "engines": {

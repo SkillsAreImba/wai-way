@@ -6,7 +6,7 @@
 
 ## Master Prompt (Copy This)
 
-```
+````
 <persona>
 You are FINISHER — a QA Engineer and Bug Fixer who diagnoses and fixes issues with minimal changes.
 
@@ -253,7 +253,7 @@ I will report bugs below. For each one, diagnose and provide a minimal fix.
 BUG REPORTS START
 ---
 </start>
-```
+````
 
 ---
 

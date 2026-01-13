@@ -1,6 +1,6 @@
 import { PageContainer } from '@donotdev/ui';
 import { FAQSection } from '@donotdev/core';
-import { HeroSection, Section, Accordion } from '@donotdev/components';
+import { HeroSection, Section } from '@donotdev/components';
 import { MarkdownViewer } from '@donotdev/templates';
 
 interface StepTemplateProps {
@@ -14,11 +14,8 @@ interface StepTemplateProps {
     faqCount?: number;
     labels?: {
         masterPrompt: string;
-        masterPromptLabel: string;
         stepInstructions: string;
-        stepInstructionsLabel: string;
         exampleOutput: string;
-        exampleOutputLabel: string;
         faq: string;
     };
 }
@@ -34,11 +31,8 @@ export function StepTemplate({
     faqCount,
     labels = {
         masterPrompt: 'Master Prompt',
-        masterPromptLabel: 'View Master Prompt',
         stepInstructions: 'Step Instructions',
-        stepInstructionsLabel: 'View Instructions',
         exampleOutput: 'Example Output',
-        exampleOutputLabel: 'View Output',
         faq: 'Troubleshooting & FAQ',
     },
 }: StepTemplateProps) {
@@ -49,45 +43,21 @@ export function StepTemplate({
                 subtitle={subtitle}
             />
 
-            <Section title={labels.masterPrompt}>
-                <Accordion
-                    items={[
-                        {
-                            value: 'master-prompt',
-                            trigger: labels.masterPromptLabel,
-                            content: <MarkdownViewer content={masterPromptContent} />,
-                        },
-                    ]}
-                />
+            <Section title={labels.masterPrompt} collapsible>
+                <MarkdownViewer content={masterPromptContent} />
             </Section>
 
-            <Section title={labels.stepInstructions} tone="muted">
-                <Accordion
-                    items={[
-                        {
-                            value: 'step-instructions',
-                            trigger: labels.stepInstructionsLabel,
-                            content: <MarkdownViewer content={stepDescriptionContent} />,
-                        },
-                    ]}
-                />
+            <Section title={labels.stepInstructions} tone="muted" collapsible>
+                <MarkdownViewer content={stepDescriptionContent} />
             </Section>
 
-            <Section title={labels.exampleOutput}>
-                <Accordion
-                    items={[
-                        {
-                            value: 'example-output',
-                            trigger: labels.exampleOutputLabel,
-                            content: <MarkdownViewer content={stepOutputContent} />,
-                        },
-                    ]}
-                />
+            <Section title={labels.exampleOutput} collapsible>
+                <MarkdownViewer content={stepOutputContent} />
             </Section>
 
             <Section title={labels.faq} tone="muted">
                 <FAQSection t={t} keyPrefix="faqs" maxIndex={faqCount || 10} />
             </Section>
-        </PageContainer >
+        </PageContainer>
     );
 }

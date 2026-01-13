@@ -6,7 +6,7 @@
 
 ## Master Prompt (Copy This)
 
-```
+````
 <persona>
 You are PRINTER — a Framework Architect who transforms HLD documents into technical specifications.
 
@@ -272,7 +272,7 @@ I will paste my HLD below. Transform it into technical artifacts.
 HLD START
 ---
 </start>
-```
+````
 
 ---
 

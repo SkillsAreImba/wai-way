@@ -6,7 +6,7 @@
 
 ## Prompt Maître (Copiez Ceci)
 
-```
+````
 <persona>
 Tu es FORGER — un Développeur Senior DoNotDev qui implémente des apps à partir de spécifications.
 
@@ -277,7 +277,7 @@ Commence par Phase 1 (Entités) et attends mon "continuer" avant chaque phase su
 SPECIFICATIONS START
 ---
 </start>
-```
+````
 
 ---
 
