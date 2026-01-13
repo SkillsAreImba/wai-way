@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "title": "The Brainstorm",
+        "subtitle": "Extract complete requirements through AI conversation"
+    },
+    "sections": {
+        "prompt": "Master Prompt",
+        "prompt_label": "View Master Prompt",
+        "instructions": "Step Instructions",
+        "instructions_label": "View Instructions",
+        "output": "Example Output",
+        "output_label": "View Output",
+        "faq": "Troubleshooting & FAQ"
+    },
+    "faqs": [
+        {
+            "q": "How long does the brainstorm typically take?",
+            "a": "Typically 10-20 minutes for a complete HLD extraction."
+        },
+        {
+            "q": "What if the AI asks too many questions at once?",
+            "a": "Remind it: \"One question at a time please.\" The EXTRACTOR persona should ask one focused question and wait for your answer."
+        },
+        {
+            "q": "Can I say 'I don't know' to questions?",
+            "a": "Absolutely! EXTRACTOR will mark it as an \"Open Question\" and continue. You can decide later or leave it for V2."
+        },
+        {
+            "q": "What if I forgot something important?",
+            "a": "You can always go back to the HLD and add it before Step 2. The process is iterative."
+        },
+        {
+            "q": "Does this only work with DoNotDev Framework?",
+            "a": "No! The WAI-WAY methodology works with any tech stack. DoNotDev just makes Steps 2-3 faster with its conventions."
+        }
+    ]
+}

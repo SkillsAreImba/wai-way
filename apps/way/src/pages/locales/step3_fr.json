@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "title": "Le Build",
+        "subtitle": "Implémenter l'application phase par phase"
+    },
+    "sections": {
+        "prompt": "Prompt maître",
+        "prompt_label": "Voir le prompt maître",
+        "instructions": "Instructions de l'étape",
+        "instructions_label": "Voir les instructions",
+        "output": "Exemple de livrable",
+        "output_label": "Voir le livrable",
+        "faq": "Dépannage & FAQ"
+    },
+    "faqs": [
+        {
+            "q": "Puis-je sauter des phases et tout construire d'un coup ?",
+            "a": "Non recommandé. Construire phase par phase aide à attraper les erreurs tôt et facilite le débogage."
+        },
+        {
+            "q": "Que faire si une phase a des erreurs ?",
+            "a": "Arrêtez et corrigez avant de procéder. Ne passez pas à la phase suivante avec des erreurs non résolues."
+        },
+        {
+            "q": "Comment vérifier chaque phase ?",
+            "a": "Suivez les critères de point de contrôle dans la description de phase. Lancez les tests, vérifiez erreurs TS, et vérifiez fonctionnalité."
+        },
+        {
+            "q": "FORGER peut-il ajouter des fonctionnalités non spécifiées ?",
+            "a": "Non ! FORGER doit seulement construire ce qui est spécifié. Si vous avez besoin de plus, retournez à l'Étape 1 pour MAJ le HLD."
+        },
+        {
+            "q": "Et si je perds le contexte pendant un long build ?",
+            "a": "FORGER devrait résumer phases complétées et travail restant. Vous pouvez aussi référer aux specs Étape 2."
+        }
+    ]
+}

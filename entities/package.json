@@ -1,0 +1,16 @@
+{
+  "name": "entities",
+  "version": "0.0.5",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "valibot": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3"
+  },
+  "main": "./index.ts",
+  "types": "./index.ts"
+}

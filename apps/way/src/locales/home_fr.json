@@ -1,0 +1,57 @@
+{
+    "hero": {
+        "title": "WAI-WAY",
+        "subtitle": "La méthode WAI-WAY pour construire des webApps - Propulsée par le Framework DoNotDev"
+    },
+    "cta": {
+        "title": "Construit avec",
+        "subtitle": "Les outils et l'entreprise derrière WAI-WAY",
+        "donotdev": "Framework DoNotDev",
+        "ambroise": "Ambroise Park"
+    },
+    "steps": {
+        "1": {
+            "phase": "EXTRACTOR",
+            "title": "Le Brainstorm",
+            "subtitle": "Ingénieur senior en exigences",
+            "deliverables": [
+                "Vision & périmètre",
+                "Rôles utilisateur & permissions",
+                "Conception de haut niveau (HLD)"
+            ]
+        },
+        "2": {
+            "phase": "PRINTER",
+            "title": "La Revue",
+            "subtitle": "Architecte framework",
+            "deliverables": [
+                "Schémas d'entités",
+                "Config de navigation",
+                "Mapping des fonctionnalités",
+                "Validation framework"
+            ]
+        },
+        "3": {
+            "phase": "FORGER",
+            "title": "Le Build",
+            "subtitle": "Développeur senior DoNotDev",
+            "deliverables": [
+                "Définitions d'entités",
+                "Composants de page",
+                "Authentification & sécurité",
+                "MVP fonctionnel"
+            ]
+        },
+        "4": {
+            "phase": "FINISHER",
+            "title": "Le Polish",
+            "subtitle": "Ingénieur QA & correcteur de bug",
+            "deliverables": [
+                "Corrections de bugs & régressions",
+                "États de chargement & polish UI",
+                "Responsivité mobile",
+                "Application prête à livrer"
+            ]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "title": "Le Polish",
+        "subtitle": "Tester, corriger les bugs et livrer"
+    },
+    "sections": {
+        "prompt": "Prompt maître",
+        "prompt_label": "Voir le prompt maître",
+        "instructions": "Instructions de l'étape",
+        "instructions_label": "Voir les instructions",
+        "output": "Exemple de livrable",
+        "output_label": "Voir le livrable",
+        "faq": "Dépannage & FAQ"
+    },
+    "faqs": [
+        {
+            "q": "Quand dois-je livrer ?",
+            "a": "Livrez quand tous les bugs critiques sont corrigés et les fonctionnalités MVP marchent. N'attendez pas la perfection—itérez après."
+        },
+        {
+            "q": "Qu'est-ce qui compte comme bug critique ?",
+            "a": "Tout ce qui cause crashs, perte de données, soucis sécurité, ou casse fonctionnalités cœur. Glitchs UI mineurs acceptables."
+        },
+        {
+            "q": "FINISHER peut-il refactoriser le code en fixant des bugs ?",
+            "a": "Non ! FINISHER doit faire changements minimaux seulement. Refactoring introduit nouveaux risques. Fixez le bug, rien de plus."
+        },
+        {
+            "q": "Comment écrire de bons rapports de bug ?",
+            "a": "Inclure : étapes pour reproduire, attendu vs réel, messages erreur, et contexte (page, rôle utilisateur, navigateur)."
+        },
+        {
+            "q": "Et si les correctifs cassent d'autres choses ?",
+            "a": "FINISHER doit vérifier les régressions. Testez fonctionnalités liées après chaque fix pour assurer que rien d'autre ne casse."
+        }
+    ]
+}

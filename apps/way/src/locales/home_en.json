@@ -1,0 +1,57 @@
+{
+    "hero": {
+        "title": "WAI-WAY",
+        "subtitle": "With AI WAY of building webApps - Powered by the DoNotDev Framework"
+    },
+    "cta": {
+        "title": "Built With",
+        "subtitle": "The tools and company behind WAI-WAY",
+        "donotdev": "DoNotDev Framework",
+        "ambroise": "Ambroise Park"
+    },
+    "steps": {
+        "1": {
+            "phase": "EXTRACTOR",
+            "title": "The Brainstorm",
+            "subtitle": "Senior Requirements Engineer",
+            "deliverables": [
+                "Vision & Scope",
+                "User Roles & Permissions",
+                "High-Level Design (HLD)"
+            ]
+        },
+        "2": {
+            "phase": "PRINTER",
+            "title": "The Review",
+            "subtitle": "Framework Architect",
+            "deliverables": [
+                "Entity Schemas",
+                "Navigation Config",
+                "Feature Mapping",
+                "Framework Validation"
+            ]
+        },
+        "3": {
+            "phase": "FORGER",
+            "title": "The Build",
+            "subtitle": "Senior DoNotDev Developer",
+            "deliverables": [
+                "Entity Definitions",
+                "Page Components",
+                "Authentication & Security",
+                "Functional MVP"
+            ]
+        },
+        "4": {
+            "phase": "FINISHER",
+            "title": "The Polish",
+            "subtitle": "QA Engineer & Bug Fixer",
+            "deliverables": [
+                "Bug Fixes & Regressions",
+                "Loading States & UI Polish",
+                "Mobile Responsiveness",
+                "Ship-Ready Application"
+            ]
+        }
+    }
+}
