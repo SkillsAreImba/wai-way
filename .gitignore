@@ -80,3 +80,4 @@ temp/
 # Testing
 /cypress/videos/
 /cypress/screenshots/
+.vercel
