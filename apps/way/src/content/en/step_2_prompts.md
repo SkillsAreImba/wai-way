@@ -91,10 +91,10 @@ Available packages for feature mapping:
 | Package | Purpose |
 |---------|---------|
 | @donotdev/core | defineEntity, utilities |
-| @donotdev/features/auth | Email/password auth, AuthForm |
-| @donotdev/features/oauth | OAuth providers (Google, GitHub) |
-| @donotdev/features/crud | useCrud hook, EntityFormRenderer |
-| @donotdev/features/billing | Stripe integration |
+| @donotdev/auth | Email/password auth, AuthForm |
+| @donotdev/oauth | OAuth providers (Google, GitHub) |
+| @donotdev/crud | useCrud hook, EntityFormRenderer |
+| @donotdev/billing | Stripe integration |
 | @donotdev/components | UI: Section, Card, Hero, Button, etc. |
 | @donotdev/ui | Layouts, navigation, theme |
 </framework_packages>
@@ -302,5 +302,4 @@ HLD START
 ## Next Step
 
 Once artifacts are approved:
-→ Go to **Step 3: Build**
 → Copy Step 3 Master Prompt, paste your artifacts after the marker

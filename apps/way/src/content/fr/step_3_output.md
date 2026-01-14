@@ -47,6 +47,4 @@
 - Implémenté HomePage avec Roadmap et CallToAction
 - Créé toutes les 4 pages d'étape (Step1-4) avec FAQs
 - Créé HLDPage pour affichage Conception de Haut Niveau
-- Corrigé problèmes API composants (Accordion, FAQSection, CallToAction, HeroSection)
-
 ⏳ **Phase 3 En Cours** : Prêt pour testing

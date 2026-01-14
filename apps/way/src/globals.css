@@ -3,10 +3,3 @@
 @import '@donotdev/adv-comps/styles';
 
 @import './themes.css';
-
-/* Override framework's default font to use Roboto */
-:root {
-  --font-sans: 'Roboto', sans-serif;
-  --font-mono: 'Roboto Mono', monospace;
-  --font-family: var(--font-sans);
-}

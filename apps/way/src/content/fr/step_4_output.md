@@ -272,5 +272,4 @@ i18n: {
 
 1. Tester toutes routes et navigation
 2. Vérifier rendu markdown
-3. Créer traductions Français
 4. Déployer sur Vercel

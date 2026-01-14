@@ -237,5 +237,4 @@ Then adapt your questions based on their answer.
 ## Next Step
 
 Once you have `HLD.md`:
-→ Go to **Step 2: Review**
 → Copy Step 2 Master Prompt, paste HLD after the marker

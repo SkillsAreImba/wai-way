@@ -60,10 +60,10 @@ Patterns d'Import :
 import { defineEntity } from '@donotdev/core';
 
 // CRUD
-import { useCrud, EntityFormRenderer } from '@donotdev/features/crud';
+import { useCrud, EntityFormRenderer } from '@donotdev/crud';
 
 // Auth
-import { useAuth, AuthForm, AuthGuard } from '@donotdev/features/auth';
+import { useAuth, AuthForm, AuthGuard } from '@donotdev/auth';
 
 // Composants UI
 import { Section, Card, Hero, Button } from '@donotdev/components';
@@ -343,5 +343,4 @@ npx tsc --noEmit
 ## Étape Suivante
 
 Une fois toutes phases complétées :
-→ Allez à **Étape 4 : Polish**
 → Testez minutieusement, rapportez bugs

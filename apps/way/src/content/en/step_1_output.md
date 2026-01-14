@@ -241,5 +241,4 @@ All step pages share this structure:
 4. Accordion: Step Output (MarkdownViewer)
 5. FAQSection (Troubleshooting)
 
-## Open Questions
 None - ready to proceed to Step 2 (Review).

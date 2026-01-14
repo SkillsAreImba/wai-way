@@ -393,6 +393,4 @@ Toutes les spécifications sont conformes au framework et prêtes pour l'implém
 ✅ **Preset docs** avec navigation latérale  
 ✅ **Support bilingue** (EN/FR)  
 ✅ **Tous les composants DoNotDev** identifiés  
-✅ **Pas de code custom** nécessaire au-delà de la composition de page  
-
-**Estimation d'implémentation** : ~2-3 heures (principalement traduction de contenu)
+✅ **Estimation d'implémentation** : ~2-3 heures (principalement traduction de contenu)

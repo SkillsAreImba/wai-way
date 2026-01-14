@@ -237,5 +237,4 @@ Puis adapte tes questions basées sur leur réponse.
 ## Étape Suivante
 
 Une fois que vous avez `HLD.md` :
-→ Allez à **Étape 2 : Revue**
 → Copiez le Prompt Maître de l'Étape 2, collez le HLD après le marqueur

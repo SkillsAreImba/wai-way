@@ -1,5 +1,7 @@
-import { StepPageContainer, StepLoaders } from '@/components/StepPageContainer';
 import { Paintbrush } from 'lucide-react';
+
+import { StepPageContainer } from '@/components/StepPageContainer';
+import type { StepLoaders } from '@/components/StepPageContainer';
 import type { PageMeta } from '@donotdev/core';
 
 export const NAMESPACE = 'step4';

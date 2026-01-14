@@ -92,8 +92,8 @@ export const routes = [
 
 | Fonctionnalité | Package | Implémentation |
 |----------------|---------|----------------|
-| Email auth | @donotdev/features/auth | AuthForm |
-| CRUD projects | @donotdev/features/crud | useCrud('projects') |
+| Email auth | @donotdev/auth | AuthForm |
+| CRUD projects | @donotdev/crud | useCrud('projects') |
 
 ---
 

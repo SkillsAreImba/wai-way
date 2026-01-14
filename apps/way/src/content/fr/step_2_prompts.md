@@ -91,10 +91,10 @@ Packages disponibles pour mapping :
 | Package | But |
 |---------|-----|
 | @donotdev/core | defineEntity, utilitaires |
-| @donotdev/features/auth | Auth email/password, AuthForm |
-| @donotdev/features/oauth | Fournisseurs OAuth (Google, GitHub) |
-| @donotdev/features/crud | Hook useCrud, EntityFormRenderer |
-| @donotdev/features/billing | Intégration Stripe |
+| @donotdev/auth | Auth email/password, AuthForm |
+| @donotdev/oauth | Fournisseurs OAuth (Google, GitHub) |
+| @donotdev/crud | Hook useCrud, EntityFormRenderer |
+| @donotdev/billing | Intégration Stripe |
 | @donotdev/components | UI : Section, Card, Hero, Button, etc. |
 | @donotdev/ui | Layouts, navigation, thème |
 </framework_packages>
@@ -302,5 +302,4 @@ HLD START
 ## Étape Suivante
 
 Une fois artefacts approuvés :
-→ Allez à **Étape 3 : Build**
 → Copiez Prompt Maître Étape 3, collez vos artefacts après le marqueur

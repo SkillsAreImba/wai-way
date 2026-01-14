@@ -210,5 +210,4 @@ Aucune entité de base de données requise. Il s'agit d'un site de documentation
 | Framework | DoNotDev (Vite) | Configuration native |
 | Preset | docs | Navigation latérale générée automatiquement |
 | Auth | Aucun | Site entièrement public |
-| Déploiement | Vercel | |
 | Liens Externes | DoNotDev.com, ambroise-park.com | Cibles des appels à l'action |

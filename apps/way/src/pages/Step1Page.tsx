@@ -1,5 +1,7 @@
-import { StepPageContainer, StepLoaders } from '@/components/StepPageContainer';
 import { Brain } from 'lucide-react';
+
+import { StepPageContainer } from '@/components/StepPageContainer';
+import type { StepLoaders } from '@/components/StepPageContainer';
 import type { PageMeta } from '@donotdev/core';
 
 export const NAMESPACE = 'step1';
