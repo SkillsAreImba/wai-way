@@ -79,9 +79,11 @@ map, timestamp, reference (relation to another entity), password,
 address, avatar, hidden
 
 Visibility levels:
+- guest: Visible to everyone (even unauthenticated)
 - user: Visible to all authenticated users
 - admin: Visible only to admins
-- technical: Hidden from UI (id, timestamps)
+- technical: Auto-added fields (id, createdAt, etc.) - shown as read-only in edit forms
+- hidden: Never shown in UI, only exists in DB (passwords, tokens, API keys)
 </field_types>
 
 <state_tracking>
@@ -237,4 +239,5 @@ Then adapt your questions based on their answer.
 ## Next Step
 
 Once you have `HLD.md`:
+→ Go to **Step 2: Review**
 → Copy Step 2 Master Prompt, paste HLD after the marker

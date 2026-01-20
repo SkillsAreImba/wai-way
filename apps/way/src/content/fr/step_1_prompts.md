@@ -79,9 +79,11 @@ map, timestamp, reference (relation vers une autre entité), password,
 address, avatar, hidden
 
 Niveaux de visibilité :
+- guest : Visible par tous (même non authentifiés)
 - user : Visible par tous les utilisateurs authentifiés
 - admin : Visible uniquement par les admins
-- technical : Caché de l'UI (id, timestamps)
+- technical : Champs ajoutés automatiquement (id, createdAt, etc.) - affichés en lecture seule dans les formulaires d'édition
+- hidden : Jamais affiché dans l'UI, existe uniquement en DB (mots de passe, tokens, clés API)
 </field_types>
 
 <state_tracking>
@@ -237,4 +239,5 @@ Puis adapte tes questions basées sur leur réponse.
 ## Étape Suivante
 
 Une fois que vous avez `HLD.md` :
+→ Allez à **Étape 2 : Revue**
 → Copiez le Prompt Maître de l'Étape 2, collez le HLD après le marqueur

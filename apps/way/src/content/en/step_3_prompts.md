@@ -63,7 +63,7 @@ import { defineEntity } from '@donotdev/core';
 import { useCrud, EntityFormRenderer } from '@donotdev/crud';
 
 // Auth
-import { useAuth, AuthForm, AuthGuard } from '@donotdev/auth';
+import { useAuth, AuthForm, AuthGuard } from '@donotdev/features/auth';
 
 // UI Components
 import { Section, Card, Hero, Button } from '@donotdev/components';
@@ -192,9 +192,9 @@ export const projectEntity = defineEntity({
   name: 'Project',
   collection: 'projects',
   fields: {
-    id: { type: 'text', visibility: 'technical', hidden: true },
-    name: { type: 'text', visibility: 'user', validation: { required: true } },
-    createdAt: { type: 'timestamp', visibility: 'technical', hidden: true }
+    // Technical fields (id, createdAt, updatedAt, createdById, updatedById)
+    // are automatically added by defineEntity - no need to add them manually
+    name: { type: 'text', visibility: 'user', validation: { required: true } }
   }
 });
 ```
@@ -343,4 +343,5 @@ npx tsc --noEmit
 ## Next Step
 
 Once all phases complete:
+→ Go to **Step 4: Polish**
 → Test thoroughly, report bugs

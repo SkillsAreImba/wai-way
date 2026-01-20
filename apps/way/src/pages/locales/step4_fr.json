@@ -10,7 +10,14 @@
         "instructions_label": "Voir les instructions",
         "output": "Exemple de livrable",
         "output_label": "Voir le livrable",
-        "faq": "Dépannage & FAQ"
+        "faq": "Dépannage & FAQ",
+        "tryWithAI": "Créer votre propre assistant IA",
+        "tryWithAIDescription": "Automatisez cette étape en formant un assistant IA personnalisé (GPT/Gemini/Claude) avec le prompt maître ci-dessous",
+        "createYourOwn": "Comment créer votre assistant IA",
+        "createYourOwnDescription": "Utilisez des agents IA pour créer automatiquement des assistants personnalisés formés sur la méthodologie WAI-WAY"
+    },
+    "aiGems": {
+        "trainingGuide": "Voir le guide de formation"
     },
     "faqs": [
         {

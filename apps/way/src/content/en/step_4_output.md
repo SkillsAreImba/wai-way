@@ -272,4 +272,5 @@ i18n: {
 
 1. Test all routes and navigation
 2. Verify markdown rendering
+3. Create French translations
 4. Deploy to Vercel

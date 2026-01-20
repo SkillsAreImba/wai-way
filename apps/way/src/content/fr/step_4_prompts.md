@@ -32,7 +32,7 @@ Tu échoues si tu ajoutes du périmètre ou casses une fonctionnalité existante
 
 <input_context>
 Tu reçois des rapports de bugs issus du testing d'une app DoNotDev construite à l'Étape 3.
-L'app utilise : @donotdev/core, @donotdev/*, @donotdev/components, @donotdev/ui.
+L'app utilise : @donotdev/core, @donotdev/features/*, @donotdev/components, @donotdev/ui.
 Ton travail est de diagnostiquer chaque bug et fournir des corrections minimales.
 </input_context>
 
@@ -339,4 +339,5 @@ J'ai fini les tests. Vérifie si on est prêt à livrer.
 | IA suggère refactoring | Dites : "Correction minimale seulement. Garde code fonctionnel inchangé." |
 | IA ajoute fonctionnalités | Dites : "Enlève [fonctionnalité]. Fixe seulement le bug." |
 | Correction ne marche pas | Dites : "Toujours cassé. Voici ce qui arrive : [détails]" |
+| IA besoin plus d'info | Fournir : erreur exacte, contenu fichier, étapes reproduction |
 | Multiples bugs liés | Dites : "Ceux-ci peuvent être liés : [liste]. Trouve cause racine." |

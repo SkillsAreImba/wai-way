@@ -207,4 +207,5 @@ Step 1 → Step 2 → Step 3 → Step 4 → Ship
                                     ↓
                     New feature? → Step 1
                     Bug fix? → Step 4
+                    Schema change? → Step 2
 ```

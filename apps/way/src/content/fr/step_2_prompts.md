@@ -51,7 +51,7 @@ export const exampleEntity = defineEntity({
   fields: {
     fieldName: {
       type: 'text',          // Type de champ
-      visibility: 'user',    // user | admin | technical
+      visibility: 'user',    // guest | user | admin | technical | hidden
       validation: {          // Optionnel
         required: true,
         minLength: 3
@@ -66,9 +66,9 @@ text, email, number, textarea, select, date, checkbox, dropdown,
 multiDropdown, file, image, radio, range, phone, geopoint, map,
 timestamp, reference, password, address, avatar, hidden
 
-Champs Standards (ajouter à chaque entité) :
-- id: { type: 'text', visibility: 'technical', hidden: true }
-- createdAt: { type: 'timestamp', visibility: 'technical', hidden: true }
+Champs Techniques (ajoutés automatiquement par defineEntity, pas besoin de les ajouter manuellement) :
+- id, createdAt, updatedAt, createdById, updatedById
+- Tous ont visibility: 'technical' (affichés en lecture seule dans les formulaires d'édition, cachés dans les formulaires de création)
 
 Format Référence :
 - type: 'reference'
@@ -91,10 +91,10 @@ Packages disponibles pour mapping :
 | Package | But |
 |---------|-----|
 | @donotdev/core | defineEntity, utilitaires |
-| @donotdev/auth | Auth email/password, AuthForm |
-| @donotdev/oauth | Fournisseurs OAuth (Google, GitHub) |
+| @donotdev/features/auth | Auth email/password, AuthForm |
+| @donotdev/features/oauth | Fournisseurs OAuth (Google, GitHub) |
 | @donotdev/crud | Hook useCrud, EntityFormRenderer |
-| @donotdev/billing | Intégration Stripe |
+| @donotdev/features/billing | Intégration Stripe |
 | @donotdev/components | UI : Section, Card, Hero, Button, etc. |
 | @donotdev/ui | Layouts, navigation, thème |
 </framework_packages>
@@ -115,18 +115,9 @@ export const [name]Entity = defineEntity({
   name: '[Names]',
   collection: '[names]',
   fields: {
-    id: {
-      type: 'text',
-      visibility: 'technical',
-      hidden: true,
-      validation: { required: false, nullable: true }
-    },
+    // Champs techniques (id, createdAt, updatedAt, createdById, updatedById)
+    // sont ajoutés automatiquement par defineEntity - pas besoin de les ajouter manuellement
     // ... tous les champs du HLD
-    createdAt: {
-      type: 'timestamp',
-      visibility: 'technical',
-      hidden: true
-    }
   }
 });
 ```
@@ -177,7 +168,7 @@ Si pas de problèmes : ✅ Tout est valide
 <validation_checks>
 Avant de sortir, vérifie :
 □ Chaque entité HLD a un schéma
-□ Chaque schéma a id et createdAt
+□ Les champs techniques ne sont PAS ajoutés manuellement (ajoutés automatiquement par defineEntity)
 □ Chaque référence a une ref valide pointant vers une collection existante
 □ Chaque select a un tableau d'options
 □ Chaque page HLD a une route
@@ -198,12 +189,8 @@ export const projectEntity = defineEntity({
   name: 'Project',
   collection: 'projects',
   fields: {
-    id: {
-      type: 'text',
-      visibility: 'technical',
-      hidden: true,
-      validation: { required: false, nullable: true }
-    },
+    // Champs techniques (id, createdAt, updatedAt, createdById, updatedById)
+    // sont ajoutés automatiquement par defineEntity - pas besoin de les ajouter manuellement
     name: {
       type: 'text',
       visibility: 'user',
@@ -214,11 +201,6 @@ export const projectEntity = defineEntity({
       visibility: 'user',
       ref: 'users',
       validation: { required: true }
-    },
-    createdAt: {
-      type: 'timestamp',
-      visibility: 'technical',
-      hidden: true
     }
   }
 });
@@ -302,4 +284,5 @@ HLD START
 ## Étape Suivante
 
 Une fois artefacts approuvés :
+→ Allez à **Étape 3 : Build**
 → Copiez Prompt Maître Étape 3, collez vos artefacts après le marqueur

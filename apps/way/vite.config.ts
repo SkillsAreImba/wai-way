@@ -6,4 +6,13 @@ export default defineViteConfig({
   server: {
     https: false,
   },
+  resolve: {
+    conditions: ['import', 'module', 'browser', 'default'],
+  },
+  optimizeDeps: {
+    exclude: ['shiki'],
+  },
+  ssr: {
+    noExternal: ['shiki'],
+  },
 });

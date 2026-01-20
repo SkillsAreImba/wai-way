@@ -10,26 +10,26 @@
     "type-check": "turbo run type-check"
   },
   "dependencies": {
-    "@donotdev/adv-comps": "^0.0.7",
-    "@donotdev/auth": "^0.0.4",
-    "@donotdev/billing": "^0.0.4",
-    "@donotdev/components": "^0.0.11",
-    "@donotdev/core": "^0.0.11",
-    "@donotdev/crud": "^0.0.4",
-    "@donotdev/firebase": "^0.0.4",
-    "@donotdev/oauth": "^0.0.4",
+    "@donotdev/adv-comps": "^0.0.8",
+    "@donotdev/auth": "^0.0.5",
+    "@donotdev/billing": "^0.0.5",
+    "@donotdev/components": "^0.0.12",
+    "@donotdev/core": "^0.0.13",
+    "@donotdev/crud": "^0.0.6",
+    "@donotdev/firebase": "^0.0.5",
+    "@donotdev/oauth": "^0.0.5",
     "@donotdev/templates": "^0.0.4",
-    "@donotdev/ui": "^0.0.7",
+    "@donotdev/ui": "^0.0.8",
     "firebase": "^12.5.0",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "valibot": "^1.2.0",
-    "zustand": "^5.0.8"
+    "zustand": "^5.0.10"
   },
   "devDependencies": {
     "sharp": "^0.34.5",
-    "turbo": "^2.7.2"
+    "turbo": "^2.7.4"
   },
   "resolutions": {
     "@donotdev/crud": "0.0.4"

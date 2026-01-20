@@ -63,6 +63,10 @@ export function StepPageContainer({ stepNumber, loaders }: { stepNumber: number;
                 stepInstructions: t('sections.instructions'),
                 exampleOutput: t('sections.output'),
                 faq: t('sections.faq'),
+                tryWithAI: t('sections.tryWithAI', 'Create Your Own AI Assistant'),
+                tryWithAIDescription: t('sections.tryWithAIDescription', 'Automate this step by training a custom AI assistant (GPT/Gemini/Claude) with the master prompt below'),
+                createYourOwn: t('sections.createYourOwn', 'How to Create Your AI Assistant'),
+                createYourOwnDescription: t('sections.createYourOwnDescription', 'Use AI agents to automatically create custom assistants trained on WAI-WAY methodology'),
             }}
         />
     );

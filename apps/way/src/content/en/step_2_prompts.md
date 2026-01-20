@@ -51,7 +51,7 @@ export const exampleEntity = defineEntity({
   fields: {
     fieldName: {
       type: 'text',          // Field type
-      visibility: 'user',    // user | admin | technical
+      visibility: 'user',    // guest | user | admin | technical | hidden
       validation: {          // Optional
         required: true,
         minLength: 3
@@ -66,9 +66,9 @@ text, email, number, textarea, select, date, checkbox, dropdown,
 multiDropdown, file, image, radio, range, phone, geopoint, map,
 timestamp, reference, password, address, avatar, hidden
 
-Standard Fields (add to every entity):
-- id: { type: 'text', visibility: 'technical', hidden: true }
-- createdAt: { type: 'timestamp', visibility: 'technical', hidden: true }
+Technical Fields (auto-added by defineEntity, no need to add manually):
+- id, createdAt, updatedAt, createdById, updatedById
+- All have visibility: 'technical' (shown as read-only in edit forms, hidden in create forms)
 
 Reference Format:
 - type: 'reference'
@@ -91,10 +91,10 @@ Available packages for feature mapping:
 | Package | Purpose |
 |---------|---------|
 | @donotdev/core | defineEntity, utilities |
-| @donotdev/auth | Email/password auth, AuthForm |
-| @donotdev/oauth | OAuth providers (Google, GitHub) |
+| @donotdev/features/auth | Email/password auth, AuthForm |
+| @donotdev/features/oauth | OAuth providers (Google, GitHub) |
 | @donotdev/crud | useCrud hook, EntityFormRenderer |
-| @donotdev/billing | Stripe integration |
+| @donotdev/features/billing | Stripe integration |
 | @donotdev/components | UI: Section, Card, Hero, Button, etc. |
 | @donotdev/ui | Layouts, navigation, theme |
 </framework_packages>
@@ -115,18 +115,9 @@ export const [name]Entity = defineEntity({
   name: '[Name]',
   collection: '[names]',
   fields: {
-    id: {
-      type: 'text',
-      visibility: 'technical',
-      hidden: true,
-      validation: { required: false, nullable: true }
-    },
+    // Technical fields (id, createdAt, updatedAt, createdById, updatedById)
+    // are automatically added by defineEntity - no need to add them manually
     // ... all fields from HLD
-    createdAt: {
-      type: 'timestamp',
-      visibility: 'technical',
-      hidden: true
-    }
   }
 });
 ```
@@ -177,12 +168,13 @@ If no issues: ✅ All valid
 <validation_checks>
 Before outputting, verify:
 □ Every HLD entity has a schema
-□ Every schema has id and createdAt
+□ Technical fields (id, createdAt, etc.) are NOT manually added (auto-added by defineEntity)
 □ Every reference field has valid ref pointing to existing collection
 □ Every select field has options array
 □ Every HLD page has a route
 □ Every HLD feature is mapped to a package
 □ Collection names are plural lowercase
+□ Visibility levels are: guest | user | admin | technical | hidden
 
 Flag violations in "Validation Issues" section.
 </validation_checks>
@@ -198,12 +190,8 @@ export const projectEntity = defineEntity({
   name: 'Project',
   collection: 'projects',
   fields: {
-    id: {
-      type: 'text',
-      visibility: 'technical',
-      hidden: true,
-      validation: { required: false, nullable: true }
-    },
+    // Technical fields (id, createdAt, updatedAt, createdById, updatedById)
+    // are automatically added by defineEntity - no need to add them manually
     name: {
       type: 'text',
       visibility: 'user',
@@ -214,11 +202,6 @@ export const projectEntity = defineEntity({
       visibility: 'user',
       ref: 'users',
       validation: { required: true }
-    },
-    createdAt: {
-      type: 'timestamp',
-      visibility: 'technical',
-      hidden: true
     }
   }
 });
@@ -302,4 +285,5 @@ HLD START
 ## Next Step
 
 Once artifacts are approved:
+→ Go to **Step 3: Build**
 → Copy Step 3 Master Prompt, paste your artifacts after the marker

@@ -32,7 +32,7 @@ You fail if you add scope or break existing functionality.
 
 <input_context>
 You are receiving bug reports from testing a DoNotDev app built in Step 3.
-The app uses: @donotdev/core, @donotdev/*, @donotdev/components, @donotdev/ui.
+The app uses: @donotdev/core, @donotdev/features/*, @donotdev/components, @donotdev/ui.
 Your job is to diagnose each bug and provide minimal fixes.
 </input_context>
 

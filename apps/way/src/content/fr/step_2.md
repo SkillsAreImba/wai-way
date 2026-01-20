@@ -71,10 +71,10 @@ export const projectEntity = defineEntity({
   name: 'Project',
   collection: 'projects',
   fields: {
-    id: { type: 'text', visibility: 'technical', hidden: true },
+    // Champs techniques (id, createdAt, updatedAt, createdById, updatedById)
+    // sont ajoutés automatiquement par defineEntity - pas besoin de les ajouter manuellement
     name: { type: 'text', visibility: 'user', validation: { required: true } },
-    owner: { type: 'reference', visibility: 'user', ref: 'users' },
-    createdAt: { type: 'timestamp', visibility: 'technical', hidden: true }
+    owner: { type: 'reference', visibility: 'user', ref: 'users' }
   }
 });
 ```
@@ -92,7 +92,7 @@ export const routes = [
 
 | Fonctionnalité | Package | Implémentation |
 |----------------|---------|----------------|
-| Email auth | @donotdev/auth | AuthForm |
+| Email auth | @donotdev/features/auth | AuthForm |
 | CRUD projects | @donotdev/crud | useCrud('projects') |
 
 ---
@@ -100,7 +100,7 @@ export const routes = [
 ## Critères de Succès
 
 - [ ] Toutes les entités HLD ont des schémas avec code
-- [ ] Chaque schéma a les champs id et createdAt
+- [ ] Les champs techniques ne sont PAS ajoutés manuellement (ajoutés automatiquement par defineEntity)
 - [ ] Chaque référence pointe vers une collection existante
 - [ ] Chaque select a un tableau d'options
 - [ ] Toutes les pages HLD ont des routes

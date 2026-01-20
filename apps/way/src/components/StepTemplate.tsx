@@ -1,7 +1,9 @@
-import { PageContainer } from '@donotdev/ui';
+import { PageContainer, Link } from '@donotdev/ui';
 import { FAQSection } from '@donotdev/core';
-import { HeroSection, Section } from '@donotdev/components';
+import { HeroSection, Section, Button, Stack, Text } from '@donotdev/components';
 import { MarkdownViewer } from '@donotdev/templates';
+import { ExternalLink, BookOpen } from 'lucide-react';
+import { AI_GEMS_TRAINING_GUIDE_URL } from '@/config/ai-gems';
 
 interface StepTemplateProps {
     stepNumber: number;
@@ -17,6 +19,10 @@ interface StepTemplateProps {
         stepInstructions: string;
         exampleOutput: string;
         faq: string;
+        tryWithAI?: string;
+        tryWithAIDescription?: string;
+        createYourOwn?: string;
+        createYourOwnDescription?: string;
     };
 }
 
@@ -34,6 +40,10 @@ export function StepTemplate({
         stepInstructions: 'Step Instructions',
         exampleOutput: 'Example Output',
         faq: 'Troubleshooting & FAQ',
+        tryWithAI: 'Create Your Own AI Assistant',
+        tryWithAIDescription: 'Automate this step by training a custom AI assistant (GPT/Gemini/Claude) with the master prompt below',
+        createYourOwn: 'How to Create Your AI Assistant',
+        createYourOwnDescription: 'Use AI agents to automatically create custom assistants trained on WAI-WAY methodology',
     },
 }: StepTemplateProps) {
     return (
@@ -42,6 +52,27 @@ export function StepTemplate({
                 title={title}
                 subtitle={subtitle}
             />
+
+            <Section title={labels.tryWithAI} tone="primary">
+                <Stack gap="md">
+                    <Text>{labels.tryWithAIDescription}</Text>
+                    <Button
+                        variant="outline"
+                        icon={BookOpen}
+                        iconEnd={ExternalLink}
+                        render={({ children, ...props }) => (
+                            <Link path={AI_GEMS_TRAINING_GUIDE_URL} {...props}>
+                                {children}
+                            </Link>
+                        )}
+                    >
+                        {t('aiGems.trainingGuide', 'View Training Guide')}
+                    </Button>
+                    <Text variant="muted" size="sm">
+                        {labels.createYourOwnDescription}
+                    </Text>
+                </Stack>
+            </Section>
 
             <Section title={labels.masterPrompt} collapsible>
                 <MarkdownViewer content={masterPromptContent} />
