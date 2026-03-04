@@ -17,11 +17,5 @@
     "FeatureCard"
   ],
   "pendingReview": false,
-  "currentModule": null,
-  "toolCallCounts": {
-    "lookup_symbol": 7,
-    "search_framework": 2,
-    "get_guide": 2,
-    "run_typecheck": 2
-  }
+  "currentModule": null
 }

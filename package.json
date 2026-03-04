@@ -10,13 +10,9 @@
     "type-check": "turbo run type-check"
   },
   "dependencies": {
-    "@donotdev/auth": "^0.0.15",
-    "@donotdev/billing": "^0.0.13",
     "@donotdev/components": "^0.0.24",
-    "@donotdev/core": "^0.0.33",
+    "@donotdev/core": "^0.0.34",
     "@donotdev/crud": "^0.0.21",
-    "@donotdev/firebase": "^0.0.17",
-    "@donotdev/oauth": "^0.0.13",
     "@donotdev/templates": "^0.0.4",
     "@donotdev/ui": "^0.0.21",
     "firebase": "^12.9.0",

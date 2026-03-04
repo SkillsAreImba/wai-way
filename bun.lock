@@ -8,7 +8,7 @@
         "@donotdev/auth": "^0.0.15",
         "@donotdev/billing": "^0.0.13",
         "@donotdev/components": "^0.0.24",
-        "@donotdev/core": "^0.0.33",
+        "@donotdev/core": "^0.0.34",
         "@donotdev/crud": "^0.0.21",
         "@donotdev/firebase": "^0.0.17",
         "@donotdev/oauth": "^0.0.13",
@@ -31,7 +31,7 @@
       "version": "0.0.6",
       "dependencies": {
         "@donotdev/components": "^0.0.24",
-        "@donotdev/core": "^0.0.33",
+        "@donotdev/core": "^0.0.34",
         "@donotdev/ui": "^0.0.21",
         "lucide-react": "^0.575.0",
         "react": "^19.2.4",
@@ -274,7 +274,7 @@
 
     "@donotdev/components": ["@donotdev/components@0.0.24", "", { "dependencies": { "@radix-ui/react-accordion": "^1.2.2", "@radix-ui/react-alert-dialog": "^1.1.2", "@radix-ui/react-avatar": "^1.1.1", "@radix-ui/react-checkbox": "^1.1.2", "@radix-ui/react-collapsible": "^1.1.1", "@radix-ui/react-context-menu": "^2.2.2", "@radix-ui/react-dialog": "^1.1.2", "@radix-ui/react-dropdown-menu": "^2.1.2", "@radix-ui/react-hover-card": "^1.1.2", "@radix-ui/react-label": "^2.1.0", "@radix-ui/react-navigation-menu": "^1.2.1", "@radix-ui/react-popover": "^1.1.2", "@radix-ui/react-portal": "^1.1.2", "@radix-ui/react-progress": "^1.1.0", "@radix-ui/react-radio-group": "^1.2.1", "@radix-ui/react-scroll-area": "^1.2.0", "@radix-ui/react-select": "^2.1.2", "@radix-ui/react-separator": "^1.1.0", "@radix-ui/react-slider": "^1.2.1", "@radix-ui/react-slot": "^1.1.0", "@radix-ui/react-switch": "^1.1.1", "@radix-ui/react-tabs": "^1.1.1", "@radix-ui/react-toast": "^1.2.2", "@radix-ui/react-toggle": "^1.1.0", "@radix-ui/react-toggle-group": "^1.1.0", "@radix-ui/react-tooltip": "^1.1.3", "@radix-ui/react-visually-hidden": "^1.2.3", "class-variance-authority": "^0.7.1", "clsx": "^2.1.1", "react-day-picker": "^9.13.2" }, "peerDependencies": { "lucide-react": "^0.575.0", "react": "^19.2.4", "react-dom": "^19.2.4", "shiki": "^3.22.0" }, "optionalPeers": ["shiki"] }, "sha512-72zCbJMpGh4kVGb9Wu0k0qRoKgqGcD89DnBnsYEKNx5Ao5PGT853eVv/m2jrWlXZbyf++O2TtiARdP1IGf5CYg=="],
 
-    "@donotdev/core": ["@donotdev/core@0.0.33", "", { "dependencies": { "@clack/prompts": "^1.0.1", "@rollup/plugin-strip": "^3.0.4", "@tanstack/react-query": "^5.90.21", "@vitejs/plugin-basic-ssl": "^2.1.4", "@vitejs/plugin-react": "^5.1.4", "autoprefixer": "^10.4.27", "fast-glob": "^3.3.3", "i18next": "^25.8.13", "i18next-browser-languagedetector": "^8.2.1", "i18next-http-backend": "^3.0.2", "postcss": "^8.5.6", "postcss-import": "^16.1.1", "postcss-nesting": "^14.0.0", "react-i18next": "^16.5.4", "rollup-plugin-visualizer": "^6.0.5", "vite-plugin-pwa": "1.2.0", "vite-tsconfig-paths": "^6.1.1" }, "peerDependencies": { "@donotdev/components": "^0.0.24", "@sentry/react": "^10.39.0", "lucide-react": "^0.575.0", "react": "^19.2.4", "react-dom": "^19.2.4", "valibot": "^1.2.0", "zustand": "^5.0.11" } }, "sha512-WrI0fZUqUCdIij22afDyUQDOQX8PzEz7Ux74TzMKzXNWoCHi+EGgKQBEhF15hgNBu8J3QjbpTf3LKQKZsS+Khg=="],
+    "@donotdev/core": ["@donotdev/core@0.0.34", "", { "dependencies": { "@clack/prompts": "^1.0.1", "@rollup/plugin-strip": "^3.0.4", "@tanstack/react-query": "^5.90.21", "@vitejs/plugin-basic-ssl": "^2.1.4", "@vitejs/plugin-react": "^5.1.4", "autoprefixer": "^10.4.27", "fast-glob": "^3.3.3", "i18next": "^25.8.13", "i18next-browser-languagedetector": "^8.2.1", "i18next-http-backend": "^3.0.2", "postcss": "^8.5.6", "postcss-import": "^16.1.1", "postcss-nesting": "^14.0.0", "react-i18next": "^16.5.4", "rollup-plugin-visualizer": "^6.0.5", "vite-plugin-pwa": "1.2.0", "vite-tsconfig-paths": "^6.1.1" }, "peerDependencies": { "@donotdev/components": "^0.0.24", "@sentry/react": "^10.39.0", "lucide-react": "^0.575.0", "react": "^19.2.4", "react-dom": "^19.2.4", "valibot": "^1.2.0", "zustand": "^5.0.11" } }, "sha512-aFdjN1MCur2+FpNWb2GensWImC+5rx2S9ehHBnW1W3J3xO6vEe/blnWAnzFHmozqMBBWX4jvFnmbP1uGrez8/Q=="],
 
     "@donotdev/crud": ["@donotdev/crud@0.0.4", "", { "dependencies": { "@donotdev/components": "0.0.4", "@donotdev/core": "0.0.4" }, "peerDependencies": { "@donotdev/firebase": "0.0.4", "@hookform/resolvers": "^5.2.2", "firebase": "^12.5.0", "lucide-react": "^0.562.0", "react": "^19.2.3", "react-dom": "^19.2.3", "react-hook-form": "^7.68.0", "valibot": "^1.2.0" } }, "sha512-FVKQxi70IQ+iaRX40GgDmVC2f9pUF6JKDavSayCwJ7B+dOFpJUbVKNrqxMzLlfoc83EprzaLHZiQTg4YqdYs6w=="],
 
