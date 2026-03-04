@@ -18,7 +18,7 @@
     "@donotdev/firebase": "^0.0.17",
     "@donotdev/oauth": "^0.0.13",
     "@donotdev/templates": "^0.0.4",
-    "@donotdev/ui": "^0.0.20",
+    "@donotdev/ui": "^0.0.21",
     "firebase": "^12.9.0",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",

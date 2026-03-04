@@ -2,7 +2,7 @@
   "mcpServers": {
     "donotdev": {
       "command": "bunx",
-      "args": ["@donotdev/mcp-server"]
+      "args": ["@donotdev/mcp-server@latest"]
     }
   }
 }

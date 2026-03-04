@@ -13,7 +13,7 @@
   "dependencies": {
     "@donotdev/components": "^0.0.24",
     "@donotdev/core": "^0.0.32",
-    "@donotdev/ui": "^0.0.20",
+    "@donotdev/ui": "^0.0.21",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"

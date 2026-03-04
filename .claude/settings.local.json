@@ -5,7 +5,8 @@
       "mcp__donotdev__search_framework",
       "mcp__donotdev__get_guide",
       "mcp__donotdev__run_typecheck",
-      "Bash(dndev tc:*)"
+      "Bash(dndev tc:*)",
+      "Bash(git checkout:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
