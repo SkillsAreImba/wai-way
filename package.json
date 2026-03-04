@@ -10,11 +10,11 @@
     "type-check": "turbo run type-check"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.24",
-    "@donotdev/core": "^0.0.34",
-    "@donotdev/crud": "^0.0.21",
+    "@donotdev/components": "^0.0.25",
+    "@donotdev/core": "^0.0.35",
+    "@donotdev/crud": "^0.0.22",
     "@donotdev/templates": "^0.0.4",
-    "@donotdev/ui": "^0.0.21",
+    "@donotdev/ui": "^0.0.22",
     "firebase": "^12.9.0",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
