@@ -2,21 +2,10 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "types": [
-      "node",
-      "vite/client"
-    ]
+    "types": ["node"],
+    "jsx": "preserve",
+    "plugins": [{ "name": "next" }]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src", "next.config.ts"],
+  "exclude": ["node_modules", "dist", ".next"]
 }

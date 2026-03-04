@@ -1,80 +1,131 @@
-import { PageContainer, useNavigate, Link, tList } from '@donotdev/ui';
+'use client';
+
 import { useTranslation } from '@donotdev/core';
-import { HeroSection, CallToAction, Button } from '@donotdev/components';
-import { Roadmap } from '@donotdev/adv-comps';
-import { Brain, CheckSquare, Hammer, Paintbrush, Home, ExternalLink } from 'lucide-react';
-import type { PageMeta } from '@donotdev/core';
+import { tList } from '@donotdev/ui';
+import { PageContainer, FeatureCard, Link } from '@donotdev/ui';
+import {
+  HeroSection,
+  Section,
+  CallToAction,
+  Button,
+  Roadmap,
+  Reveal,
+  Stack,
+} from '@donotdev/components';
+import type { RoadmapStep } from '@donotdev/components';
+import {
+  Brain,
+  Layout,
+  Database,
+  Code,
+  Settings,
+  Server,
+  Terminal,
+  ShieldCheck,
+  Kanban,
+  FileText,
+  RotateCcw,
+  ExternalLink,
+} from 'lucide-react';
 
-export const NAMESPACE = 'home';
+const NAMESPACE = 'home';
 
-export const meta: PageMeta = {
-  namespace: NAMESPACE,
-  icon: <Home />,
-};
+const phaseIcons = [Brain, Layout, Database, Code, Settings] as const;
+const phaseKeys = ['0', '1', '2', '3', '4'] as const;
+
+const toolkitKeys = ['mcp', 'skills', 'grill', 'kanban', 'specs', 'lessons'] as const;
+const toolkitIcons = [Server, Terminal, ShieldCheck, Kanban, FileText, RotateCcw] as const;
 
 export default function HomePage() {
-  const navigate = useNavigate();
   const { t } = useTranslation(NAMESPACE);
 
-  const roadmapSteps = [
-    {
-      phase: t('steps.1.phase', 'EXTRACTOR'),
-      title: t('steps.1.title', 'The Brainstorm'),
-      subtitle: t('steps.1.subtitle', 'Senior Requirements Engineer'),
-      content: tList(t, 'steps.1.deliverables', 3),
-      icon: Brain,
-      onClick: () => navigate('/step1'),
-    },
-    {
-      phase: t('steps.2.phase', 'PRINTER'),
-      title: t('steps.2.title', 'The Review'),
-      subtitle: t('steps.2.subtitle', 'Framework Architect'),
-      content: tList(t, 'steps.2.deliverables', 4),
-      icon: CheckSquare,
-      onClick: () => navigate('/step2'),
-    },
-    {
-      phase: t('steps.3.phase', 'FORGER'),
-      title: t('steps.3.title', 'The Build'),
-      subtitle: t('steps.3.subtitle', 'Senior DoNotDev Developer'),
-      content: tList(t, 'steps.3.deliverables', 4),
-      icon: Hammer,
-      onClick: () => navigate('/step3'),
-    },
-    {
-      phase: t('steps.4.phase', 'FINISHER'),
-      title: t('steps.4.title', 'The Polish'),
-      subtitle: t('steps.4.subtitle', 'QA Engineer & Bug Fixer'),
-      content: tList(t, 'steps.4.deliverables', 4),
-      icon: Paintbrush,
-      onClick: () => navigate('/step4'),
-    },
-  ];
+  const protocolSteps: RoadmapStep[] = phaseKeys.map((key, i) => ({
+    phase: `P${i}`,
+    icon: phaseIcons[i],
+    title: t(`protocol.phases.${key}.title`).split(' — ')[1],
+    subtitle: t(`protocol.phases.${key}.subtitle`),
+    description: t(`protocol.phases.${key}.subtitle`),
+    content: tList(t, `protocol.phases.${key}.items`, 6),
+  }));
 
   return (
     <PageContainer>
+      {/* 1. Hero */}
       <HeroSection
-        title={t('hero.title', 'WAI-WAY')}
-        subtitle={t('hero.subtitle', 'With AI WAY of building webApps - Powered by the DoNotDev Framework')}
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
+        badge={t('hero.badge')}
         variant="primary"
-      />
+      >
+        <Button
+          variant="primary"
+          icon={ExternalLink}
+          iconEnd
+          render={({ children, ...props }) => (
+            <Link path="https://donotdev.com" target="_blank" {...props}>{children}</Link>
+          )}
+        >
+          {t('hero.btnDoNotDev')}
+        </Button>
+        <Button
+          variant="outline"
+          icon={ExternalLink}
+          iconEnd
+          render={({ children, ...props }) => (
+            <Link path="https://github.com/AmboisePark/donotdev" target="_blank" {...props}>{children}</Link>
+          )}
+        >
+          {t('hero.btnGitHub')}
+        </Button>
+      </HeroSection>
 
-      <Roadmap steps={roadmapSteps} />
+      {/* 2. The Protocol — Vertical Roadmap, centered */}
+      <Section title={t('protocol.title')} align="center">
+        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
+          <Roadmap
+            steps={protocolSteps}
+            layout="vertical"
+            variant="glass"
+          />
+        </Stack>
+      </Section>
 
+      {/* 3. The Toolkit — FeatureCards */}
+      <Section
+        title={t('toolkit.title')}
+        tone="muted"
+        gridCols={[1, 1, 2, 3]}
+      >
+        <Reveal
+          direction="bottom"
+          stagger={150}
+          items={toolkitKeys.map((key, i) => (
+            <FeatureCard
+              key={key}
+              icon={toolkitIcons[i]}
+              title={t(`toolkit.features.${key}.title`)}
+              subtitle={t(`toolkit.features.${key}.subtitle`)}
+              content={tList(t, `toolkit.features.${key}.items`, 4)}
+              variant="glass"
+            />
+          ))}
+        />
+      </Section>
+
+      {/* 4. CTA */}
       <CallToAction
-        title={t('cta.title', 'Built With')}
-        subtitle={t('cta.subtitle', 'The tools and company behind WAI-WAY')}
+        title={t('cta.title')}
+        subtitle={t('cta.subtitle')}
         primaryAction={
           <Button
+            variant="primary"
             icon={ExternalLink}
             iconEnd
             render={({ children, ...props }) => (
-              <Link path="https://donotdev.com" {...props}>
-                {children}
-              </Link>
+              <Link path="https://donotdev.com" target="_blank" {...props}>{children}</Link>
             )}
           >
-            {t('cta.donotdev', 'DoNotDev Framework')}
+            {t('cta.btnInstall')}
           </Button>
         }
         secondaryAction={
@@ -83,12 +134,10 @@ export default function HomePage() {
             icon={ExternalLink}
             iconEnd
             render={({ children, ...props }) => (
-              <Link path="https://ambroise-park.com" {...props}>
-                {children}
-              </Link>
+              <Link path="https://github.com/DoNotDev/cli" target="_blank" {...props}>{children}</Link>
             )}
           >
-            {t('cta.ambroise', 'Ambroise Park')}
+            {t('cta.btnGitHub')}
           </Button>
         }
       />

@@ -1,62 +1,35 @@
 /**
- * @fileoverview Application configuration
- * @description Defines application metadata and feature flags
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
+ * @fileoverview Application Configuration
+ *
+ * THIS FILE IS YOUR MAIN CONFIGURATION. Update the values below.
+ *
+ * QUICK START:
+ * 1. Set APP_NAME and APP_SHORT_NAME
+ * 2. Choose your preset (see guide below)
+ * 3. Configure footer links
+ * 4. Run `bun dev` - everything else is automatic
  */
 
 import type { AppConfig } from '@donotdev/core';
 
-/**
- * Application name constant
- *
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
- */
+// ============================================================================
+// APP IDENTITY - Update these values
+// ============================================================================
+
 export const APP_NAME = 'WAI-WAY';
-
-/**
- * Application short name constant
- *
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
- */
 export const APP_SHORT_NAME = 'WAI-WAY';
-
-/**
- * Application description constant
- *
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
- */
 export const APP_DESCRIPTION = 'With AI WAY of building webApps';
 
-/**
- * Application tagline constant
- *
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
- */
-export const APP_TAGLINE = 'Powered by the DoNotDev Framework';
+// ============================================================================
+// MAIN CONFIGURATION
+// ============================================================================
 
-/**
- * Application configuration object
- *
- * @version 0.0.1
- * @since 0.0.1
- * @author AMBROISE PARK Consulting
- */
 export const appConfig: AppConfig = {
   app: {
     name: APP_NAME,
     shortName: APP_SHORT_NAME,
     description: APP_DESCRIPTION,
-    url: 'https://wai-way.com',
+    // Footer legal links - remove any you don't need
     footer: {
       legalLinks: [
         { path: '#cookie-settings', label: 'footer.legal.cookieSettings' },
@@ -66,16 +39,62 @@ export const appConfig: AppConfig = {
       ],
     },
   },
-  preset: 'docs',
+
+  // ==========================================================================
+  // PRESET GUIDE - Choose your layout
+  // ==========================================================================
+  //
+  // 'landing'  → Marketing site. Full-width sections, centered content, no sidebar.
+  //              Best for: Homepage, product pages, pricing, landing pages.
+  //
+  // 'admin'    → Dashboard app. Collapsible sidebar, header with user menu.
+  //              Best for: Admin panels, CRM, internal tools, CRUD apps.
+  //
+  // 'moolti'   → Multi-panel. Left sidebar nav, optional right context sidebar.
+  //              Best for: Complex apps with nested navigation, settings panels.
+  //
+  // 'docs'     → Documentation. Left sidebar TOC, right sidebar on-page nav.
+  //              Best for: Documentation sites, knowledge bases, help centers.
+  //
+  // 'blog'     → Blog layout. Wide content area, optional category sidebar.
+  //              Best for: Blog, news, articles, content-heavy sites.
+  //
+  // 'game'     → Fullscreen. Minimal chrome, focus on content area.
+  //              Best for: Games, immersive experiences, presentations.
+  //
+  // 'plain'    → No layout. Just your pages, you handle everything.
+  //              Best for: Custom layouts, embedded widgets, special cases.
+  //
+  preset: 'landing',
+
+  // ==========================================================================
+  // FEATURES - Uncomment to enable
+  // ==========================================================================
   features: {
-    // Optional: Enable debug tools in development
-    // debug: true,
+    // debug: true, // Enable debug tools in development
   },
-  // Optional: Override auth routes
+
+  // ==========================================================================
+  // AUTH CONFIG - Uncomment to customize
+  // ==========================================================================
   // auth: {
-  //   authRoute: '/signin',
-  //   roleRoute: '/403',
-  //   tierRoute: '/pricing',
+  //   authRoute: '/signin',        // Redirect when auth required
+  //   roleRoute: '/403',           // Redirect when role insufficient
+  //   tierRoute: '/pricing',       // Redirect when subscription required
+  //   profilePath: '/profile',     // Profile page path (undefined to hide)
+  //   authMenuItems: [             // Custom menu items for logged-in users
+  //     { path: '/dashboard', label: 'Dashboard' },
+  //   ],
+  // },
+
+  // ==========================================================================
+  // QUERY CACHE - Uncomment to enable auto-refetch
+  // ==========================================================================
+  // Default: Infinite cache (cost-optimized, manual refresh)
+  // Uncomment for auto-refetch behavior:
+  // query: {
+  //   staleTime: 1000 * 60 * 5,    // 5 minutes
+  //   refetchOnWindowFocus: true,
+  //   refetchOnReconnect: true,
   // },
 };
-

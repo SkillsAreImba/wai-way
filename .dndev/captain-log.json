@@ -1,0 +1,20 @@
+{
+  "project": "wai",
+  "started": "2026-03-03",
+  "sessions": [
+    {
+      "id": 1,
+      "date": "2026-03-03",
+      "phase": -1,
+      "phase_name": "ad-hoc",
+      "started_at": "2026-03-03T23:07:54.368Z",
+      "completed_at": "2026-03-03T23:07:54.368Z",
+      "outcome": "Ad-hoc session",
+      "files_touched": 0,
+      "symbols_used": 2,
+      "tool_calls": {
+        "lookup_symbol": 2
+      }
+    }
+  ]
+}

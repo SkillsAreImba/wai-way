@@ -1,0 +1,30 @@
+{
+  "languages": [
+    "en"
+  ],
+  "namespaces": [
+    "auth",
+    "billing",
+    "blog",
+    "cookies",
+    "crud",
+    "dndev",
+    "entityFormTemplate",
+    "example",
+    "home",
+    "homeTemplate",
+    "legalNotice",
+    "loginTemplate",
+    "oauth",
+    "privacy",
+    "profileDBTemplate",
+    "profileTemplate",
+    "terms"
+  ],
+  "eagerNamespaces": [
+    "dndev",
+    "home"
+  ],
+  "fallbackLanguage": "en",
+  "generatedAt": "2026-03-04T00:44:49.829Z"
+}

@@ -35,7 +35,7 @@ publicHoistPattern = [
 ]
 
 # Cache configuration
-cache = true               # Enable dependency caching (default, massive speed boost)
+cache = false               # Enable dependency caching (default, massive speed boost)
 
 # Security scanning (optional - requires installation)
 # [install.security]

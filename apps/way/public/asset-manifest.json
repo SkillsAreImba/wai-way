@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "path": "/i18n-manifest.json",
+      "type": "manifest",
+      "format": "json",
+      "size": 461
+    },
+    {
+      "path": "/route-manifest.json",
+      "type": "manifest",
+      "format": "json",
+      "size": 1268
+    },
+    {
+      "path": "/theme-manifest.json",
+      "type": "manifest",
+      "format": "json",
+      "size": 515
+    }
+  ],
+  "manifest": {
+    "logo": {
+      "optimal": null,
+      "fallback": null
+    },
+    "favicon": {
+      "optimal": null,
+      "fallback": null
+    },
+    "appleTouchIcon": null,
+    "androidChrome": {
+      "192": null,
+      "512": null
+    },
+    "manifest": "/i18n-manifest.json",
+    "modernFormats": [],
+    "fallbackFormats": [
+      "/i18n-manifest.json",
+      "/route-manifest.json",
+      "/theme-manifest.json"
+    ],
+    "logoSvgContent": null
+  },
+  "copiedAssets": [
+    "manifest.json"
+  ],
+  "totalAssets": 3,
+  "generatedAt": "2026-03-04T00:44:49.839Z"
+}

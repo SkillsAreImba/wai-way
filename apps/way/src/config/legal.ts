@@ -1,4 +1,4 @@
-// apps/apc/src/config/legal.ts
+// src/config/legal.ts
 
 /**
  * @fileoverview Legal Information Configuration
@@ -23,69 +23,98 @@ import type { LegalConfig } from '@donotdev/core';
  * hover over any field in your IDE for inline documentation.
  */
 export const legalConfig: LegalConfig = {
+	/**
+	 * Company/Publisher Information
+	 */
 	company: {
-		name: 'AMBROISE PARK Consulting',
-		shortName: 'A-P C',
-		legalStatus: 'SAS',
-		registrationNumber: '944 186 162 00011',
-		vatNumber: 'FR00944186162',
-		shareCapital: '1,000 EUR',
+		name: 'Your Company Name', // Required - Full legal name
+		shortName: 'YCN', // Optional - Abbreviation
+		legalStatus: 'LLC', // Optional - e.g., "LLC", "SARL", "SAS", "GmbH", "Ltd"
+		registrationNumber: '123456789', // Optional but recommended - e.g., SIRET (France), Company Number (UK), EIN (USA)
+		vatNumber: 'XX123456789', // Optional - VAT/Tax ID, required for EU businesses
+		shareCapital: '10,000 USD', // Optional - Required in some jurisdictions like France
 	},
 
+	/**
+	 * Contact Information
+	 */
 	contact: {
-		address: '205 chemin de la Halte, 13090 Aix-en-Provence, France',
-		email: 'Rodolphe@ambroise-park.com',
-		phone: '+33 1 23 45 67 89',
-		supportEmail: 'rodolphe@ambroise-park.com',
-		privacyEmail: 'rodolphe@ambroise-park.com',
-		dpoEmail: 'rodolphe@ambroise-park.com',
+		address: '123 Main Street, City, State/Province, Postal Code, Country', // Required - Registered office address
+		email: 'legal@yourcompany.com', // Required - Legal contact email
+		phone: '+1 (555) 123-4567', // Optional but recommended
+		supportEmail: 'support@yourcompany.com', // Required - Customer support email
+		privacyEmail: 'privacy@yourcompany.com', // Required - Privacy inquiries
+		dpoEmail: 'dpo@yourcompany.com', // Required for GDPR compliance if processing significant personal data
 	},
 
+	/**
+	 * Publication Director
+	 *
+	 * The person legally responsible for the website's content.
+	 * Required by law in France ("Directeur de la publication").
+	 */
 	director: {
-		name: 'Rodolphe AMBROISE PARK',
-		role: 'CEO',
+		name: 'John Doe', // Required - Full name of the responsible person
+		role: 'CEO', // Optional - Their title/role
 	},
 
+	/**
+	 * Hosting Provider
+	 *
+	 * Information about where your website is hosted.
+	 * Required by law in many jurisdictions including France.
+	 */
 	hosting: {
-		provider: 'Vercel Inc.',
-		address: '340 S Lemon Ave #4133, Walnut, CA 91789, USA',
-		contact: 'https://vercel.com/support',
+		provider: 'Firebase Hosting by Google', // Required - Hosting service name
+		address: 'Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA', // Optional - Hosting provider's address
+		contact: 'https://firebase.google.com/support', // Optional - Support URL or email
 	},
 
+	/**
+	 * Legal Jurisdiction
+	 *
+	 * Where your business operates and how disputes are resolved.
+	 */
 	jurisdiction: {
-		country: 'France',
-		arbitrationOrg: "Centre de Médiation et d'Arbitrage de Paris",
-		arbitrationLocation: 'Paris, France',
+		country: 'United States', // Required - Operating jurisdiction
+		arbitrationOrg: 'American Arbitration Association', // Optional - For dispute resolution
+		arbitrationLocation: 'New York, NY', // Optional - Where arbitration would occur
 	},
 
+	/**
+	 * Website Information
+	 */
 	website: {
-		url: 'https://www.ambroise-park.com',
+		url: 'https://yourcompany.com', // Required - Your main website URL
 	},
 
+	/**
+	 * Optional Sections Configuration
+	 *
+	 * Enable/disable specific sections in your legal pages.
+	 * Set to true to include, false to exclude.
+	 */
 	sections: {
+		// Terms of Service sections
 		terms: {
-			children: false,
-			international: true,
-			california: false,
-			eu: true,
+			children: false, // Include children-specific provisions (COPPA)
+			international: true, // Include international users provisions
+			california: false, // Include California-specific provisions (CCPA)
+			eu: true, // Include EU-specific provisions
 		},
+		// Privacy Policy sections
 		privacy: {
-			children: false,
-			international: true,
-			california: false,
-			eu: true,
+			children: false, // Include children's privacy provisions (COPPA)
+			international: true, // Include international data transfer provisions
+			california: false, // Include California privacy rights (CCPA)
+			eu: true, // Include EU privacy provisions (GDPR)
 		},
+		// Legal Notice sections
 		legalNotice: {
-			intellectualProperty: true,
-			personalData: true,
-			cookies: true,
+			intellectualProperty: true, // Include IP notice
+			personalData: true, // Include link to Privacy Policy
+			cookies: true, // Include cookies reference
 		},
-	},
-
-	lastUpdated: {
-		terms: '2025-05-05T00:00:00.000Z',
-		privacy: '2025-05-05T00:00:00.000Z',
-		legalNotice: '2025-05-05T00:00:00.000Z',
 	},
 } as const;
 

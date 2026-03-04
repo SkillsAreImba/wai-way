@@ -1,0 +1,30 @@
+{
+  "themes": [
+    {
+      "name": "light",
+      "displayName": "Light",
+      "meta": {
+        "icon": "Sun"
+      },
+      "essential": false,
+      "isDark": false,
+      "variableCount": 0
+    },
+    {
+      "name": "dark",
+      "displayName": "Dark",
+      "meta": {
+        "icon": "Moon"
+      },
+      "essential": false,
+      "isDark": true,
+      "variableCount": 0
+    }
+  ],
+  "variables": {
+    "total": 39,
+    "framework": 0,
+    "consumer": 39
+  },
+  "generatedAt": "2026-03-04T00:44:49.798Z"
+}

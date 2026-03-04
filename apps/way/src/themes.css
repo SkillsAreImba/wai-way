@@ -1,8 +1,11 @@
+/**
+ * src/themes.css — SSOT for essence and theme variables. Import in globals.css only.
+ * Default = SaaS (Inter). Optional .brutalist and .luxury do not apply until class is set on <html>.
+ */
 /* src/themes.css */
 
 /* ===========================
    APP-WIDE SETTINGS
-   Spacing, radius, shadows, animations - apply to all themes
    =========================== */
 :root {
   /* Routing animations (fade | slide | none) */
@@ -14,55 +17,48 @@
   /* --gap-md: 1rem; */
   /* --gap-lg: 2rem; */
 
-  /* Border radius - gentle rounded for docs */
-  --radius-interactive: 6px;
-  /* Buttons, inputs */
-  --radius-surface: 8px;
-  /* Cards, sections */
-  --radius-floating: 12px;
-  /* Popovers, modals */
+  /* Border radius */
+  /* --radius-interactive: var(--radius-none); */
+  /* --radius-surface: var(--radius-md); */
+  /* --radius-floating: var(--radius-none); */
 }
 
 /* ===========================
    LIGHT THEME
-   Optimized for documentation readability
+   Zinc-based neutral palette
    =========================== */
 :root.light {
   --theme-icon: 'Sun';
   --theme-label: 'Light';
   --theme-is-dark: 0;
 
-  /* Core colors - softer background for less eye strain */
-  --background: #fafaf9;
-  /* Warm off-white */
-  --foreground: #1c1917;
-  /* Warm dark gray (not pure black) */
+  /* Core colors */
+  --background: #ffffff;
+  --foreground: #09090b;
 
   /* Surfaces */
   --card: #ffffff;
-  --card-foreground: #1c1917;
+  --card-foreground: #09090b;
   --popover: #ffffff;
-  --popover-foreground: #1c1917;
+  --popover-foreground: #09090b;
 
-  /* Muted (for secondary text, backgrounds) */
-  --muted: #f5f5f4;
-  --muted-foreground: #78716c;
+  /* Muted (zinc-100 / zinc-500) */
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
 
-  /* Border & input */
-  --border: #e7e5e4;
-  --input: #e7e5e4;
+  /* Border & input (zinc-200) */
+  --border: #e4e4e7;
+  --input: #e4e4e7;
   --ring: var(--primary);
 
-  /* Brand colors - professional blue for docs */
-  --primary: #2563eb;
-  /* Blue 600 - professional, trustworthy */
+  /* Brand colors - customize these */
+  --primary: #0284c7;
   --primary-foreground: #ffffff;
 
-  --secondary: #f5f5f4;
-  --secondary-foreground: #1c1917;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
 
-  --accent: #7c3aed;
-  /* Purple - stands out without being harsh */
+  --accent: #ea580c;
   --accent-foreground: #ffffff;
 
   /* Status colors */
@@ -71,73 +67,62 @@
   --success: #16a34a;
   --success-foreground: #ffffff;
   --warning: #f59e0b;
-  --warning-foreground: #1c1917;
+  --warning-foreground: #09090b;
 }
 
 /* ===========================
    DARK THEME
-   Optimized for comfortable reading in low light
+   Zinc-based dark palette
    =========================== */
 :root.dark {
   --theme-icon: 'Moon';
   --theme-label: 'Dark';
   --theme-is-dark: 1;
 
-  /* Core colors - true dark for OLED/night reading */
-  --background: #0c0a09;
-  /* Warm black */
-  --foreground: #fafaf9;
-  /* Soft white (not harsh) */
+  /* Core colors */
+  --background: #09090b;
+  --foreground: #fafafa;
 
   /* Surfaces */
-  --card: #1c1917;
-  /* Elevated surface */
-  --card-foreground: #fafaf9;
-  --popover: #292524;
-  --popover-foreground: #fafaf9;
+  --card: #09090b;
+  --card-foreground: #fafafa;
+  --popover: #18181b;
+  --popover-foreground: #fafafa;
 
-  /* Muted */
-  --muted: #292524;
-  --muted-foreground: #a8a29e;
+  /* Muted (zinc-800 / zinc-400) */
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
 
-  /* Border & input */
-  --border: #292524;
-  --input: #292524;
+  /* Border & input (zinc-800) */
+  --border: #27272a;
+  --input: #27272a;
   --ring: var(--primary);
 
-  /* Brand colors - brighter for dark mode */
-  --primary: #3b82f6;
-  /* Blue 500 - pops on dark */
+  /* Brand colors - customize these */
+  --primary: #0ea5e9;
   --primary-foreground: #ffffff;
 
-  --secondary: #292524;
-  --secondary-foreground: #fafaf9;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
 
-  --accent: #a78bfa;
-  /* Purple 400 - easier on eyes in dark */
+  --accent: #f97316;
   --accent-foreground: #ffffff;
 
   /* Status colors */
-  --destructive: #ef4444;
+  --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --success: #22c55e;
+  --success: #16a34a;
   --success-foreground: #ffffff;
-  --warning: #fbbf24;
-  --warning-foreground: #0c0a09;
+  --warning: #f59e0b;
+  --warning-foreground: #09090b;
 }
 
 /* ===========================
-   CUSTOM THEMES
-   Add your brand themes below
+   OPTIONAL ESSENCES (do not apply by default; set <html class="brutalist"> or class="luxury" to use)
+   See guides/dndev/essences_reference.css for full .brutalist and .luxury blocks.
    =========================== */
 
-/* Example:
-:root.brand {
-  --theme-icon: 'Zap';
-  --theme-label: 'Brand';
-  --theme-is-dark: 0;
-  --background: #your-color;
-  --foreground: #your-color;
-  ...
-}
-*/
+/* ===========================
+   CUSTOM THEMES
+   =========================== */
+/* Example: .brand { --theme-icon: 'Zap'; --theme-label: 'Brand'; --theme-is-dark: 0; ... } */
