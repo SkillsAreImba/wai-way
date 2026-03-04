@@ -10,7 +10,6 @@
     "type-check": "turbo run type-check"
   },
   "dependencies": {
-    "@donotdev/adv-comps": "^0.0.15",
     "@donotdev/auth": "^0.0.15",
     "@donotdev/billing": "^0.0.13",
     "@donotdev/components": "^0.0.24",
