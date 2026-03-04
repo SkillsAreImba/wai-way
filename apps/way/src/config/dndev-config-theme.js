@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-04T01:21:11.459Z
+// Generated at: 2026-03-04T07:44:50.033Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const themeConfig = {

@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-04T01:21:11.483Z
+// Generated at: 2026-03-04T07:44:50.059Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const i18nConfig = {

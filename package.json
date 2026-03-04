@@ -13,7 +13,7 @@
     "@donotdev/auth": "^0.0.15",
     "@donotdev/billing": "^0.0.13",
     "@donotdev/components": "^0.0.24",
-    "@donotdev/core": "^0.0.32",
+    "@donotdev/core": "^0.0.33",
     "@donotdev/crud": "^0.0.21",
     "@donotdev/firebase": "^0.0.17",
     "@donotdev/oauth": "^0.0.13",
