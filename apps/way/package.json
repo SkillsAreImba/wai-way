@@ -11,10 +11,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.25",
-    "@donotdev/core": "^0.0.35",
+    "@donotdev/components": "^0.0.26",
+    "@donotdev/core": "^0.0.36",
     "@donotdev/templates": "^0.0.15",
-    "@donotdev/ui": "^0.0.22",
+    "@donotdev/ui": "^0.0.23",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
