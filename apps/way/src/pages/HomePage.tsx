@@ -11,6 +11,7 @@ import {
   Roadmap,
   Reveal,
   Stack,
+  Grid,
 } from '@donotdev/components';
 import type { RoadmapStep } from '@donotdev/components';
 import {
@@ -26,6 +27,8 @@ import {
   FileText,
   RotateCcw,
   ExternalLink,
+  AlertTriangle,
+  Users,
 } from 'lucide-react';
 
 const NAMESPACE = 'home';
@@ -44,7 +47,7 @@ export default function HomePage() {
     icon: phaseIcons[i],
     title: t(`protocol.phases.${key}.title`).split(' — ')[1],
     subtitle: t(`protocol.phases.${key}.subtitle`),
-    description: t(`protocol.phases.${key}.subtitle`),
+    description: t(`protocol.phases.${key}.outcome`),
     content: tList(t, `protocol.phases.${key}.items`, 6),
   }));
 
@@ -79,8 +82,15 @@ export default function HomePage() {
         </Button>
       </HeroSection>
 
-      {/* 2. The Protocol — Vertical Roadmap, centered */}
-      <Section title={t('protocol.title')} align="center">
+      {/* 2. The Problem */}
+      <Section title={t('problem.title')} icon={AlertTriangle} tone="muted" align="center">
+        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
+          {tList(t, 'problem.items', 4)}
+        </Stack>
+      </Section>
+
+      {/* 3. The Protocol — Vertical Roadmap, centered */}
+      <Section title={t('protocol.title')} subtitle={t('protocol.subtitle')} align="center">
         <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
           <Roadmap
             steps={protocolSteps}
@@ -90,29 +100,37 @@ export default function HomePage() {
         </Stack>
       </Section>
 
-      {/* 3. The Toolkit — FeatureCards */}
-      <Section
-        title={t('toolkit.title')}
-        tone="muted"
-        gridCols={[1, 1, 2, 3]}
-      >
-        <Reveal
-          direction="bottom"
-          stagger={150}
-          items={toolkitKeys.map((key, i) => (
-            <FeatureCard
+      {/* 4. The Toolkit — FeatureCards */}
+      <Section title={t('toolkit.title')} subtitle={t('toolkit.subtitle')} tone="muted">
+        <Grid cols={[1, 1, 2, 3]}>
+          {toolkitKeys.map((key, i) => (
+            <Reveal
               key={key}
-              icon={toolkitIcons[i]}
-              title={t(`toolkit.features.${key}.title`)}
-              subtitle={t(`toolkit.features.${key}.subtitle`)}
-              content={tList(t, `toolkit.features.${key}.items`, 4)}
-              variant="glass"
+              direction="bottom"
+              stagger={150 * i}
+              items={[
+                <FeatureCard
+                  key={key}
+                  icon={toolkitIcons[i]}
+                  title={t(`toolkit.features.${key}.title`)}
+                  subtitle={t(`toolkit.features.${key}.subtitle`)}
+                  content={tList(t, `toolkit.features.${key}.items`, 4)}
+                  variant="glass"
+                />,
+              ]}
             />
           ))}
-        />
+        </Grid>
       </Section>
 
-      {/* 4. CTA */}
+      {/* 5. Who It's For */}
+      <Section title={t('audience.title')} icon={Users} align="center">
+        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
+          <p>{t('audience.subtitle')}</p>
+        </Stack>
+      </Section>
+
+      {/* 6. CTA */}
       <CallToAction
         title={t('cta.title')}
         subtitle={t('cta.subtitle')}

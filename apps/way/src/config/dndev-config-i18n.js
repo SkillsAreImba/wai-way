@@ -1,186 +1,183 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-05T14:15:08.366Z
+// Generated at: 2026-03-06T14:39:04.141Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const i18nConfig = {
   mapping: {
-  "dndev": {
-    "en": "./src/locales/dndev_en.json",
-    "ar": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_de.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/eager/dndev_nl.json"
-  },
   "home": {
-    "en": "./src/pages/locales/home_en.json"
+    "en": "./src/locales/home_en.json"
   },
-  "example": {
-    "en": "./src/pages/locales/example_en.json"
+  "dndev": {
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/eager/dndev_nl.json"
   },
   "auth": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/auth_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/auth_nl.json"
   },
   "billing": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/billing_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/billing_nl.json"
   },
   "blog": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/blog_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/blog_nl.json"
   },
   "cookies": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/cookies_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/cookies_nl.json"
   },
   "crud": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/crud_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/crud_nl.json"
   },
   "entityFormTemplate": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/entityFormTemplate_nl.json"
   },
   "homeTemplate": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/homeTemplate_nl.json"
   },
   "legalNotice": {
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/legalNotice_en.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/legalNotice_fr.json"
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/legalNotice_en.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/legalNotice_fr.json"
   },
   "loginTemplate": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/loginTemplate_nl.json"
   },
   "oauth": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/oauth_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/oauth_nl.json"
   },
   "privacy": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/privacy_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/privacy_nl.json"
   },
   "profileDBTemplate": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileDBTemplate_nl.json"
   },
   "profileTemplate": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/profileTemplate_nl.json"
   },
   "terms": {
-    "ar": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_ar.json",
-    "da": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_da.json",
-    "de": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_de.json",
-    "en": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_en.json",
-    "es": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_es.json",
-    "fr": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_fr.json",
-    "it": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_it.json",
-    "ja": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_ja.json",
-    "ko": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_ko.json",
-    "nl": "./node_modules/@donotdev/core/i18n/locales/lazy/terms_nl.json"
+    "ar": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_ar.json",
+    "da": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_da.json",
+    "de": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_de.json",
+    "en": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_en.json",
+    "es": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_es.json",
+    "fr": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_fr.json",
+    "it": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_it.json",
+    "ja": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_ja.json",
+    "ko": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_ko.json",
+    "nl": "./../../node_modules/@donotdev/core/i18n/locales/lazy/terms_nl.json"
   }
 },
   languages: [
@@ -192,775 +189,171 @@ const i18nConfig = {
 ],
   fallback: 'en',
   content: {
-  "dndev": {
+  "home": {
     "en": {
-      "signIn": "Sign In",
-      "choosePlatform": "Choose a platform to sign in with",
-      "providers": {
-        "google": "Google",
-        "facebook": "Facebook",
-        "github": "GitHub",
-        "twitter": "Twitter",
-        "microsoft": "Microsoft",
-        "yahoo": "Yahoo",
-        "apple": "Apple"
+      "hero": {
+        "title": "With AI WAY",
+        "subtitle": "AI can code. Without structure, you get spaghetti. WAI-WAY is the protocol that makes AI-built apps production-ready.",
+        "badge": "Open Source",
+        "btnDoNotDev": "DoNotDev",
+        "btnGitHub": "GitHub"
       },
-      "buttons": {
-        "signIn": "Sign in with {{provider}}",
-        "continue": "Continue with {{provider}}",
-        "verify": "Verify Email",
-        "sendVerification": "Send Verification Email",
-        "signOut": "Sign Out",
-        "loading": "Loading..."
+      "problem": {
+        "title": "The Problem",
+        "items": [
+          "You describe your app. AI generates code. But specs are vague, context is lost between sessions, and quality drifts.",
+          "No traceability — you can't tell why a decision was made three prompts ago.",
+          "No structure — every session starts from scratch. V2 repeats V1 mistakes.",
+          "No quality gate — code ships without review, security audit, or test coverage."
+        ]
       },
-      "accountLinking": {
-        "title": "Account Linking Required",
-        "message": "This email is already associated with different sign-in methods ({{methods}}). Please sign in using one of those methods to link your accounts.",
-        "instruction": "Please sign in with one of the following methods to link your accounts:",
-        "explanation": "By signing in, your accounts will be automatically linked, allowing you to use either sign-in method in the future.",
-        "success": "Accounts successfully linked!",
-        "error": "Failed to link accounts. Please try again.",
-        "emailLabel": "Email:"
-      },
-      "emailVerification": {
-        "title": "Email Verification",
-        "status": {
-          "verified": "Your email is verified.",
-          "unverified": "Please verify your email to access all features."
-        },
-        "sending": "Sending verification email...",
-        "success": "Verification email sent! Please check your inbox.",
-        "alreadyVerified": "Your email has already been verified.",
-        "notSignedIn": "You must be signed in to verify your email.",
-        "error": "Failed to send verification email. Please try again."
-      },
-      "errors": {
-        "auth/popup-closed-by-user": "The sign in popup was closed before completion.",
-        "auth/cancelled-popup-request": "The sign in popup was cancelled.",
-        "auth/popup-blocked": "The sign in popup was blocked by the browser.",
-        "auth/email-already-in-use": "This email is already registered.",
-        "auth/invalid-email": "The email address is invalid.",
-        "auth/operation-not-allowed": "This sign in method is not enabled.",
-        "auth/weak-password": "The password is too weak.",
-        "auth/user-disabled": "This account has been disabled.",
-        "auth/user-not-found": "No account found with this email.",
-        "auth/wrong-password": "Incorrect password.",
-        "auth/network-request-failed": "A network error occurred. Please try again.",
-        "auth/internal-error": "An internal error occurred. Please try again.",
-        "auth/invalid-credential": "The provided credential is invalid.",
-        "auth/account-exists-with-different-credential": "An account already exists with the same email address but different sign-in credentials.",
-        "auth/provider-not-enabled": "{{provider}} authentication is not enabled",
-        "auth/unknown-provider": "Unknown provider: {{provider}}",
-        "auth/missing-provider": "Authentication provider is not configured",
-        "auth/no-user-signed-in": "No user is currently signed in",
-        "auth/oauth-incomplete": "Authentication flow incomplete. Please try signing in again.",
-        "fallback": {
-          "title": "Authentication Required",
-          "description": "You need to sign in to access this page.",
-          "chooseProvider": "Choose your preferred sign-in method",
-          "authOptions": "Authentication options",
-          "secure": "Your data is secure and encrypted.",
-          "terms": "By signing in, you agree to our Terms of Service."
-        },
-        "genericError": "Authentication failed. Please try again.",
-        "fieldUpdate": "Failed to update {{field}}",
-        "hiddenField": "Error rendering hidden field {{field}}",
-        "unsupportedFieldType": "Unsupported field type: {{type}}",
-        "fieldRendering": "Error rendering field {{field}}",
-        "fallingBackToTextField": "Using text field for unsupported type {{type}}",
-        "invalidFieldProps": "Invalid configuration for field {{field}}"
-      },
-      "status": {
-        "loading": "Loading...",
-        "authenticating": "Authenticating...",
-        "verifying": "Verifying...",
-        "checking": "Checking permissions..."
-      },
-      "aria": {
-        "signInOptions": "Sign in options",
-        "signInButton": "Sign in with {{provider}}",
-        "loadingState": "Loading authentication",
-        "errorAlert": "Authentication error",
-        "successAlert": "Success",
-        "accountLinkingRequired": "Account linking required",
-        "verificationRequired": "Email verification required"
-      },
-      "home": {
-        "title": "DoNotDev",
-        "description": "DoNotDev is a platform for building web applications with TypeScript and pure CSS.",
-        "getStarted": "Get Started",
-        "whyChooseDoNotDev": "Why Choose DoNotDev?",
-        "openSource": "Open Source",
-        "freeAndOpenSource": "Free and open-source with a vibrant community.",
-        "customizable": "Customizable",
-        "flexibleComponents": "Flexible components to tailor your project needs.",
-        "developerFocused": "Developer-Focused",
-        "scalableArchitecture": "Scalable Architecture",
-        "secureByDesign": "Secure by Design",
-        "fastIntegration": "Fast Integration",
-        "scaleEffortlessly": "Scale effortlessly from prototypes to enterprise solutions.",
-        "header": {
-          "purchase": "Purchase"
-        }
-      },
-      "actions": {
-        "create": "Create",
-        "update": "Update",
-        "delete": "Delete",
-        "cancel": "Cancel",
-        "save": "Save",
-        "confirm": "Confirm",
-        "back": "Back",
-        "next": "Next",
-        "previous": "Previous",
-        "search": "Search",
-        "searchPlaceholder": "Search...",
-        "filter": "Filter",
-        "clear": "Clear",
-        "reset": "Reset",
-        "apply": "Apply",
-        "select": "Select",
-        "upload": "Upload",
-        "download": "Download",
-        "close": "Close"
-      },
-      "messages": {
-        "createSuccess": "{{entity}} created successfully",
-        "updateSuccess": "{{entity}} updated successfully",
-        "deleteSuccess": "{{entity}} deleted successfully",
-        "error": "An error occurred",
-        "loading": "Loading...",
-        "noResults": "No results found",
-        "confirmDelete": "Are you sure you want to delete this {{entity}}?",
-        "unsavedChanges": "You have unsaved changes",
-        "sessionExpired": "Your session has expired",
-        "networkError": "Network error occurred",
-        "unauthorized": "Unauthorized access",
-        "forbidden": "Access forbidden",
-        "serverError": "Server error occurred",
-        "notFound": {
-          "title": "Page Not Found",
-          "description": "The page you're looking for doesn't exist or has been moved.",
-          "suggestions": "You might be looking for:",
-          "goHome": "Go Home",
-          "goBack": "Go Back"
-        }
-      },
-      "nav": {
-        "signIn": "Sign in"
-      },
-      "pagination": {
-        "showing": "Showing {{from}} to {{to}} of {{total}} entries",
-        "previous": "Previous",
-        "next": "Next",
-        "page": "Page {{page}} of {{total}}"
-      },
-      "filters": {
-        "title": "Filters",
-        "apply": "Apply Filters",
-        "clear": "Clear Filters",
-        "noResults": "No results match your filters",
-        "selected": "{{count}} selected"
-      },
-      "settings": {
-        "title": "Settings",
-        "theme": "Theme",
-        "language": "Language",
-        "clearCache": {
-          "title": "Clear Cache",
-          "localStorage": "Local Storage",
-          "sessionStorage": "Session Storage",
-          "applicationCache": "Application Cache",
-          "serviceWorker": "Service Worker",
-          "cookies": "Cookies",
-          "indexedDB": "IndexedDB",
-          "webSQL": "WebSQL",
-          "memoryCache": "Memory Cache",
-          "button": "Clear Cache",
-          "clearing": "Clearing...",
-          "error": "Error clearing cache",
-          "success": "Cache cleared successfully: {{items}}",
-          "noItemsCleared": "No cache items were cleared"
-        }
-      },
-      "common": {
-        "app": {
-          "name": "DoNotDev App"
-        },
-        "defaultTitle": "Page",
-        "defaultDescription": "Page description",
-        "locale": "en_US",
-        "themeSelector": {
-          "changeTheme": "Change Theme",
-          "tooltipWithTransition": "Change Theme: {{current}} → {{next}}",
-          "tooltipWithCurrent": "Change Theme: {{current}}",
-          "tooltipWithNext": "Change Theme: Switch to {{next}}"
-        },
-        "languageSelector": {
-          "changeLanguage": "Change Language"
-        }
-      },
-      "footer": {
-        "landing": {
-          "company": {
-            "defaultName": "Company",
-            "description": "Build better products faster with our comprehensive development platform."
-          },
-          "social": {
-            "twitter": "Twitter",
-            "github": "GitHub",
-            "discord": "Discord"
-          },
-          "sections": {
-            "product": {
-              "title": "Product",
-              "features": "Features",
-              "pricing": "Pricing",
-              "docs": "Docs",
-              "updates": "Updates"
-            },
-            "support": {
-              "title": "Support",
-              "help": "Help",
-              "contact": "Contact",
-              "status": "Status",
-              "community": "Community"
-            }
-          }
-        },
-        "legal": {
-          "allRightsReserved": "All rights reserved.",
-          "cookieSettings": "Cookie Settings",
-          "legalNotice": "Legal Notice",
-          "privacyPolicy": "Privacy Policy",
-          "termsOfService": "Terms of Service",
-          "builtWith": "Made with ❤️ & DoNotDev ©",
-          "collapse": "Collapse footer",
-          "expand": "Expand footer"
-        }
-      },
-      "search": {
-        "ariaLabel": "Search",
-        "label": "Search"
-      },
-      "goTo": {
-        "ariaLabel": "Go to page",
-        "label": "Go to"
-      },
-      "globalGoTo": {
-        "placeholder": "Filter routes or navigate to a page...",
-        "noResults": "No routes found.",
-        "favorites": "Favorites",
-        "allPages": "All Pages",
-        "addFavorite": "Add to favorites",
-        "removeFavorite": "Remove from favorites"
-      },
-      "copyToClipboard": "Copy to clipboard",
-      "copied": "Copied!",
-      "copyPassword": "Copy password",
-      "table": {
-        "searchPlaceholder": "Search...",
-        "filters": "Filters",
-        "selectAllRows": "Select all rows",
-        "selectRow": "Select row {{index}}",
-        "showingResults": "Showing {{from}} to {{to}} of {{total}} results",
-        "previous": "Previous",
-        "next": "Next",
-        "page": "Page {{current}} of {{total}}"
-      },
-      "language": {
-        "selectLanguage": "Select Language",
-        "searchLanguages": "Search languages...",
-        "noLanguagesFound": "No languages found",
-        "changeLanguage": "Change Language"
-      },
-      "form": {
-        "submit": "Submit",
-        "cancel": "Cancel",
-        "submitting": "Submitting...",
-        "loading": "Loading...",
-        "add": "Add",
-        "remove": "Remove",
-        "typeAndPressAdd": "Type and press Add...",
-        "enterLocationData": "Enter location data (JSON)"
-      },
-      "navigation": {
-        "more": "More",
-        "home": "Home"
-      },
-      "pwa": {
-        "update": {
-          "title": "Update available",
-          "description": "A new version is ready. Refresh to update.",
-          "button": "Update",
-          "altText": "Update application"
-        }
-      },
-      "document": {
-        "upload": {
-          "hint": "Click or drag files to upload",
-          "ariaLabel": "Upload document"
-        },
-        "preview": {
-          "title": "Document Preview",
-          "ariaLabel": "Preview document"
-        },
-        "delete": {
-          "ariaLabel": "Delete document",
-          "failed": "Failed to delete document"
-        },
-        "errors": {
-          "maxFiles": "Maximum {{max}} files allowed",
-          "invalidType": "\"{{fileName}}\" is not an allowed file type",
-          "exceedsSize": "\"{{fileName}}\" exceeds the maximum size of {{size}} MB"
-        }
-      },
-      "image": {
-        "alt": {
-          "upload": "Upload image {{index}}"
-        },
-        "upload": {
-          "pending": "Pending",
-          "dropzoneMultiple": "Drop images here or click to upload",
-          "dropzoneSingle": "Drop image here or click to upload"
-        }
-      },
-      "code": {
-        "copyCode": "Copy code",
-        "copied": "Copied!",
-        "copyCodeToClipboard": "Copy code to clipboard"
-      },
-      "video": {
-        "clickToWatch": "Click to watch video",
-        "watchVideo": "Watch Video"
-      },
-      "inspector": {
-        "pageSource": "Page Source",
-        "inspectPageSourceCode": "Inspect page source code"
-      },
-      "sheet": {
-        "navigation": "Navigation",
-        "codeInspector": "Code Inspector",
-        "debugPanel": "Debug Panel"
-      },
-      "routeError": {
-        "title": "Something went wrong",
-        "description": "We encountered an error while loading this page.",
-        "dataSafe": "Don't worry, your data is safe.",
-        "errorId": "Error ID",
-        "errorMessage": "Error Message",
-        "copied": "Copied",
-        "copyDetails": "Copy Details",
-        "tryAgain": "Try Again",
-        "goHome": "Go Home",
-        "goBack": "Go Back",
-        "contactSupport": "If the problem persists, please contact support."
-      },
-      "redirectOverlay": {
+      "protocol": {
+        "title": "The Protocol",
+        "subtitle": "Five phases. Each one produces a verifiable artifact. Skip none.",
         "phases": {
-          "connecting": "Connecting to secure server...",
-          "preparing": "Preparing your session...",
-          "redirecting": "Redirecting...",
-          "timeout": "Taking longer than expected..."
-        },
-        "cancel": "Cancel",
-        "doNotRefresh": "Please do not refresh or press back",
-        "default": {
-          "title": "Redirecting",
-          "message": "Please wait while we redirect you...",
-          "subtitle": "This may take a moment",
-          "ariaLabel": "Redirecting, please wait"
-        },
-        "stripe-checkout": {
-          "title": "Redirecting to Stripe",
-          "message": "Initializing secure payment...",
-          "subtitle": "This may take a moment on first load",
-          "ariaLabel": "Preparing secure checkout, please wait"
-        },
-        "stripe-portal": {
-          "title": "Redirecting to Stripe",
-          "message": "Opening billing portal...",
-          "subtitle": "Manage your subscription and invoices",
-          "ariaLabel": "Opening billing portal, please wait"
-        },
-        "oauth-google": {
-          "title": "Signing in with Google",
-          "message": "Connecting to Google...",
-          "subtitle": "You will be redirected to sign in",
-          "ariaLabel": "Signing in with Google, please wait"
-        },
-        "oauth-github": {
-          "title": "Signing in with GitHub",
-          "message": "Connecting to GitHub...",
-          "subtitle": "You will be redirected to sign in",
-          "ariaLabel": "Signing in with GitHub, please wait"
-        },
-        "oauth-apple": {
-          "title": "Signing in with Apple",
-          "message": "Connecting to Apple...",
-          "subtitle": "You will be redirected to sign in",
-          "ariaLabel": "Signing in with Apple, please wait"
-        },
-        "oauth-microsoft": {
-          "title": "Signing in with Microsoft",
-          "message": "Connecting to Microsoft...",
-          "subtitle": "You will be redirected to sign in",
-          "ariaLabel": "Signing in with Microsoft, please wait"
-        },
-        "oauth-facebook": {
-          "title": "Signing in with Facebook",
-          "message": "Connecting to Facebook...",
-          "subtitle": "You will be redirected to sign in",
-          "ariaLabel": "Signing in with Facebook, please wait"
-        },
-        "auth-email-link": {
-          "title": "Sending verification",
-          "message": "Preparing your verification link...",
-          "subtitle": "Check your email inbox",
-          "ariaLabel": "Sending verification email, please wait"
+          "0": {
+            "title": "P0 — Brainstorm",
+            "subtitle": "From idea to complete specification.",
+            "outcome": "No more 'I forgot to mention...' — the spec is complete or the conversation continues.",
+            "items": [
+              "Describe your app idea in plain language",
+              "AI asks targeted questions — identity, journeys, data, business rules, edge cases",
+              "Conversation produces PRD (what), HLD (how, big picture), LLD (how, detailed)",
+              "Every entity has fields, states, transitions, and access matrices",
+              "Every user journey has numbered steps with success/failure criteria",
+              "No TBDs, no TODOs — the spec is complete or the conversation continues"
+            ]
+          },
+          "1": {
+            "title": "P1 — Scaffold",
+            "subtitle": "Clickable prototype, zero business logic.",
+            "outcome": "Catch navigation gaps and missing pages before writing a single line of logic.",
+            "items": [
+              "Every page from the HLD gets a route and a stub component",
+              "Navigation is wired — click through the entire app flow",
+              "PageMeta defines route, access level, and menu placement",
+              "Interactive prototype you can demo before writing logic",
+              "Catches navigation gaps and missing pages early"
+            ]
+          },
+          "2": {
+            "title": "P2 — Entities",
+            "subtitle": "Type-safe data models from your LLD.",
+            "outcome": "Your data layer is defined once, enforced everywhere — no runtime surprises.",
+            "items": [
+              "Every entity defined with defineEntity — fields, types, validations",
+              "State machines with explicit transitions and triggers",
+              "Relationships — belongs-to, has-many, cascade rules",
+              "Access matrices — CRUD permissions per role per condition",
+              "Exported from a single index.ts — one source of truth"
+            ]
+          },
+          "3": {
+            "title": "P3 — Compose",
+            "subtitle": "Functional pages with real data.",
+            "outcome": "Ship the logic first, polish later — every page follows the user journey from the PRD.",
+            "items": [
+              "Components composed from the framework library — no custom CSS",
+              "CRUD wired to entities — create, read, update, delete working",
+              "Pages follow user journeys from the PRD step by step",
+              "Hardcoded strings — content and i18n come in P4",
+              "Ship the logic first, polish later"
+            ]
+          },
+          "4": {
+            "title": "P4 — Configure",
+            "subtitle": "From prototype to production.",
+            "outcome": "Tests, security rules, CI/CD, i18n, code review — nothing ships without passing /grill.",
+            "items": [
+              "Tests — unit, integration, e2e for critical paths",
+              "Security rules — Firestore rules generated from access matrices",
+              "CI/CD pipeline configured and tested",
+              "i18n — hardcoded strings extracted to translation files",
+              "/grill review — staff-engineer code review with OWASP security audit",
+              "Bug fixes via Kanban — track, prioritize, ship"
+            ]
+          }
         }
       },
-      "templates": {
-        "home": {
-          "hero": {
-            "badge": "Welcome",
-            "title": "Build Something Amazing",
-            "subtitle": "A modern platform to launch, grow, and scale your next project — faster than ever.",
-            "primaryAction": "Get Started",
-            "secondaryAction": "Learn More"
+      "toolkit": {
+        "title": "What Ships With It",
+        "subtitle": "The tools that enforce the protocol — so AI stays on track.",
+        "features": {
+          "mcp": {
+            "title": "MCP Server",
+            "subtitle": "13 tools for AI-assisted development.",
+            "items": [
+              "Phase tracking — start, complete, approve",
+              "Symbol lookup — real TypeScript types from .d.ts",
+              "Convention enforcement — catches inline styles, bad imports, RTL violations",
+              "Lessons loop — tagged gotchas filtered by phase and module"
+            ]
           },
-          "features": {
-            "title": "Features",
-            "feature1": {
-              "title": "Lightning Fast",
-              "description": "Optimized for speed with instant page loads and real-time updates out of the box."
-            },
-            "feature2": {
-              "title": "Secure by Default",
-              "description": "Enterprise-grade security with authentication, role-based access, and encryption built in."
-            },
-            "feature3": {
-              "title": "Ready to Scale",
-              "description": "From prototype to production — scale effortlessly with a robust, modular architecture."
-            }
+          "skills": {
+            "title": "Skills",
+            "subtitle": "Slash commands for every workflow stage.",
+            "items": [
+              "/brainstorm — extract requirements through conversation",
+              "/build — scaffold + entities + compose in sequence",
+              "/grill — staff-engineer code review with security depth",
+              "/polish — tests, rules, CI/CD, i18n"
+            ]
           },
-          "howItWorks": {
-            "title": "How It Works",
-            "step1": {
-              "title": "Sign Up",
-              "description": "Create your account in seconds. No credit card required to get started."
-            },
-            "step2": {
-              "title": "Configure",
-              "description": "Set up your workspace, invite your team, and customize your workflow."
-            },
-            "step3": {
-              "title": "Launch",
-              "description": "Go live with confidence. Deploy, monitor, and iterate at your own pace."
-            }
+          "grill": {
+            "title": "/grill",
+            "subtitle": "Security audit included. Zero cost.",
+            "items": [
+              "Staff-engineer level code review",
+              "OWASP top 10 coverage",
+              "Output feeds directly into bug tracking",
+              "Run it before every release"
+            ]
           },
-          "showcase": {
-            "title": "Why Us",
-            "item1": {
-              "title": "Modern Stack",
-              "description": "Built on cutting-edge technology for performance, reliability, and developer happiness."
-            },
-            "item2": {
-              "title": "Open Source",
-              "description": "Transparent, community-driven, and free to use."
-            },
-            "item3": {
-              "title": "Developer First",
-              "description": "Designed by developers, for developers. Clean APIs and great docs."
-            },
-            "item4": {
-              "title": "Global Ready",
-              "description": "Multi-language, multi-region, and accessible from day one."
-            }
+          "kanban": {
+            "title": "Kanban Board",
+            "subtitle": "Bugs and changes, tracked.",
+            "items": [
+              "Built into the workflow, not bolted on",
+              "Track bugs from /grill review",
+              "Prioritize changes across versions",
+              "Ship when the board is clear"
+            ]
           },
-          "cta": {
-            "title": "Ready to Get Started?",
-            "subtitle": "Join thousands of teams building better products, faster.",
-            "primaryAction": "Start for Free",
-            "secondaryAction": "Contact Sales"
+          "specs": {
+            "title": "Spec Documents",
+            "subtitle": "PRD + HLD + LLD — living docs.",
+            "items": [
+              "Generated through AI conversation",
+              "Versioned in git — full history",
+              "Updated in place for V2, V3...",
+              "The single source of truth for what and how"
+            ]
+          },
+          "lessons": {
+            "title": "Lessons Loop",
+            "subtitle": "V1 mistakes don't repeat in V2.",
+            "items": [
+              "Tagged gotchas with confidence scoring",
+              "90-day half-life decay — stale lessons fade",
+              "Filtered by phase + module on each start_phase",
+              "Critical input for V(N+1) planning"
+            ]
           }
-        },
-        "dashboard": {
-          "title": "Dashboard",
-          "stats": {
-            "revenue": "Revenue",
-            "orders": "Orders",
-            "customers": "Customers",
-            "conversion": "Conversion"
-          },
-          "activity": {
-            "title": "Recent Activity",
-            "item1": "New order #1234 placed",
-            "time1": "2 min ago",
-            "item2": "Customer John D. signed up",
-            "time2": "15 min ago",
-            "item3": "Product 'Pro Plan' updated",
-            "time3": "1 hour ago",
-            "item4": "Payment of $299 received",
-            "time4": "3 hours ago"
-          },
-          "actions": {
-            "title": "Quick Actions",
-            "newProduct": "New Product",
-            "viewReports": "View Reports",
-            "manageTeam": "Manage Team"
-          }
-        },
-        "settings": {
-          "title": "Settings",
-          "tabs": {
-            "general": "General",
-            "notifications": "Notifications",
-            "appearance": "Appearance"
-          },
-          "general": {
-            "appInfo": "Application",
-            "appName": "Name",
-            "description": "Description",
-            "language": "Language",
-            "languageHint": "Language can be changed from the header menu."
-          },
-          "notifications": {
-            "preferences": "Notification Preferences",
-            "email": "Email Notifications",
-            "emailDesc": "Receive updates and alerts via email.",
-            "push": "Push Notifications",
-            "pushDesc": "Receive real-time push notifications.",
-            "marketing": "Marketing Emails",
-            "marketingDesc": "Receive product updates and promotions."
-          },
-          "appearance": {
-            "theme": "Theme",
-            "darkMode": "Dark Mode",
-            "currentTheme": "Current theme"
-          }
-        },
-        "profile": {
-          "title": "Profile",
-          "subtitle": "Manage your account settings and preferences.",
-          "identity": {
-            "title": "Identity",
-            "displayName": "Display Name",
-            "email": "Email",
-            "emailVerified": "Verified",
-            "emailUnverified": "Unverified"
-          },
-          "security": {
-            "title": "Security",
-            "updatePassword": "Update Password",
-            "linkedProviders": "Linked Providers"
-          },
-          "subscription": {
-            "title": "Subscription",
-            "currentPlan": "Current Plan",
-            "status": "Status",
-            "manageBilling": "Manage Billing",
-            "noPlan": "No active plan"
-          },
-          "dangerZone": {
-            "title": "Danger Zone",
-            "deleteAccount": "Delete Account",
-            "deleteWarning": "This action is permanent and cannot be undone. All your data will be deleted."
-          },
-          "signOut": "Sign Out"
         }
       },
-      "fields": {
-        "array": "Array",
-        "boolean": "Boolean",
-        "checkbox": "Checkbox",
-        "date": "Date",
-        "datetime-local": "Date and Time",
-        "email": "Email",
-        "file": "File",
-        "geopoint": "Location",
-        "image": "Image",
-        "map": "Map",
-        "multiselect": "Multiple Select",
-        "number": "Number",
-        "password": "Password",
-        "phone": "Phone Number",
-        "radio": "Radio Buttons",
-        "range": "Range",
-        "reference": "Reference",
-        "select": "Select",
-        "tel": "Phone Number",
-        "text": "Text",
-        "textarea": "Text Area",
-        "timestamp": "Timestamp",
-        "url": "URL"
+      "audience": {
+        "title": "Who It's For",
+        "subtitle": "Developers building with AI assistants — Claude, GPT, Gemini. If you prompt AI to write code, WAI-WAY makes the output predictable, traceable, and production-grade."
       },
-      "text": {
-        "required": "{{field}} is required",
-        "minLength": "{{field}} must be at least {{min}} characters",
-        "maxLength": "{{field}} must not exceed {{max}} characters",
-        "email": "Please enter a valid email address",
-        "url": "Please enter a valid URL",
-        "matches": "{{field}} must match the pattern {{pattern}}",
-        "unique": "{{field}} must be unique",
-        "alphanumeric": "{{field}} must only contain letters and numbers",
-        "lettersOnly": "{{field}} must only contain letters"
-      },
-      "number": {
-        "required": "{{field}} is required",
-        "min": "{{field}} must be at least {{min}}",
-        "max": "{{field}} must not exceed {{max}}",
-        "integer": "{{field}} must be a whole number",
-        "positive": "{{field}} must be positive",
-        "negative": "{{field}} must be negative",
-        "between": "{{field}} must be between {{min}} and {{max}}",
-        "precision": "{{field}} must have at most {{precision}} decimal places"
-      },
-      "date": {
-        "required": "{{field}} is required",
-        "min": "{{field}} must be after {{min}}",
-        "max": "{{field}} must be before {{max}}",
-        "between": "{{field}} must be between {{min}} and {{max}}",
-        "format": "Please enter a valid date",
-        "future": "{{field}} must be in the future",
-        "past": "{{field}} must be in the past",
-        "today": "{{field}} must be today"
-      },
-      "select": {
-        "required": "Please select a {{field}}",
-        "invalid": "Invalid selection for {{field}}",
-        "min": "Please select at least {{min}} options",
-        "max": "Please select no more than {{max}} options"
-      },
-      "boolean": {
-        "required": "{{field}} must be selected"
-      },
-      "array": {
-        "required": "At least one {{field}} is required",
-        "minItems": "Please select at least {{min}} {{field}}",
-        "maxItems": "Cannot select more than {{max}} {{field}}",
-        "uniqueItems": "All {{field}} must be unique"
-      },
-      "file": {
-        "required": "Please select a file",
-        "maxSize": "File size must not exceed {{max}}",
-        "minSize": "File size must be at least {{min}}",
-        "type": "File type must be {{types}}",
-        "dimensions": "Image dimensions must be {{width}}x{{height}}"
-      },
-      "custom": {
-        "passwordMatch": "Passwords must match",
-        "phoneNumber": "Please enter a valid phone number",
-        "postalCode": "Please enter a valid postal code",
-        "currency": "Please enter a valid amount",
-        "color": "Please enter a valid color code"
-      },
-      "oauth": {
-        "connectServices": "Connect Services",
-        "chooseService": "Choose a service to connect with your account",
-        "noProvidersEnabled": "No OAuth Providers",
-        "noProvidersMessage": "No OAuth providers are currently enabled. Please check your configuration.",
-        "checkConfiguration": "Please check your OAuth provider configuration.",
-        "noProviders": "No OAuth Providers",
-        "aria": {
-          "connectionOptions": "OAuth connection options"
-        }
-      },
-      "auth": {
-        "loading": "Loading...",
-        "defaultUser": "User",
-        "signOut": "Sign Out",
-        "deleteAccount": {
-          "label": "Delete Account",
-          "confirm": {
-            "title": "Delete Your Account?",
-            "description": "This action cannot be undone. This will permanently delete your account.",
-            "cancel": "Cancel",
-            "delete": "Delete My Account",
-            "deleting": "Deleting...",
-            "whatDeleted": "What will be deleted:",
-            "credentials": "Your account and authentication credentials",
-            "profile": "Your profile information",
-            "oauth": "All connected OAuth providers",
-            "subscriptions": "Active subscriptions (will be canceled)",
-            "whatKept": "What will be kept (anonymized):",
-            "billing": "Billing history for tax/accounting purposes",
-            "invoices": "Past invoices and transaction records",
-            "checkbox": "I understand this action cannot be undone"
-          },
-          "reauth": {
-            "title": "Confirm Your Identity",
-            "description": "For security, please re-enter your password to continue.",
-            "cancel": "Cancel",
-            "continue": "Continue",
-            "verifying": "Verifying...",
-            "password": "Password",
-            "passwordPlaceholder": "Enter your password"
-          }
-        },
-        "profile": "Profile",
-        "signIn": "Sign In",
-        "signingIn": "Signing in...",
-        "creatingAccount": "Creating account...",
-        "email": "Email",
-        "password": "Password",
-        "emailHint": "Enter your email address",
-        "passwordHintSignin": "Enter your password",
-        "passwordHintSignup": "Enter a password (minimum 6 characters)",
-        "signInForm": "Sign in form",
-        "signUpForm": "Sign up form",
-        "emailPlaceholder": "Enter your email address",
-        "passwordPlaceholder": "Enter your password",
-        "userMenu": "User menu",
-        "settings": "Settings",
-        "account": "Account",
-        "logout": "Logout",
-        "login": "Login",
-        "register": "Register",
-        "forgotPassword": "Forgot Password?",
-        "emailVerification": "Email Verification",
-        "resendEmail": "Resend Email",
-        "verificationRequired": "Please verify your email",
-        "verificationSuccess": "Email verified successfully",
-        "verificationError": "Verification failed",
-        "passwordReset": "Password Reset",
-        "passwordResetSent": "Password reset email sent",
-        "passwordResetSuccess": "Password reset successfully",
-        "passwordResetError": "Password reset failed",
-        "accountLinking": "Account Linking",
-        "linkAccount": "Link Account",
-        "unlinkAccount": "Unlink Account",
-        "accountLinked": "Account linked successfully",
-        "accountUnlinked": "Account unlinked successfully",
-        "linkError": "Failed to link account",
-        "unlinkError": "Failed to unlink account",
-        "checkEmail": "Check your email",
-        "verificationSent": "We've sent you a verification link to prove ownership of your account.",
-        "errorTitle": "Account Linking Error",
-        "networkError": "Network error",
-        "tryAgain": "Try Again",
-        "cancel": "Cancel",
-        "confirm": "Confirm",
-        "save": "Save",
-        "edit": "Edit",
-        "delete": "Delete",
-        "close": "Close",
-        "back": "Back",
-        "next": "Next",
-        "previous": "Previous",
-        "submit": "Submit",
-        "error": "Error",
-        "success": "Success",
-        "warning": "Warning",
-        "info": "Information",
-        "popup": "Popup",
-        "redirect": "Redirect",
-        "toggleMethod": "Toggle between popup and redirect authentication",
-        "popupDescription": "A popup window will open for authentication",
-        "redirectDescription": "You will be redirected to complete authentication",
-        "fedcmRequired": "Google One Tap requires a modern browser (Chrome 116+ or Edge 116+)"
+      "cta": {
+        "title": "Start Building. For Free.",
+        "subtitle": "Install the DoNotDev CLI and let the protocol do the heavy lifting.",
+        "btnInstall": "Install DoNotDev",
+        "btnGitHub": "GitHub"
       }
-    },
+    }
+  },
+  "dndev": {
     "ar": {
       "signIn": "تسجيل الدخول",
       "choosePlatform": "اختر منصة لتسجيل الدخول بها",
@@ -2232,6 +1625,584 @@ const i18nConfig = {
           "message": "Ihr Verifizierungslink wird vorbereitet...",
           "subtitle": "Überprüfen Sie Ihren Posteingang",
           "ariaLabel": "Verifizierungs-E-Mail wird gesendet, bitte warten"
+        }
+      }
+    },
+    "en": {
+      "signIn": "Sign In",
+      "choosePlatform": "Choose a platform to sign in with",
+      "providers": {
+        "google": "Google",
+        "facebook": "Facebook",
+        "github": "GitHub",
+        "twitter": "Twitter",
+        "microsoft": "Microsoft",
+        "yahoo": "Yahoo",
+        "apple": "Apple"
+      },
+      "buttons": {
+        "signIn": "Sign in with {{provider}}",
+        "continue": "Continue with {{provider}}",
+        "verify": "Verify Email",
+        "sendVerification": "Send Verification Email",
+        "signOut": "Sign Out",
+        "loading": "Loading..."
+      },
+      "accountLinking": {
+        "title": "Account Linking Required",
+        "message": "This email is already associated with different sign-in methods ({{methods}}). Please sign in using one of those methods to link your accounts.",
+        "instruction": "Please sign in with one of the following methods to link your accounts:",
+        "explanation": "By signing in, your accounts will be automatically linked, allowing you to use either sign-in method in the future.",
+        "success": "Accounts successfully linked!",
+        "error": "Failed to link accounts. Please try again.",
+        "emailLabel": "Email:"
+      },
+      "emailVerification": {
+        "title": "Email Verification",
+        "status": {
+          "verified": "Your email is verified.",
+          "unverified": "Please verify your email to access all features."
+        },
+        "sending": "Sending verification email...",
+        "success": "Verification email sent! Please check your inbox.",
+        "alreadyVerified": "Your email has already been verified.",
+        "notSignedIn": "You must be signed in to verify your email.",
+        "error": "Failed to send verification email. Please try again."
+      },
+      "errors": {
+        "auth/popup-closed-by-user": "The sign in popup was closed before completion.",
+        "auth/cancelled-popup-request": "The sign in popup was cancelled.",
+        "auth/popup-blocked": "The sign in popup was blocked by the browser.",
+        "auth/email-already-in-use": "This email is already registered.",
+        "auth/invalid-email": "The email address is invalid.",
+        "auth/operation-not-allowed": "This sign in method is not enabled.",
+        "auth/weak-password": "The password is too weak.",
+        "auth/user-disabled": "This account has been disabled.",
+        "auth/user-not-found": "No account found with this email.",
+        "auth/wrong-password": "Incorrect password.",
+        "auth/network-request-failed": "A network error occurred. Please try again.",
+        "auth/internal-error": "An internal error occurred. Please try again.",
+        "auth/invalid-credential": "The provided credential is invalid.",
+        "auth/account-exists-with-different-credential": "An account already exists with the same email address but different sign-in credentials.",
+        "auth/provider-not-enabled": "{{provider}} authentication is not enabled",
+        "auth/unknown-provider": "Unknown provider: {{provider}}",
+        "auth/missing-provider": "Authentication provider is not configured",
+        "auth/no-user-signed-in": "No user is currently signed in",
+        "auth/oauth-incomplete": "Authentication flow incomplete. Please try signing in again.",
+        "fallback": {
+          "title": "Authentication Required",
+          "description": "You need to sign in to access this page.",
+          "chooseProvider": "Choose your preferred sign-in method",
+          "authOptions": "Authentication options",
+          "secure": "Your data is secure and encrypted.",
+          "terms": "By signing in, you agree to our Terms of Service."
+        },
+        "genericError": "Authentication failed. Please try again.",
+        "fieldUpdate": "Failed to update {{field}}",
+        "hiddenField": "Error rendering hidden field {{field}}",
+        "unsupportedFieldType": "Unsupported field type: {{type}}",
+        "fieldRendering": "Error rendering field {{field}}",
+        "fallingBackToTextField": "Using text field for unsupported type {{type}}",
+        "invalidFieldProps": "Invalid configuration for field {{field}}"
+      },
+      "status": {
+        "loading": "Loading...",
+        "authenticating": "Authenticating...",
+        "verifying": "Verifying...",
+        "checking": "Checking permissions..."
+      },
+      "aria": {
+        "signInOptions": "Sign in options",
+        "signInButton": "Sign in with {{provider}}",
+        "loadingState": "Loading authentication",
+        "errorAlert": "Authentication error",
+        "successAlert": "Success",
+        "accountLinkingRequired": "Account linking required",
+        "verificationRequired": "Email verification required"
+      },
+      "home": {
+        "title": "DoNotDev",
+        "description": "DoNotDev is a platform for building web applications with TypeScript and pure CSS.",
+        "getStarted": "Get Started",
+        "whyChooseDoNotDev": "Why Choose DoNotDev?",
+        "openSource": "Open Source",
+        "freeAndOpenSource": "Free and open-source with a vibrant community.",
+        "customizable": "Customizable",
+        "flexibleComponents": "Flexible components to tailor your project needs.",
+        "developerFocused": "Developer-Focused",
+        "scalableArchitecture": "Scalable Architecture",
+        "secureByDesign": "Secure by Design",
+        "fastIntegration": "Fast Integration",
+        "scaleEffortlessly": "Scale effortlessly from prototypes to enterprise solutions.",
+        "header": {
+          "purchase": "Purchase"
+        }
+      },
+      "actions": {
+        "create": "Create",
+        "update": "Update",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save",
+        "confirm": "Confirm",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "search": "Search",
+        "searchPlaceholder": "Search...",
+        "filter": "Filter",
+        "clear": "Clear",
+        "reset": "Reset",
+        "apply": "Apply",
+        "select": "Select",
+        "upload": "Upload",
+        "download": "Download",
+        "close": "Close"
+      },
+      "messages": {
+        "createSuccess": "{{entity}} created successfully",
+        "updateSuccess": "{{entity}} updated successfully",
+        "deleteSuccess": "{{entity}} deleted successfully",
+        "error": "An error occurred",
+        "loading": "Loading...",
+        "noResults": "No results found",
+        "confirmDelete": "Are you sure you want to delete this {{entity}}?",
+        "unsavedChanges": "You have unsaved changes",
+        "sessionExpired": "Your session has expired",
+        "networkError": "Network error occurred",
+        "unauthorized": "Unauthorized access",
+        "forbidden": "Access forbidden",
+        "serverError": "Server error occurred",
+        "notFound": {
+          "title": "Page Not Found",
+          "description": "The page you're looking for doesn't exist or has been moved.",
+          "suggestions": "You might be looking for:",
+          "goHome": "Go Home",
+          "goBack": "Go Back"
+        }
+      },
+      "nav": {
+        "signIn": "Sign in"
+      },
+      "pagination": {
+        "showing": "Showing {{from}} to {{to}} of {{total}} entries",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page {{page}} of {{total}}"
+      },
+      "filters": {
+        "title": "Filters",
+        "apply": "Apply Filters",
+        "clear": "Clear Filters",
+        "noResults": "No results match your filters",
+        "selected": "{{count}} selected"
+      },
+      "settings": {
+        "title": "Settings",
+        "theme": "Theme",
+        "language": "Language",
+        "clearCache": {
+          "title": "Clear Cache",
+          "localStorage": "Local Storage",
+          "sessionStorage": "Session Storage",
+          "applicationCache": "Application Cache",
+          "serviceWorker": "Service Worker",
+          "cookies": "Cookies",
+          "indexedDB": "IndexedDB",
+          "webSQL": "WebSQL",
+          "memoryCache": "Memory Cache",
+          "button": "Clear Cache",
+          "clearing": "Clearing...",
+          "error": "Error clearing cache",
+          "success": "Cache cleared successfully: {{items}}",
+          "noItemsCleared": "No cache items were cleared"
+        }
+      },
+      "common": {
+        "app": {
+          "name": "DoNotDev App"
+        },
+        "defaultTitle": "Page",
+        "defaultDescription": "Page description",
+        "locale": "en_US",
+        "themeSelector": {
+          "changeTheme": "Change Theme",
+          "tooltipWithTransition": "Change Theme: {{current}} → {{next}}",
+          "tooltipWithCurrent": "Change Theme: {{current}}",
+          "tooltipWithNext": "Change Theme: Switch to {{next}}"
+        },
+        "languageSelector": {
+          "changeLanguage": "Change Language"
+        }
+      },
+      "footer": {
+        "landing": {
+          "company": {
+            "defaultName": "Company",
+            "description": "Build better products faster with our comprehensive development platform."
+          },
+          "social": {
+            "twitter": "Twitter",
+            "github": "GitHub",
+            "discord": "Discord"
+          },
+          "sections": {
+            "product": {
+              "title": "Product",
+              "features": "Features",
+              "pricing": "Pricing",
+              "docs": "Docs",
+              "updates": "Updates"
+            },
+            "support": {
+              "title": "Support",
+              "help": "Help",
+              "contact": "Contact",
+              "status": "Status",
+              "community": "Community"
+            }
+          }
+        },
+        "legal": {
+          "allRightsReserved": "All rights reserved.",
+          "cookieSettings": "Cookie Settings",
+          "legalNotice": "Legal Notice",
+          "privacyPolicy": "Privacy Policy",
+          "termsOfService": "Terms of Service",
+          "builtWith": "Made with ❤️ & DoNotDev ©",
+          "collapse": "Collapse footer",
+          "expand": "Expand footer"
+        }
+      },
+      "search": {
+        "ariaLabel": "Search",
+        "label": "Search"
+      },
+      "goTo": {
+        "ariaLabel": "Go to page",
+        "label": "Go to"
+      },
+      "globalGoTo": {
+        "placeholder": "Filter routes or navigate to a page...",
+        "noResults": "No routes found.",
+        "favorites": "Favorites",
+        "allPages": "All Pages",
+        "addFavorite": "Add to favorites",
+        "removeFavorite": "Remove from favorites"
+      },
+      "copyToClipboard": "Copy to clipboard",
+      "copied": "Copied!",
+      "copyPassword": "Copy password",
+      "table": {
+        "searchPlaceholder": "Search...",
+        "filters": "Filters",
+        "selectAllRows": "Select all rows",
+        "selectRow": "Select row {{index}}",
+        "showingResults": "Showing {{from}} to {{to}} of {{total}} results",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page {{current}} of {{total}}"
+      },
+      "language": {
+        "selectLanguage": "Select Language",
+        "searchLanguages": "Search languages...",
+        "noLanguagesFound": "No languages found",
+        "changeLanguage": "Change Language"
+      },
+      "form": {
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "submitting": "Submitting...",
+        "loading": "Loading...",
+        "add": "Add",
+        "remove": "Remove",
+        "typeAndPressAdd": "Type and press Add...",
+        "enterLocationData": "Enter location data (JSON)"
+      },
+      "navigation": {
+        "more": "More",
+        "home": "Home"
+      },
+      "pwa": {
+        "update": {
+          "title": "Update available",
+          "description": "A new version is ready. Refresh to update.",
+          "button": "Update",
+          "altText": "Update application"
+        }
+      },
+      "document": {
+        "upload": {
+          "hint": "Click or drag files to upload",
+          "ariaLabel": "Upload document"
+        },
+        "preview": {
+          "title": "Document Preview",
+          "ariaLabel": "Preview document"
+        },
+        "delete": {
+          "ariaLabel": "Delete document",
+          "failed": "Failed to delete document"
+        },
+        "errors": {
+          "maxFiles": "Maximum {{max}} files allowed",
+          "invalidType": "\"{{fileName}}\" is not an allowed file type",
+          "exceedsSize": "\"{{fileName}}\" exceeds the maximum size of {{size}} MB"
+        }
+      },
+      "image": {
+        "alt": {
+          "upload": "Upload image {{index}}"
+        },
+        "upload": {
+          "pending": "Pending",
+          "dropzoneMultiple": "Drop images here or click to upload",
+          "dropzoneSingle": "Drop image here or click to upload"
+        }
+      },
+      "code": {
+        "copyCode": "Copy code",
+        "copied": "Copied!",
+        "copyCodeToClipboard": "Copy code to clipboard"
+      },
+      "video": {
+        "clickToWatch": "Click to watch video",
+        "watchVideo": "Watch Video"
+      },
+      "inspector": {
+        "pageSource": "Page Source",
+        "inspectPageSourceCode": "Inspect page source code"
+      },
+      "sheet": {
+        "navigation": "Navigation",
+        "codeInspector": "Code Inspector",
+        "debugPanel": "Debug Panel"
+      },
+      "routeError": {
+        "title": "Something went wrong",
+        "description": "We encountered an error while loading this page.",
+        "dataSafe": "Don't worry, your data is safe.",
+        "errorId": "Error ID",
+        "errorMessage": "Error Message",
+        "copied": "Copied",
+        "copyDetails": "Copy Details",
+        "tryAgain": "Try Again",
+        "goHome": "Go Home",
+        "goBack": "Go Back",
+        "contactSupport": "If the problem persists, please contact support."
+      },
+      "redirectOverlay": {
+        "phases": {
+          "connecting": "Connecting to secure server...",
+          "preparing": "Preparing your session...",
+          "redirecting": "Redirecting...",
+          "timeout": "Taking longer than expected..."
+        },
+        "cancel": "Cancel",
+        "doNotRefresh": "Please do not refresh or press back",
+        "default": {
+          "title": "Redirecting",
+          "message": "Please wait while we redirect you...",
+          "subtitle": "This may take a moment",
+          "ariaLabel": "Redirecting, please wait"
+        },
+        "stripe-checkout": {
+          "title": "Redirecting to Stripe",
+          "message": "Initializing secure payment...",
+          "subtitle": "This may take a moment on first load",
+          "ariaLabel": "Preparing secure checkout, please wait"
+        },
+        "stripe-portal": {
+          "title": "Redirecting to Stripe",
+          "message": "Opening billing portal...",
+          "subtitle": "Manage your subscription and invoices",
+          "ariaLabel": "Opening billing portal, please wait"
+        },
+        "oauth-google": {
+          "title": "Signing in with Google",
+          "message": "Connecting to Google...",
+          "subtitle": "You will be redirected to sign in",
+          "ariaLabel": "Signing in with Google, please wait"
+        },
+        "oauth-github": {
+          "title": "Signing in with GitHub",
+          "message": "Connecting to GitHub...",
+          "subtitle": "You will be redirected to sign in",
+          "ariaLabel": "Signing in with GitHub, please wait"
+        },
+        "oauth-apple": {
+          "title": "Signing in with Apple",
+          "message": "Connecting to Apple...",
+          "subtitle": "You will be redirected to sign in",
+          "ariaLabel": "Signing in with Apple, please wait"
+        },
+        "oauth-microsoft": {
+          "title": "Signing in with Microsoft",
+          "message": "Connecting to Microsoft...",
+          "subtitle": "You will be redirected to sign in",
+          "ariaLabel": "Signing in with Microsoft, please wait"
+        },
+        "oauth-facebook": {
+          "title": "Signing in with Facebook",
+          "message": "Connecting to Facebook...",
+          "subtitle": "You will be redirected to sign in",
+          "ariaLabel": "Signing in with Facebook, please wait"
+        },
+        "auth-email-link": {
+          "title": "Sending verification",
+          "message": "Preparing your verification link...",
+          "subtitle": "Check your email inbox",
+          "ariaLabel": "Sending verification email, please wait"
+        }
+      },
+      "templates": {
+        "home": {
+          "hero": {
+            "badge": "Welcome",
+            "title": "Build Something Amazing",
+            "subtitle": "A modern platform to launch, grow, and scale your next project — faster than ever.",
+            "primaryAction": "Get Started",
+            "secondaryAction": "Learn More"
+          },
+          "features": {
+            "title": "Features",
+            "feature1": {
+              "title": "Lightning Fast",
+              "description": "Optimized for speed with instant page loads and real-time updates out of the box."
+            },
+            "feature2": {
+              "title": "Secure by Default",
+              "description": "Enterprise-grade security with authentication, role-based access, and encryption built in."
+            },
+            "feature3": {
+              "title": "Ready to Scale",
+              "description": "From prototype to production — scale effortlessly with a robust, modular architecture."
+            }
+          },
+          "howItWorks": {
+            "title": "How It Works",
+            "step1": {
+              "title": "Sign Up",
+              "description": "Create your account in seconds. No credit card required to get started."
+            },
+            "step2": {
+              "title": "Configure",
+              "description": "Set up your workspace, invite your team, and customize your workflow."
+            },
+            "step3": {
+              "title": "Launch",
+              "description": "Go live with confidence. Deploy, monitor, and iterate at your own pace."
+            }
+          },
+          "showcase": {
+            "title": "Why Us",
+            "item1": {
+              "title": "Modern Stack",
+              "description": "Built on cutting-edge technology for performance, reliability, and developer happiness."
+            },
+            "item2": {
+              "title": "Open Source",
+              "description": "Transparent, community-driven, and free to use."
+            },
+            "item3": {
+              "title": "Developer First",
+              "description": "Designed by developers, for developers. Clean APIs and great docs."
+            },
+            "item4": {
+              "title": "Global Ready",
+              "description": "Multi-language, multi-region, and accessible from day one."
+            }
+          },
+          "cta": {
+            "title": "Ready to Get Started?",
+            "subtitle": "Join thousands of teams building better products, faster.",
+            "primaryAction": "Start for Free",
+            "secondaryAction": "Contact Sales"
+          }
+        },
+        "dashboard": {
+          "title": "Dashboard",
+          "stats": {
+            "revenue": "Revenue",
+            "orders": "Orders",
+            "customers": "Customers",
+            "conversion": "Conversion"
+          },
+          "activity": {
+            "title": "Recent Activity",
+            "item1": "New order #1234 placed",
+            "time1": "2 min ago",
+            "item2": "Customer John D. signed up",
+            "time2": "15 min ago",
+            "item3": "Product 'Pro Plan' updated",
+            "time3": "1 hour ago",
+            "item4": "Payment of $299 received",
+            "time4": "3 hours ago"
+          },
+          "actions": {
+            "title": "Quick Actions",
+            "newProduct": "New Product",
+            "viewReports": "View Reports",
+            "manageTeam": "Manage Team"
+          }
+        },
+        "settings": {
+          "title": "Settings",
+          "tabs": {
+            "general": "General",
+            "notifications": "Notifications",
+            "appearance": "Appearance"
+          },
+          "general": {
+            "appInfo": "Application",
+            "appName": "Name",
+            "description": "Description",
+            "language": "Language",
+            "languageHint": "Language can be changed from the header menu."
+          },
+          "notifications": {
+            "preferences": "Notification Preferences",
+            "email": "Email Notifications",
+            "emailDesc": "Receive updates and alerts via email.",
+            "push": "Push Notifications",
+            "pushDesc": "Receive real-time push notifications.",
+            "marketing": "Marketing Emails",
+            "marketingDesc": "Receive product updates and promotions."
+          },
+          "appearance": {
+            "theme": "Theme",
+            "darkMode": "Dark Mode",
+            "currentTheme": "Current theme"
+          }
+        },
+        "profile": {
+          "title": "Profile",
+          "subtitle": "Manage your account settings and preferences.",
+          "identity": {
+            "title": "Identity",
+            "displayName": "Display Name",
+            "email": "Email",
+            "emailVerified": "Verified",
+            "emailUnverified": "Unverified"
+          },
+          "security": {
+            "title": "Security",
+            "updatePassword": "Update Password",
+            "linkedProviders": "Linked Providers"
+          },
+          "subscription": {
+            "title": "Subscription",
+            "currentPlan": "Current Plan",
+            "status": "Status",
+            "manageBilling": "Manage Billing",
+            "noPlan": "No active plan"
+          },
+          "dangerZone": {
+            "title": "Danger Zone",
+            "deleteAccount": "Delete Account",
+            "deleteWarning": "This action is permanent and cannot be undone. All your data will be deleted."
+          },
+          "signOut": "Sign Out"
         }
       }
     },
@@ -4777,156 +4748,6 @@ const i18nConfig = {
           "ariaLabel": "Verificatiemail sturen"
         }
       }
-    }
-  },
-  "home": {
-    "en": {
-      "hero": {
-        "title": "With AI WAY",
-        "subtitle": "20 years of IT best practices. Baked into an MCP server + skill package. Free.",
-        "badge": "Open Source",
-        "btnDoNotDev": "DoNotDev",
-        "btnGitHub": "GitHub"
-      },
-      "protocol": {
-        "title": "The Protocol",
-        "phases": {
-          "0": {
-            "title": "P0 — Brainstorm",
-            "subtitle": "From idea to complete specification.",
-            "items": [
-              "Describe your app idea in plain language",
-              "AI asks targeted questions — identity, journeys, data, business rules, edge cases",
-              "Conversation produces PRD (what), HLD (how, big picture), LLD (how, detailed)",
-              "Every entity has fields, states, transitions, and access matrices",
-              "Every user journey has numbered steps with success/failure criteria",
-              "No TBDs, no TODOs — the spec is complete or the conversation continues"
-            ]
-          },
-          "1": {
-            "title": "P1 — Scaffold",
-            "subtitle": "Clickable prototype, zero business logic.",
-            "items": [
-              "Every page from the HLD gets a route and a stub component",
-              "Navigation is wired — click through the entire app flow",
-              "PageMeta defines route, access level, and menu placement",
-              "Interactive prototype you can demo before writing logic",
-              "Catches navigation gaps and missing pages early"
-            ]
-          },
-          "2": {
-            "title": "P2 — Entities",
-            "subtitle": "Type-safe data models from your LLD.",
-            "items": [
-              "Every entity defined with defineEntity — fields, types, validations",
-              "State machines with explicit transitions and triggers",
-              "Relationships — belongs-to, has-many, cascade rules",
-              "Access matrices — CRUD permissions per role per condition",
-              "Exported from a single index.ts — one source of truth"
-            ]
-          },
-          "3": {
-            "title": "P3 — Compose",
-            "subtitle": "Functional pages with real data.",
-            "items": [
-              "Components composed from the framework library — no custom CSS",
-              "CRUD wired to entities — create, read, update, delete working",
-              "Pages follow user journeys from the PRD step by step",
-              "Hardcoded strings — content and i18n come in P4",
-              "Ship the logic first, polish later"
-            ]
-          },
-          "4": {
-            "title": "P4 — Configure",
-            "subtitle": "From prototype to production.",
-            "items": [
-              "Tests — unit, integration, e2e for critical paths",
-              "Security rules — Firestore rules generated from access matrices",
-              "CI/CD pipeline configured and tested",
-              "i18n — hardcoded strings extracted to translation files",
-              "/grill review — staff-engineer code review with OWASP security audit",
-              "Bug fixes via Kanban — track, prioritize, ship"
-            ]
-          }
-        }
-      },
-      "toolkit": {
-        "title": "The Toolkit",
-        "features": {
-          "mcp": {
-            "title": "MCP Server",
-            "subtitle": "13 tools for AI-assisted development.",
-            "items": [
-              "Phase tracking — start, complete, approve",
-              "Symbol lookup — real TypeScript types from .d.ts",
-              "Convention enforcement — catches inline styles, bad imports, RTL violations",
-              "Lessons loop — tagged gotchas filtered by phase and module"
-            ]
-          },
-          "skills": {
-            "title": "Skills",
-            "subtitle": "Slash commands for every workflow stage.",
-            "items": [
-              "/brainstorm — extract requirements through conversation",
-              "/build — scaffold + entities + compose in sequence",
-              "/grill — staff-engineer code review with security depth",
-              "/polish — tests, rules, CI/CD, i18n"
-            ]
-          },
-          "grill": {
-            "title": "/grill",
-            "subtitle": "Security audit included. Zero cost.",
-            "items": [
-              "Staff-engineer level code review",
-              "OWASP top 10 coverage",
-              "Output feeds directly into bug tracking",
-              "Run it before every release"
-            ]
-          },
-          "kanban": {
-            "title": "Kanban Board",
-            "subtitle": "Bugs and changes, tracked.",
-            "items": [
-              "Built into the workflow, not bolted on",
-              "Track bugs from /grill review",
-              "Prioritize changes across versions",
-              "Ship when the board is clear"
-            ]
-          },
-          "specs": {
-            "title": "Spec Documents",
-            "subtitle": "PRD + HLD + LLD — living docs.",
-            "items": [
-              "Generated through AI conversation",
-              "Versioned in git — full history",
-              "Updated in place for V2, V3...",
-              "The single source of truth for what and how"
-            ]
-          },
-          "lessons": {
-            "title": "Lessons Loop",
-            "subtitle": "V1 mistakes don't repeat in V2.",
-            "items": [
-              "Tagged gotchas with confidence scoring",
-              "90-day half-life decay — stale lessons fade",
-              "Filtered by phase + module on each start_phase",
-              "Critical input for V(N+1) planning"
-            ]
-          }
-        }
-      },
-      "cta": {
-        "title": "Start Building. For Free.",
-        "subtitle": "Install the DoNotDev CLI and let AI handle the heavy lifting.",
-        "btnInstall": "Install DoNotDev",
-        "btnGitHub": "GitHub"
-      }
-    }
-  },
-  "example": {
-    "en": {
-      "title": "Example Page",
-      "description": "Example page locale file that is dynamically loaded on demand only"
     }
   },
   "auth": {
@@ -19015,8 +18836,8 @@ const i18nConfig = {
     errorCacheTTL: 30000,
   },
   manifest: {
-    totalFiles: 17,
-    totalNamespaces: 17,
+    totalFiles: 16,
+    totalNamespaces: 16,
     totalLanguages: 1,
     eagerNamespaces: 2,
     generatedAt: new Date().toISOString(),

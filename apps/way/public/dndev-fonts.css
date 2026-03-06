@@ -131,6 +131,7 @@
   --border: color-mix(in oklab, var(--foreground) 15%, var(--background));
   --input: var(--muted);
   --ring: var(--primary);
+  --placeholder: rgb(from var(--muted-foreground) r g b / 0.6);
 
   /* Containers (Flat design by default) */
   --card: var(--background);
@@ -287,11 +288,6 @@
   --opacity-subtle: 0.3;
   --opacity-muted: 0.6;
   --opacity-strong: 0.9;
-
-  /* ===========================
-     SURFACE SYSTEM - SIMPLIFIED
-     =========================== */
-  /* --surface-1 deprecated: use --card */
 
   /* ===========================
      PANEL/POPOVER WIDTHS
@@ -811,11 +807,11 @@ em {
   }
 
 .dndev-input::-moz-placeholder {
-    color: rgb(from var(--muted-foreground) r g b / 0.6);
+    color: var(--placeholder);
   }
 
 .dndev-input::placeholder {
-    color: rgb(from var(--muted-foreground) r g b / 0.6);
+    color: var(--placeholder);
   }
 
 .dndev-input:hover {
@@ -825,14 +821,12 @@ em {
 .dndev-input:focus {
     border-color: var(--ring);
     outline: none;
-    box-shadow: 0 0 0 2px var(--ring);
+    box-shadow: var(--shadow-focus);
   }
 
 .dndev-input:focus-visible {
     outline: none;
-    box-shadow:
-      0 0 0 2px var(--ring),
-      0 0 0 4px rgb(from var(--ring) r g b / 0.2);
+    box-shadow: var(--shadow-focus), var(--shadow-interactive);
   }
 
 .dndev-input:disabled {
@@ -848,13 +842,13 @@ em {
 
 .dndev-input[data-variant='destructive']:focus {
       border-color: var(--destructive);
-      box-shadow: 0 0 0 2px var(--destructive);
+      box-shadow: 0 0 0 3px color-mix(in oklab, var(--destructive) 50%, transparent);
     }
 
 .dndev-input[data-variant='destructive']:focus-visible {
       box-shadow:
-        0 0 0 2px var(--destructive),
-        0 0 0 4px rgb(from var(--destructive) r g b / 0.2);
+        0 0 0 3px color-mix(in oklab, var(--destructive) 50%, transparent),
+        0 0 0 3px color-mix(in oklab, var(--destructive) 20%, transparent);
     }
 
 /* File input specific styles */
@@ -865,6 +859,12 @@ em {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
   }
+
+/* Radix UI and other non-native placeholders (e.g. Select, DatePicker triggers) */
+
+[data-placeholder] {
+  color: var(--placeholder);
+}
 
 /* Control base class - checkbox, radio, switch, slider */
 
@@ -881,9 +881,7 @@ em {
 
 .dndev-control:focus-visible {
     outline: none;
-    box-shadow:
-      0 0 0 2px var(--ring),
-      0 0 0 4px rgb(from var(--ring) r g b / 0.2);
+    box-shadow: var(--shadow-focus), var(--shadow-interactive);
   }
 
 .dndev-control:disabled {
@@ -1035,13 +1033,13 @@ em {
 .dndev-surface[data-hover='glow']:hover {
       box-shadow:
         var(--shadow-xl),
-        0 0 40px rgba(0, 0, 0, 0.3);
+        0 0 40px color-mix(in oklab, var(--foreground) 30%, transparent);
     }
 
 .dndev-surface[data-hover='glow']:dir(rtl):hover {
       box-shadow:
         var(--shadow-xl-rtl),
-        0 0 40px rgba(0, 0, 0, 0.3);
+        0 0 40px color-mix(in oklab, var(--foreground) 30%, transparent);
     }
 
 /* Role-specific defaults */
@@ -1302,13 +1300,13 @@ em {
 .dndev-floating[data-hover='glow']:hover {
       box-shadow:
         var(--shadow-xl),
-        0 0 40px rgba(0, 0, 0, 0.3);
+        0 0 40px color-mix(in oklab, var(--foreground) 30%, transparent);
     }
 
 .dndev-floating[data-hover='glow']:dir(rtl):hover {
       box-shadow:
         var(--shadow-xl-rtl),
-        0 0 40px rgba(0, 0, 0, 0.3);
+        0 0 40px color-mix(in oklab, var(--foreground) 30%, transparent);
     }
 
 /* Role-specific defaults */
@@ -1426,15 +1424,21 @@ em {
   /* Base - filled primary (industry standard) */
   background: var(--primary);
   color: var(--primary-foreground);
+
+  /* ── Shared states ── */
 }
 
 .dndev-interactive:hover {
-    opacity: var(--opacity-strong);
+    background: color-mix(in oklab, var(--primary) 85%, var(--foreground));
+  }
+
+.dndev-interactive:active:not(:disabled) {
+    scale: 0.97;
   }
 
 .dndev-interactive:focus-visible {
-    outline: 2px solid var(--ring);
-    outline-offset: 2px;
+    outline: none;
+    box-shadow: var(--shadow-focus), var(--shadow-interactive);
   }
 
 .dndev-interactive:disabled {
@@ -1449,36 +1453,83 @@ em {
     flex-shrink: 0;
   }
 
-/**
-   * Variant system - 4 button variants
-   */
+/* ═══════════════════════════
+     FILLED VARIANTS — hover = darken/lighten the bg color
+     ═══════════════════════════ */
 
-/* Outline - secondary action */
+.dndev-interactive[data-variant='primary'] {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+.dndev-interactive[data-variant='accent'] {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+.dndev-interactive[data-variant='accent']:hover {
+      background: color-mix(in oklab, var(--accent) 85%, var(--foreground));
+    }
+
+.dndev-interactive[data-variant='secondary'] {
+    background: var(--secondary);
+    color: var(--secondary-foreground);
+  }
+
+.dndev-interactive[data-variant='secondary']:hover {
+      background: color-mix(in oklab, var(--secondary) 85%, var(--foreground));
+    }
+
+.dndev-interactive[data-variant='success'] {
+    background: var(--success);
+    color: var(--success-foreground);
+  }
+
+.dndev-interactive[data-variant='success']:hover {
+      background: color-mix(in oklab, var(--success) 85%, var(--foreground));
+    }
+
+.dndev-interactive[data-variant='warning'] {
+    background: var(--warning);
+    color: var(--warning-foreground);
+  }
+
+.dndev-interactive[data-variant='warning']:hover {
+      background: color-mix(in oklab, var(--warning) 85%, var(--foreground));
+    }
+
+.dndev-interactive[data-variant='muted'] {
+    background: var(--muted);
+    color: var(--muted-foreground);
+  }
+
+.dndev-interactive[data-variant='muted']:hover {
+      background: color-mix(in oklab, var(--muted) 80%, var(--foreground) 20%);
+    }
+
+/* ═══════════════════════════
+     GHOST VARIANTS — hover = subtle tint + text color shift
+     ═══════════════════════════ */
+
+/* Shared ghost hover — one rule for all transparent interactive elements */
+
+.dndev-interactive[data-variant='outline'],.dndev-interactive[data-variant='ghost'],.dndev-interactive[data-role='nav-trigger'],.dndev-interactive[data-role='menu-item'],.dndev-interactive[data-role='command-item'] {
+    background: transparent;
+    color: var(--foreground);
+  }
+
+:is(.dndev-interactive[data-variant='outline'],.dndev-interactive[data-variant='ghost'],.dndev-interactive[data-role='nav-trigger'],.dndev-interactive[data-role='menu-item'],.dndev-interactive[data-role='command-item']):hover {
+      background: rgb(from var(--primary) r g b / 0.1);
+      color: var(--primary);
+    }
+
+/* Outline adds border on top of ghost base */
 
 .dndev-interactive[data-variant='outline'] {
     border: var(--border-hairline) solid var(--border);
-    background: transparent;
-    color: var(--foreground);
   }
 
-.dndev-interactive[data-variant='outline']:hover {
-      background: var(--primary);
-      color: var(--primary-foreground);
-    }
-
-/* Ghost - tertiary action */
-
-.dndev-interactive[data-variant='ghost'] {
-    background: transparent;
-    color: var(--foreground);
-  }
-
-.dndev-interactive[data-variant='ghost']:hover {
-      background: var(--primary);
-      color: var(--primary-foreground);
-    }
-
-/* Destructive - danger */
+/* Destructive ghost — same paradigm, different color */
 
 .dndev-interactive[data-variant='destructive'] {
     background: transparent;
@@ -1487,11 +1538,11 @@ em {
   }
 
 .dndev-interactive[data-variant='destructive']:hover {
-      background: var(--destructive);
-      color: var(--destructive-foreground);
+      background: rgb(from var(--destructive) r g b / 0.1);
+      color: var(--destructive);
     }
 
-/* Link variant - action styled as text link */
+/* Link variant — text-only, no background shift */
 
 .dndev-interactive[data-variant='link'] {
     background: transparent;
@@ -1506,72 +1557,6 @@ em {
 
 .dndev-interactive[data-variant='link']:hover {
       color: var(--primary);
-    }
-
-/* Muted variant - subtle background */
-
-.dndev-interactive[data-variant='muted'] {
-    background: var(--muted);
-    color: var(--muted-foreground);
-  }
-
-.dndev-interactive[data-variant='muted']:hover {
-      background: color-mix(in oklab, var(--muted) 80%, black 20%);
-    }
-
-/* Accent variant - highlighted/active state */
-
-.dndev-interactive[data-variant='accent'] {
-    background: var(--accent);
-    color: var(--accent-foreground);
-  }
-
-.dndev-interactive[data-variant='accent']:hover {
-      opacity: var(--opacity-strong);
-    }
-
-/* Primary variant - explicit primary (base is already primary, but allows explicit override) */
-
-.dndev-interactive[data-variant='primary'] {
-    background: var(--primary);
-    color: var(--primary-foreground);
-  }
-
-.dndev-interactive[data-variant='primary']:hover {
-      opacity: var(--opacity-strong);
-    }
-
-/* Secondary variant - secondary brand color */
-
-.dndev-interactive[data-variant='secondary'] {
-    background: var(--secondary);
-    color: var(--secondary-foreground);
-  }
-
-.dndev-interactive[data-variant='secondary']:hover {
-      opacity: var(--opacity-strong);
-    }
-
-/* Success variant - success state */
-
-.dndev-interactive[data-variant='success'] {
-    background: var(--success);
-    color: var(--success-foreground);
-  }
-
-.dndev-interactive[data-variant='success']:hover {
-      opacity: var(--opacity-strong);
-    }
-
-/* Warning variant - warning state */
-
-.dndev-interactive[data-variant='warning'] {
-    background: var(--warning);
-    color: var(--warning-foreground);
-  }
-
-.dndev-interactive[data-variant='warning']:hover {
-      opacity: var(--opacity-strong);
     }
 
 /* Context-aware: ONLY inside accent surfaces */
@@ -1590,11 +1575,11 @@ em {
     }
 
 :is([data-variant='outline']:is(.dndev-surface[data-variant='accent'] .dndev-interactive,.dndev-floating[data-variant='accent'] .dndev-interactive),[data-variant='ghost']:is(.dndev-surface[data-variant='accent'] .dndev-interactive,.dndev-floating[data-variant='accent'] .dndev-interactive)):hover {
-        background: var(--surface-text);
-        color: var(--surface-bg);
+        background: rgb(from var(--surface-text) r g b / 0.1);
+        color: var(--surface-text);
       }
 
-/* Unified menu/command/nav item base */
+/* Unified menu/command/nav item base — ghost hover inherited from shared rule above */
 
 .dndev-interactive[data-role='menu-item'],.dndev-interactive[data-role='command-item'],.dndev-interactive[data-role='nav-trigger'] {
     min-height: auto;
@@ -1608,10 +1593,6 @@ em {
     position: relative;
     text-decoration: none;
 
-    /* Override base .dndev-interactive filled primary - make ghost */
-    background: transparent;
-    color: inherit;
-
     /* Remove gap when compact (no label to space from) */
   }
 
@@ -1619,11 +1600,9 @@ em {
       gap: 0 !important;
     }
 
-/* Modern industry pattern: one consistent hover/focus/active state */
-
-.dndev-interactive[data-role='menu-item']:hover,.dndev-interactive[data-role='menu-item']:focus-visible,.dndev-interactive[data-role='menu-item'][data-highlighted] {
-      background-color: var(--accent);
-      color: var(--accent-foreground);
+.dndev-interactive[data-role='menu-item']:focus-visible,.dndev-interactive[data-role='menu-item'][data-highlighted] {
+      background: rgb(from var(--primary) r g b / 0.1);
+      color: var(--primary);
       outline: 2px solid var(--ring);
       outline-offset: 0;
     }
@@ -1649,14 +1628,9 @@ em {
     width: 100%;
   }
 
-.dndev-interactive[data-role='command-item']:hover:not([data-selected='true']) {
-      background-color: var(--accent);
-      color: var(--accent-foreground);
-    }
-
 .dndev-interactive[data-role='command-item'][data-selected='true'] {
-      background-color: var(--accent);
-      color: var(--accent-foreground);
+      background: rgb(from var(--primary) r g b / 0.1);
+      color: var(--primary);
     }
 
 .dndev-interactive[data-role='command-item'][data-disabled='true'] {
@@ -1665,8 +1639,8 @@ em {
     }
 
 .dndev-interactive[data-role='command-item']:focus-visible {
-      outline: 2px solid var(--ring);
-      outline-offset: 0;
+      outline: none;
+      box-shadow: var(--shadow-focus), var(--shadow-interactive);
     }
 
 /* Specific containers that need start-align (not general stacks/grids) */
@@ -1761,8 +1735,8 @@ em {
 /* Focus state */
 
 .dndev-control:focus-visible {
-    outline: 2px solid var(--ring);
-    outline-offset: 2px;
+    outline: none;
+    box-shadow: var(--shadow-focus), var(--shadow-interactive);
   }
 
 /* Disabled state */
@@ -1776,8 +1750,8 @@ em {
 
 .dndev-control[data-state='checked'],.dndev-control[data-state='on'],.dndev-control[data-pressed='true'] {
     background-color: var(--control-border);
-    /* --card not --background: inverted text must be opaque (--background can be transparent in some themes) */
-    color: var(--card);
+    /* --card-base: root snapshot, not overridden by variant blocks (safe inside any surface) */
+    color: var(--card-base);
   }
 
 /* CONTROL GROUP - Shared pattern for grouped controls (RadioGroup, Checkbox groups) */
@@ -1918,8 +1892,7 @@ em {
   margin-top: var(--gap-sm);
   margin-bottom: var(--gap-sm);
   height: 1px;
-  background-color: var(--accent);
-  opacity: var(--opacity-strong);
+  background-color: var(--border);
 }
 
 /* Menu shortcut */
@@ -1955,26 +1928,13 @@ em {
     --notification-shadow-base: var(--shadow-xl-rtl);
   }
 
-/* Notification variants - shared by tooltips and toasts */
+/* Notification variants - only override border + glow, bg/color inherited from base */
 
 .dndev-notification[data-variant='default'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-hairline) solid var(--border);
-    /* Uses base shadow from .dndev-notification */
   }
 
 .dndev-notification[data-variant='info'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--accent);
     box-shadow:
       var(--notification-shadow-base),
@@ -1982,12 +1942,6 @@ em {
   }
 
 .dndev-notification[data-variant='success'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--success);
     box-shadow:
       var(--notification-shadow-base),
@@ -1995,12 +1949,6 @@ em {
   }
 
 .dndev-notification[data-variant='warning'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--warning);
     box-shadow:
       var(--notification-shadow-base),
@@ -2008,12 +1956,6 @@ em {
   }
 
 .dndev-notification[data-variant='error'],.dndev-notification[data-variant='destructive'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--destructive);
     box-shadow:
       var(--notification-shadow-base),
@@ -2021,12 +1963,6 @@ em {
   }
 
 .dndev-notification[data-variant='primary'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--primary);
     box-shadow:
       var(--notification-shadow-base),
@@ -2034,12 +1970,6 @@ em {
   }
 
 .dndev-notification[data-variant='secondary'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--secondary);
     box-shadow:
       var(--notification-shadow-base),
@@ -2047,12 +1977,6 @@ em {
   }
 
 .dndev-notification[data-variant='accent'] {
-    background: color-mix(
-      in oklab,
-      var(--popover-foreground) 95%,
-      transparent
-    ) !important;
-    color: var(--popover) !important;
     border: var(--border-width) solid var(--accent);
     box-shadow:
       var(--notification-shadow-base),
@@ -2066,7 +1990,7 @@ em {
 .dndev-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: color-mix(in oklab, var(--foreground) 40%, transparent);
   backdrop-filter: blur(8px);
   will-change: opacity;
   z-index: var(--z-overlay);
@@ -2137,7 +2061,7 @@ em {
 
 .dndev-modal-content {
   position: fixed;
-  left: 50%;
+  inset-inline-start: 50%;
   top: 50%;
   z-index: calc(var(--z-modal) + 1);
   transform: translate(-50%, -50%);

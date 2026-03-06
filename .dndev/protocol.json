@@ -14,8 +14,17 @@
     "tList",
     "Reveal",
     "SplitReveal",
-    "FeatureCard"
+    "FeatureCard",
+    "Section",
+    "Grid",
+    "defineNextConfig",
+    "NextJsAppProviders"
   ],
   "pendingReview": false,
-  "currentModule": null
+  "currentModule": null,
+  "toolCallCounts": {
+    "lookup_symbol": 7,
+    "search_framework": 2,
+    "get_guide": 2
+  }
 }

@@ -10,7 +10,6 @@
     "crud",
     "dndev",
     "entityFormTemplate",
-    "example",
     "home",
     "homeTemplate",
     "legalNotice",
@@ -26,5 +25,5 @@
     "home"
   ],
   "fallbackLanguage": "en",
-  "generatedAt": "2026-03-05T14:15:08.372Z"
+  "generatedAt": "2026-03-06T14:39:04.147Z"
 }

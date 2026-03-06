@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-05T14:15:08.450Z
+// Generated at: 2026-03-06T14:39:04.193Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const seoConfig = {
@@ -85,7 +85,7 @@ const seoConfig = {
   "errors": [],
   "source": "auto-discovery",
   "totalFiles": 4,
-  "timestamp": 1772720108450
+  "timestamp": 1772807944193
 };
 
 // Populate unified DnDev config for runtime access (universal CSR/SSR)

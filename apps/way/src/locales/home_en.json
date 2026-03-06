@@ -1,17 +1,28 @@
 {
   "hero": {
     "title": "With AI WAY",
-    "subtitle": "20 years of IT best practices. Baked into an MCP server + skill package. Free.",
+    "subtitle": "AI can code. Without structure, you get spaghetti. WAI-WAY is the protocol that makes AI-built apps production-ready.",
     "badge": "Open Source",
     "btnDoNotDev": "DoNotDev",
     "btnGitHub": "GitHub"
   },
+  "problem": {
+    "title": "The Problem",
+    "items": [
+      "You describe your app. AI generates code. But specs are vague, context is lost between sessions, and quality drifts.",
+      "No traceability — you can't tell why a decision was made three prompts ago.",
+      "No structure — every session starts from scratch. V2 repeats V1 mistakes.",
+      "No quality gate — code ships without review, security audit, or test coverage."
+    ]
+  },
   "protocol": {
     "title": "The Protocol",
+    "subtitle": "Five phases. Each one produces a verifiable artifact. Skip none.",
     "phases": {
       "0": {
         "title": "P0 — Brainstorm",
         "subtitle": "From idea to complete specification.",
+        "outcome": "No more 'I forgot to mention...' — the spec is complete or the conversation continues.",
         "items": [
           "Describe your app idea in plain language",
           "AI asks targeted questions — identity, journeys, data, business rules, edge cases",
@@ -24,6 +35,7 @@
       "1": {
         "title": "P1 — Scaffold",
         "subtitle": "Clickable prototype, zero business logic.",
+        "outcome": "Catch navigation gaps and missing pages before writing a single line of logic.",
         "items": [
           "Every page from the HLD gets a route and a stub component",
           "Navigation is wired — click through the entire app flow",
@@ -35,6 +47,7 @@
       "2": {
         "title": "P2 — Entities",
         "subtitle": "Type-safe data models from your LLD.",
+        "outcome": "Your data layer is defined once, enforced everywhere — no runtime surprises.",
         "items": [
           "Every entity defined with defineEntity — fields, types, validations",
           "State machines with explicit transitions and triggers",
@@ -46,6 +59,7 @@
       "3": {
         "title": "P3 — Compose",
         "subtitle": "Functional pages with real data.",
+        "outcome": "Ship the logic first, polish later — every page follows the user journey from the PRD.",
         "items": [
           "Components composed from the framework library — no custom CSS",
           "CRUD wired to entities — create, read, update, delete working",
@@ -57,6 +71,7 @@
       "4": {
         "title": "P4 — Configure",
         "subtitle": "From prototype to production.",
+        "outcome": "Tests, security rules, CI/CD, i18n, code review — nothing ships without passing /grill.",
         "items": [
           "Tests — unit, integration, e2e for critical paths",
           "Security rules — Firestore rules generated from access matrices",
@@ -69,7 +84,8 @@
     }
   },
   "toolkit": {
-    "title": "The Toolkit",
+    "title": "What Ships With It",
+    "subtitle": "The tools that enforce the protocol — so AI stays on track.",
     "features": {
       "mcp": {
         "title": "MCP Server",
@@ -133,9 +149,13 @@
       }
     }
   },
+  "audience": {
+    "title": "Who It's For",
+    "subtitle": "Developers building with AI assistants — Claude, GPT, Gemini. If you prompt AI to write code, WAI-WAY makes the output predictable, traceable, and production-grade."
+  },
   "cta": {
     "title": "Start Building. For Free.",
-    "subtitle": "Install the DoNotDev CLI and let AI handle the heavy lifting.",
+    "subtitle": "Install the DoNotDev CLI and let the protocol do the heavy lifting.",
     "btnInstall": "Install DoNotDev",
     "btnGitHub": "GitHub"
   }
