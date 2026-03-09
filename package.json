@@ -7,13 +7,14 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "type-check": "turbo run type-check"
+    "type-check": "turbo run type-check",
+    "way": "dndev dev way"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.27",
-    "@donotdev/core": "^0.0.36",
-    "@donotdev/templates": "^0.0.4",
-    "@donotdev/ui": "^0.0.24",
+    "@donotdev/components": "^0.0.29",
+    "@donotdev/core": "^0.0.40",
+    "@donotdev/templates": "^0.0.20",
+    "@donotdev/ui": "^0.0.27",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

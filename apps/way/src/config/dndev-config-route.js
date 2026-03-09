@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-06T14:39:04.100Z
+// Generated at: 2026-03-07T15:59:52.711Z
 // Populates _DNDEV_CONFIG_.routes with discovery results
 
 const routeMapping = [
@@ -87,7 +87,7 @@ const routeManifest = {
   "authRequired": 0,
   "publicRoutes": 4,
   "source": "auto-discovery",
-  "generatedAt": "2026-03-06T14:39:04.099Z"
+  "generatedAt": "2026-03-07T15:59:52.711Z"
 };
 
 // Populate unified DnDev config for runtime access (universal CSR/SSR)
