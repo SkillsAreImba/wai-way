@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@donotdev/components": "^0.0.30",
-    "@donotdev/core": "^0.0.42",
+    "@donotdev/core": "^0.0.43",
     "@donotdev/templates": "^0.0.20",
-    "@donotdev/ui": "^0.0.28",
+    "@donotdev/ui": "^0.0.29",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

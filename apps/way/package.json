@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@donotdev/components": "^0.0.30",
-    "@donotdev/core": "^0.0.42",
+    "@donotdev/core": "^0.0.43",
     "@donotdev/templates": "^0.0.20",
-    "@donotdev/ui": "^0.0.28",
+    "@donotdev/ui": "^0.0.29",
     "@tanstack/react-query": "^5.90.21",
     "i18next": "^25.8.13",
     "i18next-browser-languagedetector": "^8.2.1",

@@ -58,7 +58,6 @@ Desktop.ini
 # DnDev discovery outputs (regenerated at build time)
 *.generated.ts
 *.generated.log
-dndev-config-*.js
 
 # Cache
 .cache/
