@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.30",
+    "@donotdev/components": "^0.0.31",
     "@donotdev/core": "^0.0.43",
     "@donotdev/templates": "^0.0.20",
     "@donotdev/ui": "^0.0.29",
