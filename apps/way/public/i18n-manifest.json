@@ -1,6 +1,7 @@
 {
   "languages": [
-    "en"
+    "en",
+    "fr"
   ],
   "namespaces": [
     "auth",
@@ -27,5 +28,5 @@
     "home"
   ],
   "fallbackLanguage": "en",
-  "generatedAt": "2026-03-09T22:55:37.532Z"
+  "generatedAt": "2026-03-10T00:16:48.122Z"
 }

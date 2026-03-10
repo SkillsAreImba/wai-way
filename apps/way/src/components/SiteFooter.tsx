@@ -12,7 +12,7 @@ export default function SiteFooter() {
   const { t } = useTranslation(NAMESPACE);
 
   return (
-    <Section as="footer" separator gridCols={[1, 1, 3, 3]} align="start" textAlign="start">
+    <Section separator gridCols={[1, 1, 3, 3]} align="start" textAlign="start">
       <Stack>
         <Text level="caption">{t('headings.product')}</Text>
         <Text level="caption">

@@ -55,6 +55,11 @@ Desktop.ini
 *.txt
 *.ps1
 
+# DnDev discovery outputs (regenerated at build time)
+*.generated.ts
+*.generated.log
+dndev-config-*.js
+
 # Cache
 .cache/
 .firebase/
@@ -65,11 +70,12 @@ Desktop.ini
 service-account-key.json
 **/functions/service-account-key.json
 
-# Lock files (using Bun)
+# Lock files
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
 bun.lockb
+bun.lock
 
 # Temporary files
 .temp
