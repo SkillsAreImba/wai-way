@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslation } from '@donotdev/core';
+import { useTranslation, Trans } from '@donotdev/core';
 import { tList } from '@donotdev/ui';
 import { PageContainer, FeatureCard, Link, AppBranding } from '@donotdev/ui';
 import {
@@ -50,10 +50,11 @@ export default function HomePage() {
         {/* Hero */}
         <HeroSection
           title={
-            <>
-              <span className="hero-highlight">Every</span> single time.<br />
-              AI <span className="hero-highlight">almost</span> nails it!
-            </>
+            <Trans
+              ns={NAMESPACE}
+              i18nKey="hero.title"
+              components={{ highlight: <span className="hero-highlight" /> }}
+            />
           }
           subtitle={t('hero.subtitle')}
           variant="subtle"
@@ -99,7 +100,7 @@ export default function HomePage() {
         {/* CTA */}
         <CallToAction
           title={t('cta.title')}
-          subtitle={t('cta.line1')}
+          subtitle={t('cta.subtitle')}
           primaryAction={
             <Button
               variant="primary"

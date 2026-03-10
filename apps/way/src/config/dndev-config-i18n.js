@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-10T09:30:45.206Z
+// Generated at: 2026-03-10T09:50:35.463Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const i18nConfig = {
@@ -245,7 +245,7 @@ const i18nConfig = {
   "home": {
     "en": {
       "hero": {
-        "title": "Every single time.\nAI almost nails it!",
+        "title": "<highlight>Every</highlight> single time.<br/>AI <highlight>almost</highlight> nails it!",
         "subtitle": "AI gets closer every day. Still misses.\n5%, 10%, 20% off — across pages, features, prompts.\nGlobal coherence? Forget it. You finish by hand.\n\nThe WAI WAY fixes that. Free. Any codebase."
       },
       "what": {
@@ -339,7 +339,7 @@ const i18nConfig = {
     },
     "fr": {
       "hero": {
-        "title": "À chaque fois.\nL'IA rate de peu !",
+        "title": "À <highlight>chaque</highlight> fois.<br/>L'IA rate de <highlight>peu</highlight> !",
         "subtitle": "L'IA s'améliore. Ça ne suffit pas.\n20% d'écarts sur chaque page, feature, prompt...\nDès qu'on a besoin de cohérence, on doit finir à la main.\n\nLa WAI WAY change la donne. Gratuite. Toute codebase."
       },
       "what": {

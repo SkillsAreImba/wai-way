@@ -2,7 +2,7 @@
   "totalRoutes": 4,
   "publicRoutes": 4,
   "protectedRoutes": 0,
-  "baseUrl": "http://wai-way.com",
+  "baseUrl": "http://localhost:3000",
   "siteName": "WAI-WAY",
-  "generatedAt": "2026-03-10T09:30:45.247Z"
+  "generatedAt": "2026-03-10T09:50:35.507Z"
 }

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "À chaque fois.\nL'IA rate de peu !",
+    "title": "À <highlight>chaque</highlight> fois.<br/>L'IA rate de <highlight>peu</highlight> !",
     "subtitle": "L'IA s'améliore. Ça ne suffit pas.\n20% d'écarts sur chaque page, feature, prompt...\nDès qu'on a besoin de cohérence, on doit finir à la main.\n\nLa WAI WAY change la donne. Gratuite. Toute codebase."
   },
   "what": {
