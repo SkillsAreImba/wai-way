@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "title": "À chaque fois.\nL'IA rate de peu !",
+    "subtitle": "L'IA s'améliore. Ça ne suffit pas.\n20% d'écarts sur chaque page, feature, prompt...\nDès qu'on a besoin de cohérence, on doit finir à la main.\n\nLa WAI WAY change la donne. Gratuite. Toute codebase."
+  },
+  "what": {
+    "method": {
+      "title": "Le problème avec les agents",
+      "subtitle": "L'IA va vite. Mais vite et faux, ça coûte cher.",
+      "items": [
+        "L'IA oublie ce qu'elle a codé deux prompts avant",
+        "Pas de spec = pas de comptes à rendre",
+        "Tu finis par débugger les raccourcis de l'IA",
+        "\"Prompt et ça roule\" tient pas au-delà d'un proto"
+      ]
+    },
+    "tooling": {
+      "title": "La solution \"with AI WAY\"",
+      "subtitle": "Une méthode en cinq phases qui garde ton IA cadrée.",
+      "items": [
+        "Chaque phase produit un livrable vérifiable",
+        "Tu valides avant que l'IA passe à la suite",
+        "Compatible toute codebase, tout agent IA",
+        "Spec, scaffold, build, test, deploy. Dans l'ordre"
+      ]
+    }
+  },
+  "protocol": {
+    "title": "Cinq Phases. Aucune en option.",
+    "phases": {
+      "0": {
+        "title": "Brainstorm",
+        "subtitle": "De l'idée à la spec complète.",
+        "outcome": "Une spec complète avant la moindre ligne de code.",
+        "items": [
+          "Décris ce que tu veux en langage courant",
+          "L'IA pose des questions jusqu'à zéro ambiguïté",
+          "Modèles de données, parcours, permissions, cas limites",
+          "Résultat : des specs que tu possèdes et contrôles"
+        ]
+      },
+      "1": {
+        "title": "Scaffold",
+        "subtitle": "App cliquable, zéro logique.",
+        "outcome": "Navigue dans l'app réelle avant d'écrire du code métier.",
+        "items": [
+          "Chaque écran a sa route et son placeholder",
+          "Navigation câblée de bout en bout",
+          "Repère les erreurs de structure avant qu'elles coûtent",
+          "Démo prête en quelques minutes"
+        ]
+      },
+      "2": {
+        "title": "Entities",
+        "subtitle": "Tes données, verrouillées.",
+        "outcome": "Définie une fois, appliquée partout.",
+        "items": [
+          "Champs, types, validations. Direct depuis la spec",
+          "Machines à états avec transitions explicites",
+          "Qui peut faire quoi, quand. Décidé en amont",
+          "Source unique de vérité pour toute l'app"
+        ]
+      },
+      "3": {
+        "title": "Compose",
+        "subtitle": "Vraies pages, vraies données.",
+        "outcome": "Chaque écran fait ce que la spec dit.",
+        "items": [
+          "CRUD câblé à tes entités",
+          "L'IA suit la spec étape par étape",
+          "Pas d'impro, pas de features inventées",
+          "La fonctionnalité d'abord, le polish après"
+        ]
+      },
+      "4": {
+        "title": "Harden",
+        "subtitle": "Ship.",
+        "outcome": "Rien ne part en prod sans vérification.",
+        "items": [
+          "Tests générés depuis ta spec",
+          "Règles de sécurité issues de tes définitions d'accès",
+          "Code review et audit de vulnérabilités",
+          "i18n, CI/CD, deploy"
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Suis la WAI WAY.",
+    "subtitle": "La méthode est intégrée au framework. Skills et templates sont sur GitHub.",
+    "linkFramework": "DoNotDev.com",
+    "linkGithub": "GitHub"
+  }
+}

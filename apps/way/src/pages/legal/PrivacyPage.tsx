@@ -11,7 +11,7 @@ import { Shield } from 'lucide-react';
 
 import { type PageMeta } from '@donotdev/core';
 import { PrivacyPolicyTemplate } from '@donotdev/templates';
-import { PageContainer } from '@donotdev/ui';
+import { PageContainer, AppBranding } from '@donotdev/ui';
 
 import { legalConfig } from '../../config/legal';
 
@@ -49,6 +49,7 @@ export const meta: PageMeta = {
 function PrivacyPage() {
   return (
     <PageContainer>
+      <AppBranding display="full" linkToHome />
       <PrivacyPolicyTemplate
         companyName={legalConfig.company.name}
         websiteUrl={legalConfig.website.url}

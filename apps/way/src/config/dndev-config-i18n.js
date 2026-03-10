@@ -1,9 +1,12 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-07T15:59:52.745Z
+// Generated at: 2026-03-09T22:55:37.528Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const i18nConfig = {
   mapping: {
+  "footer": {
+    "en": "./src/locales/footer_en.json"
+  },
   "home": {
     "en": "./src/locales/home_en.json"
   },
@@ -185,171 +188,128 @@ const i18nConfig = {
 ],
   eager: [
   "dndev",
+  "footer",
   "home"
 ],
   fallback: 'en',
   content: {
+  "footer": {
+    "en": {
+      "headings": {
+        "product": "PRODUCT",
+        "resources": "RESOURCES",
+        "legal": "LEGAL"
+      },
+      "links": {
+        "framework": "DoNotDev Framework",
+        "github": "DoNotDev on GitHub",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "legalNotice": "Legal Notice"
+      },
+      "copyright": {
+        "text": "© {{year}}",
+        "company": "AMBROISE PARK Consulting",
+        "rights": "All rights reserved."
+      }
+    }
+  },
   "home": {
     "en": {
       "hero": {
-        "title": "With AI WAY",
-        "subtitle": "AI can code. Without structure, you get spaghetti. WAI-WAY is the protocol that makes AI-built apps production-ready.",
-        "badge": "Open Source",
-        "btnDoNotDev": "DoNotDev",
-        "btnGitHub": "GitHub"
+        "title": "Every single time.\nAI almost nails it!",
+        "subtitle": "The better agents get, the better they almost get it right.\n5%, 10%, 20% off. Across pages, features, prompts.\nWhen you need global coherence, it falls apart and you end up finishing by hand.\n\nThe WAI WAY (With AI WAY) is a free method that makes AI nail it for real.\nOn complex codebases or from scratch.",
+        "badge": "Free & Open Source"
       },
-      "problem": {
-        "title": "The Problem",
-        "items": [
-          "You describe your app. AI generates code. But specs are vague, context is lost between sessions, and quality drifts.",
-          "No traceability — you can't tell why a decision was made three prompts ago.",
-          "No structure — every session starts from scratch. V2 repeats V1 mistakes.",
-          "No quality gate — code ships without review, security audit, or test coverage."
-        ]
+      "what": {
+        "method": {
+          "title": "The Problem",
+          "subtitle": "AI is fast. But fast and wrong is expensive.",
+          "items": [
+            "AI forgets what it built two prompts ago",
+            "No spec means no accountability",
+            "You end up debugging AI's shortcuts",
+            "\"Just prompt it\" doesn't scale past a prototype"
+          ]
+        },
+        "tooling": {
+          "title": "The Fix",
+          "subtitle": "A five phase method that keeps your AI honest.",
+          "items": [
+            "Every phase produces a reviewable artifact",
+            "You approve before the AI moves on",
+            "Works with any codebase and any AI agent",
+            "Spec, scaffold, build, test, deploy. In order"
+          ]
+        }
       },
       "protocol": {
-        "title": "The Protocol",
-        "subtitle": "Five phases. Each one produces a verifiable artifact. Skip none.",
+        "title": "Five Phases. Skip None.",
+        "subtitle": "Each phase produces something real.\nYou validate. Then move on.",
         "phases": {
           "0": {
-            "title": "P0 — Brainstorm",
-            "subtitle": "From idea to complete specification.",
-            "outcome": "No more 'I forgot to mention...' — the spec is complete or the conversation continues.",
+            "title": "P0. Brainstorm",
+            "subtitle": "Idea to complete spec.",
+            "outcome": "A full spec before a single line of code.",
             "items": [
-              "Describe your app idea in plain language",
-              "AI asks targeted questions — identity, journeys, data, business rules, edge cases",
-              "Conversation produces PRD (what), HLD (how, big picture), LLD (how, detailed)",
-              "Every entity has fields, states, transitions, and access matrices",
-              "Every user journey has numbered steps with success/failure criteria",
-              "No TBDs, no TODOs — the spec is complete or the conversation continues"
+              "Describe what you want in plain language",
+              "AI asks questions until nothing is ambiguous",
+              "Data models, journeys, permissions, edge cases",
+              "Output: spec documents you own and control"
             ]
           },
           "1": {
-            "title": "P1 — Scaffold",
-            "subtitle": "Clickable prototype, zero business logic.",
-            "outcome": "Catch navigation gaps and missing pages before writing a single line of logic.",
+            "title": "P1. Scaffold",
+            "subtitle": "Clickable app, zero logic.",
+            "outcome": "Navigate the real app before writing business code.",
             "items": [
-              "Every page from the HLD gets a route and a stub component",
-              "Navigation is wired — click through the entire app flow",
-              "PageMeta defines route, access level, and menu placement",
-              "Interactive prototype you can demo before writing logic",
-              "Catches navigation gaps and missing pages early"
+              "Every screen gets a route and a placeholder",
+              "Navigation wired end to end",
+              "Catch structural mistakes before they cost you",
+              "Demo ready in minutes"
             ]
           },
           "2": {
-            "title": "P2 — Entities",
-            "subtitle": "Type-safe data models from your LLD.",
-            "outcome": "Your data layer is defined once, enforced everywhere — no runtime surprises.",
+            "title": "P2. Entities",
+            "subtitle": "Your data, locked down.",
+            "outcome": "Defined once, enforced everywhere.",
             "items": [
-              "Every entity defined with defineEntity — fields, types, validations",
-              "State machines with explicit transitions and triggers",
-              "Relationships — belongs-to, has-many, cascade rules",
-              "Access matrices — CRUD permissions per role per condition",
-              "Exported from a single index.ts — one source of truth"
+              "Fields, types, validations. Straight from the spec",
+              "State machines with explicit transitions",
+              "Who can do what, when. Decided upfront",
+              "Single source of truth for the entire app"
             ]
           },
           "3": {
-            "title": "P3 — Compose",
-            "subtitle": "Functional pages with real data.",
-            "outcome": "Ship the logic first, polish later — every page follows the user journey from the PRD.",
+            "title": "P3. Compose",
+            "subtitle": "Real pages, real data.",
+            "outcome": "Every screen does what the spec says.",
             "items": [
-              "Components composed from the framework library — no custom CSS",
-              "CRUD wired to entities — create, read, update, delete working",
-              "Pages follow user journeys from the PRD step by step",
-              "Hardcoded strings — content and i18n come in P4",
-              "Ship the logic first, polish later"
+              "CRUD wired to your entities",
+              "AI follows the spec step by step",
+              "No freestyling, no invented features",
+              "Functionality first, polish later"
             ]
           },
           "4": {
-            "title": "P4 — Configure",
-            "subtitle": "From prototype to production.",
-            "outcome": "Tests, security rules, CI/CD, i18n, code review — nothing ships without passing /grill.",
+            "title": "P4. Harden",
+            "subtitle": "Ship it.",
+            "outcome": "Nothing goes live unchecked.",
             "items": [
-              "Tests — unit, integration, e2e for critical paths",
-              "Security rules — Firestore rules generated from access matrices",
-              "CI/CD pipeline configured and tested",
-              "i18n — hardcoded strings extracted to translation files",
-              "/grill review — staff-engineer code review with OWASP security audit",
-              "Bug fixes via Kanban — track, prioritize, ship"
+              "Tests generated from your spec",
+              "Security rules from your access definitions",
+              "Code review and vulnerability audit",
+              "i18n, CI/CD, deploy"
             ]
           }
         }
-      },
-      "toolkit": {
-        "title": "What Ships With It",
-        "subtitle": "The tools that enforce the protocol — so AI stays on track.",
-        "features": {
-          "mcp": {
-            "title": "MCP Server",
-            "subtitle": "13 tools for AI-assisted development.",
-            "items": [
-              "Phase tracking — start, complete, approve",
-              "Symbol lookup — real TypeScript types from .d.ts",
-              "Convention enforcement — catches inline styles, bad imports, RTL violations",
-              "Lessons loop — tagged gotchas filtered by phase and module"
-            ]
-          },
-          "skills": {
-            "title": "Skills",
-            "subtitle": "Slash commands for every workflow stage.",
-            "items": [
-              "/brainstorm — extract requirements through conversation",
-              "/build — scaffold + entities + compose in sequence",
-              "/grill — staff-engineer code review with security depth",
-              "/polish — tests, rules, CI/CD, i18n"
-            ]
-          },
-          "grill": {
-            "title": "/grill",
-            "subtitle": "Security audit included. Zero cost.",
-            "items": [
-              "Staff-engineer level code review",
-              "OWASP top 10 coverage",
-              "Output feeds directly into bug tracking",
-              "Run it before every release"
-            ]
-          },
-          "kanban": {
-            "title": "Kanban Board",
-            "subtitle": "Bugs and changes, tracked.",
-            "items": [
-              "Built into the workflow, not bolted on",
-              "Track bugs from /grill review",
-              "Prioritize changes across versions",
-              "Ship when the board is clear"
-            ]
-          },
-          "specs": {
-            "title": "Spec Documents",
-            "subtitle": "PRD + HLD + LLD — living docs.",
-            "items": [
-              "Generated through AI conversation",
-              "Versioned in git — full history",
-              "Updated in place for V2, V3...",
-              "The single source of truth for what and how"
-            ]
-          },
-          "lessons": {
-            "title": "Lessons Loop",
-            "subtitle": "V1 mistakes don't repeat in V2.",
-            "items": [
-              "Tagged gotchas with confidence scoring",
-              "90-day half-life decay — stale lessons fade",
-              "Filtered by phase + module on each start_phase",
-              "Critical input for V(N+1) planning"
-            ]
-          }
-        }
-      },
-      "audience": {
-        "title": "Who It's For",
-        "subtitle": "Developers building with AI assistants — Claude, GPT, Gemini. If you prompt AI to write code, WAI-WAY makes the output predictable, traceable, and production-grade."
       },
       "cta": {
-        "title": "Start Building. For Free.",
-        "subtitle": "Install the DoNotDev CLI and let the protocol do the heavy lifting.",
-        "btnInstall": "Install DoNotDev",
-        "btnGitHub": "GitHub"
+        "title": "Start building.",
+        "line1": "The method is embedded in the framework.",
+        "linkFramework": "DoNotDev.com",
+        "line2": "Skills and templates are on GitHub.",
+        "linkGithub": "GitHub"
       }
     }
   },
@@ -7830,6 +7790,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "شامل الضريبة",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "قد يعجبك أيضاً"
       }
     },
     "da": {
@@ -8358,6 +8321,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "inkl. moms",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "Du vil måske også synes om"
       }
     },
     "de": {
@@ -8721,6 +8687,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "inkl. MwSt.",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "Das könnte Ihnen auch gefallen"
       }
     },
     "en": {
@@ -9249,6 +9218,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "VAT Incl.",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "You may also like"
       }
     },
     "es": {
@@ -9612,6 +9584,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "IVA incl.",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "También te puede interesar"
       }
     },
     "fr": {
@@ -9975,6 +9950,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "TTC",
         "discountPercent": "-{{percent}} %"
+      },
+      "recommendations": {
+        "title": "Vous aimerez aussi"
       }
     },
     "it": {
@@ -10338,6 +10316,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "IVA incl.",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "Potrebbe piacerti anche"
       }
     },
     "ja": {
@@ -10701,6 +10682,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "税込",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "こちらもおすすめ"
       }
     },
     "ko": {
@@ -11064,6 +11048,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "부가세 포함",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "이런 것도 좋아하실 수 있어요"
       }
     },
     "nl": {
@@ -11592,6 +11579,9 @@ const i18nConfig = {
       "price": {
         "vatIncluded": "incl. btw",
         "discountPercent": "-{{percent}}%"
+      },
+      "recommendations": {
+        "title": "Misschien vind je dit ook leuk"
       }
     }
   },
@@ -18836,10 +18826,10 @@ const i18nConfig = {
     errorCacheTTL: 30000,
   },
   manifest: {
-    totalFiles: 16,
-    totalNamespaces: 16,
+    totalFiles: 17,
+    totalNamespaces: 17,
     totalLanguages: 1,
-    eagerNamespaces: 2,
+    eagerNamespaces: 3,
     generatedAt: new Date().toISOString(),
   },
   debug: false,

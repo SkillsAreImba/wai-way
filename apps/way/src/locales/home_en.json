@@ -1,162 +1,94 @@
 {
   "hero": {
-    "title": "With AI WAY",
-    "subtitle": "AI can code. Without structure, you get spaghetti. WAI-WAY is the protocol that makes AI-built apps production-ready.",
-    "badge": "Open Source",
-    "btnDoNotDev": "DoNotDev",
-    "btnGitHub": "GitHub"
+    "title": "Every single time.\nAI almost nails it!",
+    "subtitle": "AI gets closer every day. Still misses.\n5%, 10%, 20% off — across pages, features, prompts.\nGlobal coherence? Forget it. You finish by hand.\n\nThe WAI WAY fixes that. Free. Any codebase."
   },
-  "problem": {
-    "title": "The Problem",
-    "items": [
-      "You describe your app. AI generates code. But specs are vague, context is lost between sessions, and quality drifts.",
-      "No traceability — you can't tell why a decision was made three prompts ago.",
-      "No structure — every session starts from scratch. V2 repeats V1 mistakes.",
-      "No quality gate — code ships without review, security audit, or test coverage."
-    ]
+  "what": {
+    "method": {
+      "title": "The Problem with agents",
+      "subtitle": "AI is fast. But fast and wrong gets expensive.",
+      "items": [
+        "AI forgets what it built two prompts ago",
+        "No spec means no accountability",
+        "You end up debugging AI's shortcuts",
+        "\"Just prompt it\" doesn't scale past a prototype"
+      ]
+    },
+    "tooling": {
+      "title": "The Fix \"with AI WAY\"",
+      "subtitle": "A five phase method that keeps your AI focused.",
+      "items": [
+        "Every phase produces a reviewable artifact",
+        "You approve before the AI moves on",
+        "Works with any codebase and any AI agent",
+        "Spec, scaffold, build, test, deploy. In order"
+      ]
+    }
   },
   "protocol": {
-    "title": "The Protocol",
-    "subtitle": "Five phases. Each one produces a verifiable artifact. Skip none.",
+    "title": "Five Phases. Skip None.",
     "phases": {
       "0": {
-        "title": "P0 — Brainstorm",
-        "subtitle": "From idea to complete specification.",
-        "outcome": "No more 'I forgot to mention...' — the spec is complete or the conversation continues.",
+        "title": "Brainstorm",
+        "subtitle": "Idea to complete spec.",
+        "outcome": "A full spec before a single line of code.",
         "items": [
-          "Describe your app idea in plain language",
-          "AI asks targeted questions — identity, journeys, data, business rules, edge cases",
-          "Conversation produces PRD (what), HLD (how, big picture), LLD (how, detailed)",
-          "Every entity has fields, states, transitions, and access matrices",
-          "Every user journey has numbered steps with success/failure criteria",
-          "No TBDs, no TODOs — the spec is complete or the conversation continues"
+          "Describe what you want in plain language",
+          "AI asks questions until nothing is ambiguous",
+          "Data models, journeys, permissions, edge cases",
+          "Output: spec documents you own and control"
         ]
       },
       "1": {
-        "title": "P1 — Scaffold",
-        "subtitle": "Clickable prototype, zero business logic.",
-        "outcome": "Catch navigation gaps and missing pages before writing a single line of logic.",
+        "title": "Scaffold",
+        "subtitle": "Clickable app, zero logic.",
+        "outcome": "Navigate the real app before writing business code.",
         "items": [
-          "Every page from the HLD gets a route and a stub component",
-          "Navigation is wired — click through the entire app flow",
-          "PageMeta defines route, access level, and menu placement",
-          "Interactive prototype you can demo before writing logic",
-          "Catches navigation gaps and missing pages early"
+          "Every screen gets a route and a placeholder",
+          "Navigation wired end to end",
+          "Catch structural mistakes before they cost you",
+          "Demo ready in minutes"
         ]
       },
       "2": {
-        "title": "P2 — Entities",
-        "subtitle": "Type-safe data models from your LLD.",
-        "outcome": "Your data layer is defined once, enforced everywhere — no runtime surprises.",
+        "title": "Entities",
+        "subtitle": "Your data, locked down.",
+        "outcome": "Defined once, enforced everywhere.",
         "items": [
-          "Every entity defined with defineEntity — fields, types, validations",
-          "State machines with explicit transitions and triggers",
-          "Relationships — belongs-to, has-many, cascade rules",
-          "Access matrices — CRUD permissions per role per condition",
-          "Exported from a single index.ts — one source of truth"
+          "Fields, types, validations. Straight from the spec",
+          "State machines with explicit transitions",
+          "Who can do what, when. Decided upfront",
+          "Single source of truth for the entire app"
         ]
       },
       "3": {
-        "title": "P3 — Compose",
-        "subtitle": "Functional pages with real data.",
-        "outcome": "Ship the logic first, polish later — every page follows the user journey from the PRD.",
+        "title": "Compose",
+        "subtitle": "Real pages, real data.",
+        "outcome": "Every screen does what the spec says.",
         "items": [
-          "Components composed from the framework library — no custom CSS",
-          "CRUD wired to entities — create, read, update, delete working",
-          "Pages follow user journeys from the PRD step by step",
-          "Hardcoded strings — content and i18n come in P4",
-          "Ship the logic first, polish later"
+          "CRUD wired to your entities",
+          "AI follows the spec step by step",
+          "No freestyling, no invented features",
+          "Functionality first, polish later"
         ]
       },
       "4": {
-        "title": "P4 — Configure",
-        "subtitle": "From prototype to production.",
-        "outcome": "Tests, security rules, CI/CD, i18n, code review — nothing ships without passing /grill.",
+        "title": "Harden",
+        "subtitle": "Ship it.",
+        "outcome": "Nothing goes live unchecked.",
         "items": [
-          "Tests — unit, integration, e2e for critical paths",
-          "Security rules — Firestore rules generated from access matrices",
-          "CI/CD pipeline configured and tested",
-          "i18n — hardcoded strings extracted to translation files",
-          "/grill review — staff-engineer code review with OWASP security audit",
-          "Bug fixes via Kanban — track, prioritize, ship"
+          "Tests generated from your spec",
+          "Security rules from your access definitions",
+          "Code review and vulnerability audit",
+          "i18n, CI/CD, deploy"
         ]
       }
     }
-  },
-  "toolkit": {
-    "title": "What Ships With It",
-    "subtitle": "The tools that enforce the protocol — so AI stays on track.",
-    "features": {
-      "mcp": {
-        "title": "MCP Server",
-        "subtitle": "13 tools for AI-assisted development.",
-        "items": [
-          "Phase tracking — start, complete, approve",
-          "Symbol lookup — real TypeScript types from .d.ts",
-          "Convention enforcement — catches inline styles, bad imports, RTL violations",
-          "Lessons loop — tagged gotchas filtered by phase and module"
-        ]
-      },
-      "skills": {
-        "title": "Skills",
-        "subtitle": "Slash commands for every workflow stage.",
-        "items": [
-          "/brainstorm — extract requirements through conversation",
-          "/build — scaffold + entities + compose in sequence",
-          "/grill — staff-engineer code review with security depth",
-          "/polish — tests, rules, CI/CD, i18n"
-        ]
-      },
-      "grill": {
-        "title": "/grill",
-        "subtitle": "Security audit included. Zero cost.",
-        "items": [
-          "Staff-engineer level code review",
-          "OWASP top 10 coverage",
-          "Output feeds directly into bug tracking",
-          "Run it before every release"
-        ]
-      },
-      "kanban": {
-        "title": "Kanban Board",
-        "subtitle": "Bugs and changes, tracked.",
-        "items": [
-          "Built into the workflow, not bolted on",
-          "Track bugs from /grill review",
-          "Prioritize changes across versions",
-          "Ship when the board is clear"
-        ]
-      },
-      "specs": {
-        "title": "Spec Documents",
-        "subtitle": "PRD + HLD + LLD — living docs.",
-        "items": [
-          "Generated through AI conversation",
-          "Versioned in git — full history",
-          "Updated in place for V2, V3...",
-          "The single source of truth for what and how"
-        ]
-      },
-      "lessons": {
-        "title": "Lessons Loop",
-        "subtitle": "V1 mistakes don't repeat in V2.",
-        "items": [
-          "Tagged gotchas with confidence scoring",
-          "90-day half-life decay — stale lessons fade",
-          "Filtered by phase + module on each start_phase",
-          "Critical input for V(N+1) planning"
-        ]
-      }
-    }
-  },
-  "audience": {
-    "title": "Who It's For",
-    "subtitle": "Developers building with AI assistants — Claude, GPT, Gemini. If you prompt AI to write code, WAI-WAY makes the output predictable, traceable, and production-grade."
   },
   "cta": {
-    "title": "Start Building. For Free.",
-    "subtitle": "Install the DoNotDev CLI and let the protocol do the heavy lifting.",
-    "btnInstall": "Install DoNotDev",
-    "btnGitHub": "GitHub"
+    "title": "Follow the WAI WAY.",
+    "subtitle": "The method is embedded in the framework. Skills and templates are on GitHub.",
+    "linkFramework": "DoNotDev.com",
+    "linkGithub": "GitHub"
   }
 }

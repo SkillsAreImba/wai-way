@@ -1,22 +1,8 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-07T15:59:52.711Z
+// Generated at: 2026-03-09T22:55:37.473Z
 // Populates _DNDEV_CONFIG_.routes with discovery results
 
 const routeMapping = [
-  {
-    "path": "/",
-    "component": "HomePage",
-    "importPath": "/src/pages/HomePage.tsx",
-    "auth": false,
-    "meta": {
-      "title": "Home",
-      "entity": "pages",
-      "action": null,
-      "file": "src/pages/HomePage.tsx"
-    },
-    "metaExport": null,
-    "file": "src/pages/HomePage.tsx"
-  },
   {
     "path": "/legal/legal-notice",
     "component": "LegalNoticePage",
@@ -79,6 +65,20 @@ const routeMapping = [
       "hideFromMenu": true
     },
     "file": "src/pages/legal/TermsPage.tsx"
+  },
+  {
+    "path": "/",
+    "component": "HomePage",
+    "importPath": "/src/pages/HomePage.tsx",
+    "auth": false,
+    "meta": {
+      "title": "Home",
+      "entity": "pages",
+      "action": null,
+      "file": "src/pages/HomePage.tsx"
+    },
+    "metaExport": null,
+    "file": "src/pages/HomePage.tsx"
   }
 ];
 
@@ -87,7 +87,7 @@ const routeManifest = {
   "authRequired": 0,
   "publicRoutes": 4,
   "source": "auto-discovery",
-  "generatedAt": "2026-03-07T15:59:52.711Z"
+  "generatedAt": "2026-03-09T22:55:37.473Z"
 };
 
 // Populate unified DnDev config for runtime access (universal CSR/SSR)

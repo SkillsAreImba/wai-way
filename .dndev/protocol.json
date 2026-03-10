@@ -18,13 +18,20 @@
     "Section",
     "Grid",
     "defineNextConfig",
-    "NextJsAppProviders"
+    "NextJsAppProviders",
+    "Crawl",
+    "Marquee",
+    "HeroSection",
+    "AppBranding",
+    "LanguageFAB",
+    "FloatingLanguageSwitcher",
+    "LayoutConfig"
   ],
   "pendingReview": false,
   "currentModule": null,
   "toolCallCounts": {
-    "lookup_symbol": 7,
-    "search_framework": 2,
-    "get_guide": 2
+    "lookup_symbol": 16,
+    "search_framework": 14,
+    "get_guide": 5
   }
 }

@@ -2,7 +2,7 @@
 
 import { useTranslation } from '@donotdev/core';
 import { tList } from '@donotdev/ui';
-import { PageContainer, FeatureCard, Link } from '@donotdev/ui';
+import { PageContainer, FeatureCard, Link, AppBranding } from '@donotdev/ui';
 import {
   HeroSection,
   Section,
@@ -10,8 +10,8 @@ import {
   Button,
   Roadmap,
   Reveal,
-  Stack,
   Grid,
+  Stack,
 } from '@donotdev/components';
 import type { RoadmapStep } from '@donotdev/components';
 import {
@@ -20,24 +20,15 @@ import {
   Database,
   Code,
   Settings,
-  Server,
-  Terminal,
-  ShieldCheck,
-  Kanban,
-  FileText,
-  RotateCcw,
+  BookOpen,
+  Wrench,
   ExternalLink,
-  AlertTriangle,
-  Users,
+  Github,
 } from 'lucide-react';
-
 const NAMESPACE = 'home';
 
 const phaseIcons = [Brain, Layout, Database, Code, Settings] as const;
 const phaseKeys = ['0', '1', '2', '3', '4'] as const;
-
-const toolkitKeys = ['mcp', 'skills', 'grill', 'kanban', 'specs', 'lessons'] as const;
-const toolkitIcons = [Server, Terminal, ShieldCheck, Kanban, FileText, RotateCcw] as const;
 
 export default function HomePage() {
   const { t } = useTranslation(NAMESPACE);
@@ -45,120 +36,94 @@ export default function HomePage() {
   const protocolSteps: RoadmapStep[] = phaseKeys.map((key, i) => ({
     phase: `P${i}`,
     icon: phaseIcons[i],
-    title: t(`protocol.phases.${key}.title`).split(' — ')[1],
+    title: t(`protocol.phases.${key}.title`),
     subtitle: t(`protocol.phases.${key}.subtitle`),
     description: t(`protocol.phases.${key}.outcome`),
     content: tList(t, `protocol.phases.${key}.items`, 6),
   }));
 
   return (
-    <PageContainer>
-      {/* 1. Hero */}
-      <HeroSection
-        title={t('hero.title')}
-        subtitle={t('hero.subtitle')}
-        badge={t('hero.badge')}
-        variant="primary"
-      >
-        <Button
-          variant="primary"
-          icon={ExternalLink}
-          iconEnd
-          render={({ children, ...props }) => (
-            <Link path="https://donotdev.com" target="_blank" {...props}>{children}</Link>
-          )}
-        >
-          {t('hero.btnDoNotDev')}
-        </Button>
-        <Button
-          variant="outline"
-          icon={ExternalLink}
-          iconEnd
-          render={({ children, ...props }) => (
-            <Link path="https://github.com/AmboisePark/donotdev" target="_blank" {...props}>{children}</Link>
-          )}
-        >
-          {t('hero.btnGitHub')}
-        </Button>
-      </HeroSection>
+    <>
+      <PageContainer>
+        <AppBranding display="full" linkToHome />
 
-      {/* 2. The Problem */}
-      <Section title={t('problem.title')} icon={AlertTriangle} tone="muted" align="center">
-        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
-          {tList(t, 'problem.items', 4)}
-        </Stack>
-      </Section>
+        {/* Hero */}
+        <HeroSection
+          title={
+            <>
+              <span className="hero-highlight">Every</span> single time.<br />
+              AI <span className="hero-highlight">almost</span> nails it!
+            </>
+          }
+          subtitle={t('hero.subtitle')}
+          variant="subtle"
+        />
 
-      {/* 3. The Protocol — Vertical Roadmap, centered */}
-      <Section title={t('protocol.title')} subtitle={t('protocol.subtitle')} align="center">
-        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
-          <Roadmap
-            steps={protocolSteps}
-            layout="vertical"
-            variant="glass"
-          />
-        </Stack>
-      </Section>
+        {/* The method / The tooling */}
+        <Section tone="ghost" align="center">
+          <Grid cols={[1, 1, 2, 2]}>
+            <Reveal direction="left" items={[
+              <FeatureCard
+                key="method"
+                icon={BookOpen}
+                title={t('what.method.title')}
+                subtitle={t('what.method.subtitle')}
+                content={tList(t, 'what.method.items', 4)}
+                variant="glass"
+              />,
+            ]} />
+            <Reveal direction="right" items={[
+              <FeatureCard
+                key="tooling"
+                icon={Wrench}
+                title={t('what.tooling.title')}
+                subtitle={t('what.tooling.subtitle')}
+                content={tList(t, 'what.tooling.items', 4)}
+                variant="glass"
+              />,
+            ]} />
+          </Grid>
+        </Section>
 
-      {/* 4. The Toolkit — FeatureCards */}
-      <Section title={t('toolkit.title')} subtitle={t('toolkit.subtitle')} tone="muted">
-        <Grid cols={[1, 1, 2, 3]}>
-          {toolkitKeys.map((key, i) => (
-            <Reveal
-              key={key}
-              direction="bottom"
-              stagger={150 * i}
-              items={[
-                <FeatureCard
-                  key={key}
-                  icon={toolkitIcons[i]}
-                  title={t(`toolkit.features.${key}.title`)}
-                  subtitle={t(`toolkit.features.${key}.subtitle`)}
-                  content={tList(t, `toolkit.features.${key}.items`, 4)}
-                  variant="glass"
-                />,
-              ]}
+        {/* The Protocol — centered, focused */}
+        <Section title={t('protocol.title')}>
+          <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
+            <Roadmap
+              steps={protocolSteps}
+              layout="vertical"
+              variant="glass"
             />
-          ))}
-        </Grid>
-      </Section>
+          </Stack>
+        </Section>
 
-      {/* 5. Who It's For */}
-      <Section title={t('audience.title')} icon={Users} align="center">
-        <Stack align="center" style={{ maxWidth: 700, margin: '0 auto' }}>
-          <p>{t('audience.subtitle')}</p>
-        </Stack>
-      </Section>
-
-      {/* 6. CTA */}
-      <CallToAction
-        title={t('cta.title')}
-        subtitle={t('cta.subtitle')}
-        primaryAction={
-          <Button
-            variant="primary"
-            icon={ExternalLink}
-            iconEnd
-            render={({ children, ...props }) => (
-              <Link path="https://donotdev.com" target="_blank" {...props}>{children}</Link>
-            )}
-          >
-            {t('cta.btnInstall')}
-          </Button>
-        }
-        secondaryAction={
-          <Button
-            variant="outline"
-            icon={ExternalLink}
-            iconEnd
-            render={({ children, ...props }) => (
-              <Link path="https://github.com/DoNotDev/cli" target="_blank" {...props}>{children}</Link>
-            )}
-          >
-            {t('cta.btnGitHub')}
-          </Button>
-        }
-      />
-    </PageContainer>
+        {/* CTA */}
+        <CallToAction
+          title={t('cta.title')}
+          subtitle={t('cta.line1')}
+          primaryAction={
+            <Button
+              variant="primary"
+              icon={ExternalLink}
+              render={({ children, ...props }) => (
+                <Link path="https://donotdev.com" target="_blank" {...props}>{children}</Link>
+              )}
+            >
+              {t('cta.linkFramework')}
+            </Button>
+          }
+          secondaryAction={
+            <Button
+              variant="outline"
+              icon={Github}
+              render={({ children, ...props }) => (
+                <Link path="https://github.com/DoNotDev/cli" target="_blank" {...props}>{children}</Link>
+              )}
+            >
+              {t('cta.linkGithub')}
+            </Button>
+          }
+        />
+      </PageContainer>
+    </>
   );
 }

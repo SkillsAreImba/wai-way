@@ -9,44 +9,36 @@ import '../config/dndev-config-i18n.js';
 import '../config/dndev-config-pwa.js';
 import '../config/dndev-config-asset.js';
 import '../config/dndev-config-seo.js';
+import '../config/dndev-config-env.js';
 
 import React from 'react';
 import { NextJsAppProviders } from '@donotdev/ui/next';
+import { LanguageFAB } from '@donotdev/core';
 
 import '../config/providers';
 import { appConfig } from '../config/app';
+import MatrixRain from '../components/MatrixRain';
+import SiteFooter from '../components/SiteFooter';
 
 interface ClientLayoutProps {
   children: React.ReactNode;
 }
 
-/**
- * Client-side layout wrapper for Next.js App Router
- * 
- * Configuration-driven architecture with smart defaults.
- * Layout preset comes from appConfig.preset (configured in config/app.ts).
- * Layout prop is for breadcrumbs and slot customizations only.
- * CSS variable overrides should be done in themes.css.
- * Override only what you need - everything else has sensible defaults.
- * 
- * Theme detection happens client-side to avoid Next.js 16 race condition.
- */
 export function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <div id="root">
+      <MatrixRain />
       <NextJsAppProviders
         config={appConfig}
         layout={{
-          breadcrumbs: 'smart', // 'smart' | 'always' | 'never'
-          header: {
-            // end: () => <YourHeaderActions />,
-          },
-          // footer: () => <CustomFooter />,
+          breadcrumbs: 'never',
+          header: () => null,
         }}
       >
         {children}
+        <SiteFooter />
+        <LanguageFAB />
       </NextJsAppProviders>
     </div>
   );
 }
-

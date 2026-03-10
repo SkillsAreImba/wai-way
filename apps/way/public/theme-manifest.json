@@ -2,29 +2,19 @@
   "themes": [
     {
       "name": "light",
-      "displayName": "Light",
+      "displayName": "Matrix",
       "meta": {
-        "icon": "Sun"
+        "icon": "Monitor"
       },
       "essential": false,
       "isDark": false,
       "variableCount": 0
-    },
-    {
-      "name": "dark",
-      "displayName": "Dark",
-      "meta": {
-        "icon": "Moon"
-      },
-      "essential": false,
-      "isDark": true,
-      "variableCount": 0
     }
   ],
   "variables": {
-    "total": 39,
+    "total": 30,
     "framework": 0,
-    "consumer": 39
+    "consumer": 30
   },
-  "generatedAt": "2026-03-07T15:59:52.718Z"
+  "generatedAt": "2026-03-09T22:55:37.487Z"
 }

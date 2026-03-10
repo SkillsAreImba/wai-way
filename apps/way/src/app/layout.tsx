@@ -12,8 +12,8 @@ import { ClientLayout } from './ClientLayout';
  */
 
 export const metadata: Metadata = {
-  title: 'DoNotDev Demo',
-  description: 'Next.js site using DNDev framework',
+  title: 'With AI WAY',
+  description: 'Build apps With AI - free method that works.',
 };
 
 /**

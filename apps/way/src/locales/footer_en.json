@@ -1,0 +1,22 @@
+{
+  "headings": {
+    "product": "PRODUCT",
+    "resources": "RESOURCES",
+    "legal": "LEGAL"
+  },
+  "links": {
+    "consulting": "Consulting",
+    "training": "Coaching",
+    "customDev": "Custom Dev",
+    "framework": "DoNotDev Framework",
+    "github": "WAI WAY on GitHub",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "legalNotice": "Legal Notice"
+  },
+  "copyright": {
+    "text": "© {{year}}",
+    "company": "AMBROISE PARK Consulting",
+    "rights": "All rights reserved."
+  }
+}

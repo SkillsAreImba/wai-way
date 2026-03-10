@@ -1,23 +1,9 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-07T15:59:52.793Z
+// Generated at: 2026-03-09T22:55:37.590Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const seoConfig = {
   "routes": [
-    {
-      "path": "/",
-      "component": "HomePage",
-      "importPath": "/src/pages/HomePage.tsx",
-      "auth": false,
-      "meta": {
-        "title": "Home",
-        "entity": "pages",
-        "action": null,
-        "file": "src/pages/HomePage.tsx"
-      },
-      "metaExport": null,
-      "file": "src/pages/HomePage.tsx"
-    },
     {
       "path": "/legal/legal-notice",
       "component": "LegalNoticePage",
@@ -80,12 +66,26 @@ const seoConfig = {
         "hideFromMenu": true
       },
       "file": "src/pages/legal/TermsPage.tsx"
+    },
+    {
+      "path": "/",
+      "component": "HomePage",
+      "importPath": "/src/pages/HomePage.tsx",
+      "auth": false,
+      "meta": {
+        "title": "Home",
+        "entity": "pages",
+        "action": null,
+        "file": "src/pages/HomePage.tsx"
+      },
+      "metaExport": null,
+      "file": "src/pages/HomePage.tsx"
     }
   ],
   "errors": [],
   "source": "auto-discovery",
   "totalFiles": 4,
-  "timestamp": 1772899192793
+  "timestamp": 1773096937590
 };
 
 // Populate unified DnDev config for runtime access (universal CSR/SSR)

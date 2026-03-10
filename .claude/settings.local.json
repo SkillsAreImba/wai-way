@@ -10,7 +10,8 @@
       "Bash(grep:*)",
       "Bash(tr ;:*)",
       "Bash(ls:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(gh api:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

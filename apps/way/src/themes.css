@@ -1,6 +1,6 @@
 /**
  * src/themes.css — SSOT for essence and theme variables. Import in globals.css only.
- * Default = SaaS (Inter). Optional .brutalist and .luxury do not apply until class is set on <html>.
+ * Matrix-inspired. Green on black. One theme.
  */
 /* src/themes.css */
 
@@ -8,121 +8,74 @@
    APP-WIDE SETTINGS
    =========================== */
 :root {
-  /* Routing animations (fade | slide | none) */
-  /* --routing-animation: fade; */
-  /* --routing-default-duration: var(--dur-normal); */
-
-  /* Spacing scale */
-  /* --gap-sm: 0.5rem; */
-  /* --gap-md: 1rem; */
-  /* --gap-lg: 2rem; */
-
-  /* Border radius */
-  /* --radius-interactive: var(--radius-none); */
-  /* --radius-surface: var(--radius-md); */
-  /* --radius-floating: var(--radius-none); */
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-family: var(--font-sans);
+  --font-headline: var(--font-sans);
+  --header-height: 0px;
 }
 
 /* ===========================
    LIGHT THEME
-   Zinc-based neutral palette
+   Matrix. There is no light.
    =========================== */
 :root.light {
-  --theme-icon: 'Sun';
-  --theme-label: 'Light';
+  --theme-icon: 'Monitor';
+  --theme-label: 'Matrix';
   --theme-is-dark: 0;
 
-  /* Core colors */
-  --background: #ffffff;
-  --foreground: #09090b;
+  /* Core — opaque dark green base (matches MatrixRain BG) */
+  --background: #0d1208;
+  --foreground: #00ff41;
 
   /* Surfaces */
-  --card: #ffffff;
-  --card-foreground: #09090b;
-  --popover: #ffffff;
-  --popover-foreground: #09090b;
+  --card: #0d1208;
+  --card-foreground: #00ff41;
+  --popover: #0d1208;
+  --popover-foreground: #00ff41;
 
-  /* Muted (zinc-100 / zinc-500) */
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  /* Muted */
+  --muted: #0d1a0d;
+  --muted-foreground: #33cc33;
 
-  /* Border & input (zinc-200) */
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: var(--primary);
+  /* Border & input */
+  --border: #1a3a1a;
+  --input: #1a3a1a;
+  --ring: #00ff41;
 
-  /* Brand colors - customize these */
-  --primary: #0284c7;
-  --primary-foreground: #ffffff;
+  /* Brand */
+  --primary: #00ff41;
+  --primary-foreground: #0a0a0a;
 
-  --secondary: #f4f4f5;
-  --secondary-foreground: #18181b;
+  --secondary: #0d1a0d;
+  --secondary-foreground: #00ff41;
 
-  --accent: #ea580c;
-  --accent-foreground: #ffffff;
+  --accent: #00cc44;
+  --accent-foreground: #0a0a0a;
 
-  /* Status colors */
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --success: #16a34a;
-  --success-foreground: #ffffff;
-  --warning: #f59e0b;
-  --warning-foreground: #09090b;
+  /* Status */
+  --destructive: #ff0040;
+  --destructive-foreground: #0a0a0a;
+  --success: #00ff41;
+  --success-foreground: #0a0a0a;
+  --warning: #ccff00;
+  --warning-foreground: #0a0a0a;
 }
 
 /* ===========================
-   DARK THEME
-   Zinc-based dark palette
+   MATRIX RAIN OVERRIDES
+   Let the canvas show through layout chrome
    =========================== */
-:root.dark {
-  --theme-icon: 'Moon';
-  --theme-label: 'Dark';
-  --theme-is-dark: 1;
 
-  /* Core colors */
-  --background: #09090b;
-  --foreground: #fafafa;
-
-  /* Surfaces */
-  --card: #09090b;
-  --card-foreground: #fafafa;
-  --popover: #18181b;
-  --popover-foreground: #fafafa;
-
-  /* Muted (zinc-800 / zinc-400) */
-  --muted: #27272a;
-  --muted-foreground: #a1a1aa;
-
-  /* Border & input (zinc-800) */
-  --border: #27272a;
-  --input: #27272a;
-  --ring: var(--primary);
-
-  /* Brand colors - customize these */
-  --primary: #0ea5e9;
-  --primary-foreground: #ffffff;
-
-  --secondary: #27272a;
-  --secondary-foreground: #fafafa;
-
-  --accent: #f97316;
-  --accent-foreground: #ffffff;
-
-  /* Status colors */
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --success: #16a34a;
-  --success-foreground: #ffffff;
-  --warning: #f59e0b;
-  --warning-foreground: #09090b;
+/* Transparent layout layers so MatrixRain (position:fixed) shows through */
+html,
+body,
+.dndev-layout,
+main[role='main'] {
+  background: transparent !important;
 }
 
-/* ===========================
-   OPTIONAL ESSENCES (do not apply by default; set <html class="brutalist"> or class="luxury" to use)
-   See guides/dndev/essences_reference.css for full .brutalist and .luxury blocks.
-   =========================== */
+.hero-highlight {
+  color: #fff;
+  text-shadow: 0 0 10px var(--primary), 0 0 30px var(--primary);
+}
 
-/* ===========================
-   CUSTOM THEMES
-   =========================== */
-/* Example: .brand { --theme-icon: 'Zap'; --theme-label: 'Brand'; --theme-is-dark: 0; ... } */

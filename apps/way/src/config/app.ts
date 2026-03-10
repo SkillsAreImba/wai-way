@@ -29,15 +29,7 @@ export const appConfig: AppConfig = {
     name: APP_NAME,
     shortName: APP_SHORT_NAME,
     description: APP_DESCRIPTION,
-    // Footer legal links - remove any you don't need
-    footer: {
-      legalLinks: [
-        { path: '#cookie-settings', label: 'footer.legal.cookieSettings' },
-        { path: '/legal/privacy', label: 'footer.legal.privacyPolicy' },
-        { path: '/legal/terms', label: 'footer.legal.termsOfService' },
-        { path: '/legal/legal-notice', label: 'footer.legal.legalNotice' },
-      ],
-    },
+    footer: null,
   },
 
   // ==========================================================================
@@ -65,7 +57,7 @@ export const appConfig: AppConfig = {
   // 'plain'    → No layout. Just your pages, you handle everything.
   //              Best for: Custom layouts, embedded widgets, special cases.
   //
-  preset: 'landing',
+  preset: 'plain',
 
   // ==========================================================================
   // FEATURES - Uncomment to enable
