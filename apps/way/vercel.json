@@ -9,7 +9,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'{{#needsAuth}} https://accounts.google.com https://apis.google.com{{/needsAuth}}{{#needsBilling}} https://js.stripe.com{{/needsBilling}}; style-src 'self' 'unsafe-inline'{{#needsBilling}} https://fonts.googleapis.com{{/needsBilling}}; img-src 'self' data: blob: https:; font-src 'self' data:{{#needsBilling}} https://fonts.gstatic.com{{/needsBilling}}; connect-src 'self'{{#needsAuth}} https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://*.googleapis.com https://next.firebaseio.com{{/needsAuth}}{{#needsBilling}} https://api.stripe.com{{/needsBilling}}; frame-src 'none'{{#needsAuth}} https://accounts.google.com{{/needsAuth}}{{#needsBilling}} https://js.stripe.com https://hooks.stripe.com{{/needsBilling}}; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
         },
         {
           "key": "X-Content-Type-Options",
