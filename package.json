@@ -11,10 +11,10 @@
     "way": "dndev co && dndev dev way"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.31",
-    "@donotdev/core": "^0.0.43",
-    "@donotdev/templates": "^0.0.20",
-    "@donotdev/ui": "^0.0.29",
+    "@donotdev/components": "^0.0.33",
+    "@donotdev/core": "^0.0.46",
+    "@donotdev/templates": "^0.0.22",
+    "@donotdev/ui": "^0.0.31",
     "lucide-react": "^0.575.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

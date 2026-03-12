@@ -22,7 +22,7 @@
       "path": "/i18n-manifest.json",
       "type": "manifest",
       "format": "json",
-      "size": 484
+      "size": 337
     },
     {
       "path": "/logo.svg",
@@ -80,5 +80,5 @@
   },
   "copiedAssets": [],
   "totalAssets": 8,
-  "generatedAt": "2026-03-10T09:50:35.504Z"
+  "generatedAt": "2026-03-11T23:36:51.888Z"
 }

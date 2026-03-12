@@ -1,5 +1,5 @@
 // Auto-generated DnDev config by @donotdev/config
-// Generated at: 2026-03-10T09:50:35.514Z
+// Generated at: 2026-03-11T23:36:51.907Z
 // Populates _DNDEV_CONFIG_ with discovery results
 
 const pwaConfig = {
@@ -165,7 +165,7 @@ const pwaConfig = {
     ]
   },
   "totalFiles": 7,
-  "timestamp": 1773136235514
+  "timestamp": 1773272211907
 };
 
 // Populate unified DnDev config for runtime access (universal CSR/SSR)

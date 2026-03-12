@@ -1,9 +1,9 @@
 // Auto-generated DnDev env config by @donotdev/config
-// Generated at: 2026-03-10T09:50:35.515Z
+// Generated at: 2026-03-11T23:36:51.909Z
 // Populates _DNDEV_CONFIG_.env with NEXT_PUBLIC_* environment variables
 
 const envConfig = {
-  "NEXT_PUBLIC_APP_URL": "http://localhost:3000",
+  "NEXT_PUBLIC_APP_URL": "http://wai-way.com",
   "NEXT_PUBLIC_DONOTDEV_LICENSE_KEY": "dndev_dev_seat_1_65093a22c85edff3"
 };
 

@@ -11,10 +11,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@donotdev/components": "^0.0.31",
-    "@donotdev/core": "^0.0.43",
-    "@donotdev/templates": "^0.0.20",
-    "@donotdev/ui": "^0.0.29",
+    "@donotdev/components": "^0.0.33",
+    "@donotdev/core": "^0.0.46",
+    "@donotdev/templates": "^0.0.22",
+    "@donotdev/ui": "^0.0.31",
     "@tanstack/react-query": "^5.90.21",
     "i18next": "^25.8.13",
     "i18next-browser-languagedetector": "^8.2.1",
